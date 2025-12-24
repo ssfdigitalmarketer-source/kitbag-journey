@@ -47,7 +47,7 @@ const Home = () => {
       const isMobile = window.innerWidth < 768;
 
       const maxScale = isMobile ? 2 : 1.8;
-      const speed = isMobile ? 2 : 2.5;
+      const speed = isMobile ? 2 : 1.8;
 
       const scale = Math.min(1 + progress * speed, maxScale);
 
@@ -100,13 +100,13 @@ const Home = () => {
       {/* Hero section */}
       <section
         ref={sectionRef}
-        className="w-full p-10 text-center relative
+        className="w-full py-10 px-5 text-center relative
                    h-[60vh] lg:h-[200vh] lg:px-20 lg:pb-40
                    bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover"
       >
         <h1
           ref={headingRef}
-          className="text-[8vh] font-extrabold mt-[px] text-white lg:text-[11vw] "
+          className="text-[8vh] mx-auto font-extrabold mt-[10px] text-white lg:text-[11vw] "
         >
           PROMOTING TALENT
         </h1>
@@ -144,6 +144,22 @@ const Home = () => {
           <ServiceCard img={serviceImg} text="Managememt" />
           <ServiceCard img={serviceImg} text="Managememt" />
         </div>
+      </section>
+
+
+      {/* About Section */}
+      <section className="py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
+
+
+      </section>
+
+
+      {/* Banner  */}
+      <section className="w-full py-20 text-2xl px-3 h-[10vh] lg:h-[60vh] font-bold lg:text-[15vh] flex flex-col lg:space-y-24">
+
+        <p className="text-left">PROMOTING AND</p>
+        <p className="text-right">MANAGING TALENT</p>
+        <p className="text-center">EVERYWHERE</p>
 
       </section>
 
