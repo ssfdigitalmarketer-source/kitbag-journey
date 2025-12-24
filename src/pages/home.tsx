@@ -1,14 +1,19 @@
 import { useEffect, useRef } from "react";
 import video from "../assets/sports-center.mp4";
 import serviceImg from "../assets/service.jpg";
+import serviceImg2 from "../assets/service2.jpg";
+import serviceImg3 from "../assets/service3.jpg";
+import serviceImg4 from "../assets/service4.jpg";
 import ServiceCard from "../components/ServiceCard";
 import PlayerCard from "../components/PlayerCard";
 import playerImg from "../assets/playerImage.jpeg"
+import playerImg2 from "../assets/playerImage2.jpeg"
+import playerImg3 from "../assets/playerImage3.jpeg"
+import playerImg4 from "../assets/playerImage4.jpeg"
 import gymPic from "../assets/gymPicture.jpg"
 import rightArrow from '../assets/right-arrow.svg'
 import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
-
 
 const Home = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -118,9 +123,9 @@ const Home = () => {
 
         <div className="flex flex-col my-8 lg:flex-row lg:mx-0">
           <ServiceCard img={serviceImg} text="Management" />
-          <ServiceCard img={serviceImg} text="Management" />
-          <ServiceCard img={serviceImg} text="Managememt" />
-          <ServiceCard img={serviceImg} text="Managememt" />
+          <ServiceCard img={serviceImg2} text="Management" />
+          <ServiceCard img={serviceImg3} text="Managememt" />
+          <ServiceCard img={serviceImg4} text="Managememt" />
         </div>
       </section>
 
@@ -170,9 +175,9 @@ const Home = () => {
         <div className="overflow-x-auto overscroll-x-contain">
           <div className="whitespace-nowrap space-x-2 lg:flex">
             <PlayerCard img={playerImg} title="Virat Singh" />
-            <PlayerCard img={playerImg} title="Virat Singh" />
-            <PlayerCard img={playerImg} title="Virat Singh" />
-            <PlayerCard img={playerImg} title="Virat Singh" />
+            <PlayerCard img={playerImg2} title="Virat Singh" />
+            <PlayerCard img={playerImg3} title="Virat Singh" />
+            <PlayerCard img={playerImg4} title="Virat Singh" />
           </div>
         </div>
         <div className="w-[30%] mx-auto justify-between flex invert lg:hidden"><img src={rightArrow} alt="" className="transform rotate-180" /><img src={rightArrow} alt="" /></div>
