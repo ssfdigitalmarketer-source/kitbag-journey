@@ -5,6 +5,7 @@ import ServiceCard from "../components/ServiceCard";
 import PlayerCard from "../components/PlayerCard";
 import logo from "../assets/kitbag-logo.svg"
 import playerImg from "../assets/playerImage.jpeg"
+import gymPic from "../assets/gymPicture.jpg"
 
 const Home = () => {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
@@ -150,15 +151,30 @@ const Home = () => {
 
 
       {/* About Section */}
-      <section className="py-10 px-8 text-xl font-semibold bg-[url('./assets/bg.jpg')] text-center bg-no-repeat bg-cover lg:text-6xl">
-      <div className=" space-y-10 mx-auto lg:w-[70%]">
-        <p className="">EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
-        <p>WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT REACHING THEIR FULL <span className="text-yellow-400">POTENTIAL.</span></p>
-        <div>
-          <p className="text-2xl">Shahbaz Nadeem</p>
-          <p className="text-yellow-500 text-sm">MENTOR, KITBAG JOURNEY.</p>
+      <section className="py-20 space-y-32 px-8 text-xl font-semibold bg-[url('./assets/bg.jpg')] text-left bg-no-repeat bg-cover">
+
+        <div className=" space-y-10 mx-auto lg:w-[70%] lg:text-6xl">
+          <p className="">EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
+          <p>WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL.</span></p>
+          <div>
+            <p className="text-lg lg:text-2xl">Shahbaz Nadeem</p>
+            <p className="text-yellow-500 text-xs lg:text-sm">MENTOR, KITBAG JOURNEY.</p>
+          </div>
         </div>
-      </div>
+
+        <div className="space-y-5 my-20 lg:flex">
+          <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2"><img src={gymPic} alt="" className="h-full object-contain" /></div>
+
+          <div className="w-full lg:w-1/2 space-y-4 flex-col justify-center lg:flex">
+            <p className="text-yellow-500 text-xs lg:text-lg">WELCOME TO FUTURE</p>
+            <p className="text-3xl lg:text-6xl">WELCOME TO KITBAG JOURNEY.
+              AN ATHLETE MANAGEMENT COMPANY.
+            </p>
+            <button className="px-8 py-4 border-2 border-white lg:w-[25%] hover:border-yellow-500 hover:text-yellow-500 transition-all duration-300">ABOUT US</button>
+          </div>
+
+        </div>
+
       </section>
 
 
@@ -172,17 +188,21 @@ const Home = () => {
       </section>
 
 
-        {/* players section */}
-        <section className="py-20 space-y-5 px-5">
-          <h1 className="text-4xl text-yellow-500 text-center">OUR PLAYERS</h1>
-          <div className="flex">
-            <PlayerCard img={playerImg} title="Virat Singh"/>
-            <PlayerCard img={playerImg} title="Virat Singh"/>
-            <PlayerCard img={playerImg} title="Virat Singh"/>
-            <PlayerCard img={playerImg} title="Virat Singh"/>
+      {/* players section */}
+      <section className="w-full py-20 space-y-10 px-5">
+  <h1 className="text-4xl text-yellow-500 text-center">OUR PLAYERS</h1>
 
-          </div>
-        </section>
+  {/* Scroll container */}
+  <div className="overflow-x-auto overscroll-x-contain">
+    <div className="whitespace-nowrap space-x-2 lg:flex">
+      <PlayerCard img={playerImg} title="Virat Singh" />
+      <PlayerCard img={playerImg} title="Virat Singh" />
+      <PlayerCard img={playerImg} title="Virat Singh" />
+      <PlayerCard img={playerImg} title="Virat Singh" />
+    </div>
+  </div>
+</section>
+
 
 
     </div>
