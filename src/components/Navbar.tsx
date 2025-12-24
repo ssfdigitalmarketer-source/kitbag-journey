@@ -23,7 +23,7 @@ const Navbar = () => {
 
             {showBurgerMenu && (
                 <div className="w-full space-y-3 relative z-40 top-0">
-                    <ul className={`list-none w-full ${showBurgerMenu && "translate-y-12"} px-4 py-2 transition-all bg-black absolute tracking-widest text-[20px] lg:flex lg:gap-6`}>
+                    <ul className="list-none w-full top-12 px-4 py-5 bg-black absolute tracking-widest text-[20px] lg:flex lg:gap-6">
                         <li>HOME</li>
                         <li>PAGES</li>
                         <li>BLOG</li>

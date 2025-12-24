@@ -142,8 +142,8 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="space-y-5 my-20 lg:flex">
-          <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2"><img src={gymPic} alt="" className="h-full object-contain" /></div>
+        <div className="space-y-5 my-20 text-center lg:flex lg:text-left">
+          <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2"><img src={gymPic} alt="" className="h-full object-contain mx-auto" /></div>
 
           <div className="w-full px-5 lg:w-1/2 space-y-4 flex-col justify-center lg:flex">
             <p className="text-yellow-500 text-xs lg:text-lg">WELCOME TO FUTURE</p>
