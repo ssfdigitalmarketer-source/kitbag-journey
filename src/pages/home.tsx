@@ -1,17 +1,16 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import video from "../assets/sports-center.mp4";
 import serviceImg from "../assets/service.jpg";
 import ServiceCard from "../components/ServiceCard";
 import PlayerCard from "../components/PlayerCard";
-import logo from "../assets/kitbag-logo.svg"
 import playerImg from "../assets/playerImage.jpeg"
 import gymPic from "../assets/gymPicture.jpg"
 import rightArrow from '../assets/right-arrow.svg'
 import TestimonialCard from "../components/TestimonialCard";
+import Navbar from "../components/Navbar";
 
 
 const Home = () => {
-  const [showBurgerMenu, setShowBurgerMenu] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const wrapperRef = useRef<HTMLDivElement | null>(null);
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -74,34 +73,7 @@ const Home = () => {
   return (
     <div className="w-full relative">
       {/* Navbar */}
-      <nav className="w-[100%] p-10 top-0 font-semibold sticky lg:flex z-30">
-        <div className="flex mx-auto">
-          <img src={logo} alt="Kitbag Logo" className="h-[100px] mr-5 absolute top-0 left-1 lg:h-[150px]" />
-          <button
-            className="text-2xl mx-6 absolute right-0 lg:hidden"
-            onClick={() => setShowBurgerMenu(!showBurgerMenu)}
-          >
-            ☰
-          </button>
-          <ul className="hidden list-none tracking-widest text-[15px] lg:flex lg:gap-6">
-            <li>HOME</li>
-            <li>PAGES</li>
-            <li>BLOG</li>
-            <li>CONTACT</li>
-          </ul>
-        </div>
-
-        {showBurgerMenu && (
-          <div className="w-full space-y-3 bg-black relative z-40 top-0 lg:block">
-            <ul className="list-none bg-black absolute tracking-widest text-[20px] lg:flex lg:gap-6">
-              <li>HOME</li>
-              <li>PAGES</li>
-              <li>BLOG</li>
-              <li>CONTACT</li>
-            </ul>
-          </div>
-        )}
-      </nav>
+      <Navbar />
 
       {/* Hero section */}
       <section
@@ -208,31 +180,63 @@ const Home = () => {
       </section>
 
       <section className="px-5">
-  <div className="space-y-10">
-    <h1 className="text-yellow-500 text-4xl text-center">
-      TESTIMONIALS
-    </h1>
-    <h1 className="text-center text-5xl">
-      WHAT OUR CLIENTS SAY
-    </h1>
+        <div className="space-y-10">
+          <h1 className="text-yellow-500 text-4xl text-center">
+            TESTIMONIALS
+          </h1>
+          <h1 className="text-center text-5xl">
+            WHAT OUR CLIENTS SAY
+          </h1>
 
-    {/* Scroll only on mobile */}
-    <div className="overflow-x-auto overscroll-x-contain lg:overflow-visible">
-      <div className="flex gap-10 w-max lg:w-full lg:justify-around">
-        <TestimonialCard />
-        <TestimonialCard />
-        <TestimonialCard />
+          {/* Scroll only on mobile */}
+          <div className="overflow-x-auto overscroll-x-contain lg:overflow-visible">
+            <div className="flex gap-10 w-max lg:w-full lg:justify-around">
+              <TestimonialCard />
+              <TestimonialCard />
+              <TestimonialCard />
+            </div>
+          </div>
+          <div className="w-[30%] mx-auto justify-between flex invert lg:hidden"><img src={rightArrow} alt="" className="transform rotate-180" /><img src={rightArrow} alt="" /></div>
+        </div>
+      </section>
+
+
+
+      {/* Footer */}
+<footer className="p-10 mt-32">
+  <div className="border-y-[0.5px] py-20 border-yellow-500 flex flex-col gap-10 lg:justify-around lg:flex-row lg:gap-10">
+
+    <div className="lg:w-[20%] space-y-4">
+      <h2 className="text-yellow-500 text-2xl">ABOUT US</h2>
+      <p className="text-lg font-sans">
+        Kitbag Journey is an athlete management company dedicated to nurturing
+        and promoting sports talent. Our mission is to provide athletes with the
+        guidance, resources, and opportunities they need to excel both on and
+        off the field.
+      </p>
+    </div>
+
+    <div className="lg:w-[20%] space-y-4">
+      <h2 className="text-yellow-500 text-2xl">CONTACT</h2>
+      <p className="text-lg font-sans">
+        kitbag@email.com <br />
+        +91 9876543210
+      </p>
+    </div>
+
+     <div className="lg:w-[20%] space-y-4">
+      <h2 className="text-yellow-500 text-2xl">LINKS</h2>
+      <div className="text-lg font-sans space-y-2">
+        <div>HOME</div>
+        <div>PAGES</div>
+        <div>ABOUT US</div>
+        <div>CONTACT</div>
       </div>
     </div>
-    <div className="w-[30%] mx-auto justify-between flex invert lg:hidden"><img src={rightArrow} alt="" className="transform rotate-180" /><img src={rightArrow} alt="" /></div>
+
   </div>
-</section>
+</footer>
 
-
-
-<footer>
-        
-</footer> 
 
 
     </div>
