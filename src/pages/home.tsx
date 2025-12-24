@@ -46,13 +46,13 @@ const Home = () => {
 
       const isMobile = window.innerWidth < 768;
 
-      const maxScale = isMobile ? 2 : 1.4;
-      const speed = isMobile ? 1.1 : 0.8;
+      const maxScale = isMobile ? 2 : 1.8;
+      const speed = isMobile ? 2 : 2.5;
 
       const scale = Math.min(1 + progress * speed, maxScale);
 
       videoEl.style.transform = `scale(${scale})`;
-      videoEl.style.transition = "transform 0.1s ease-out";
+      videoEl.style.transition = "transform 0.3s ease-out";
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -66,11 +66,11 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="w-full relative bg-black">
+    <div className="w-full relative">
       {/* Navbar */}
-      <nav className="w-[100%] p-10 top-0 font-semibold sticky lg:flex lg:bg-[#090909] z-30">
+      <nav className="w-[100%] p-10 top-0 font-semibold sticky lg:flex z-30">
         <div className="flex mx-auto">
-          <img src={logo} alt="Kitbag Logo" className="h-[120px] mr-5 absolute top-0 left-1 lg:h-[150px]"/>
+          <img src={logo} alt="Kitbag Logo" className="h-[100px] mr-5 absolute top-0 left-1 lg:h-[150px]" />
           <button
             className="text-2xl mx-6 absolute right-0 lg:hidden"
             onClick={() => setShowBurgerMenu(!showBurgerMenu)}
@@ -101,7 +101,7 @@ const Home = () => {
       <section
         ref={sectionRef}
         className="w-full p-10 text-center relative
-                   h-[70vh] lg:h-[200vh] lg:px-20
+                   h-[60vh] lg:h-[200vh] lg:px-20 lg:pb-40
                    bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover"
       >
         <h1
@@ -126,22 +126,25 @@ const Home = () => {
 
       {/* Services Section */}
       <section className="w-full py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
-        <div className="overflow-hidden py-4 lg:w-full">
-          <div className="flex whitespace-nowrap">
-            <div className="animate-marquee text-white text-2xl font-regular">
-              PROMOTING TALENT &nbsp; • &nbsp; PROMOTING TALENT &nbsp; • &nbsp; PROMOTING TALENT &nbsp; • &nbsp;
-            </div>
+        <div className="overflow-hidden w-full py-4">
+          <div className="flex whitespace-nowrap w-max animate-marquee">
+            <span className="text-white text-xl md:text-2xl mr-8">
+              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+            </span>
+            <span className="text-white text-xl md:text-2xl mr-8">
+              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+            </span>
           </div>
-
-          <div className="flex flex-col my-8 mx-2 lg:flex-row lg:mx-0">
-            <ServiceCard img={serviceImg} text="Management" />
-            <ServiceCard img={serviceImg} text="Management" />
-            <ServiceCard img={serviceImg} text="Managememt" />
-            <ServiceCard img={serviceImg} text="Managememt" />
-          </div>
-
-
         </div>
+
+
+        <div className="flex flex-col my-8 lg:flex-row lg:mx-0">
+          <ServiceCard img={serviceImg} text="Management" />
+          <ServiceCard img={serviceImg} text="Management" />
+          <ServiceCard img={serviceImg} text="Managememt" />
+          <ServiceCard img={serviceImg} text="Managememt" />
+        </div>
+
       </section>
 
 
