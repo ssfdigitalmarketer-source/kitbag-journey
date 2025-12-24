@@ -6,6 +6,9 @@ import PlayerCard from "../components/PlayerCard";
 import logo from "../assets/kitbag-logo.svg"
 import playerImg from "../assets/playerImage.jpeg"
 import gymPic from "../assets/gymPicture.jpg"
+import rightArrow from '../assets/right-arrow.svg'
+import TestimonialCard from "../components/TestimonialCard";
+
 
 const Home = () => {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
@@ -165,7 +168,7 @@ const Home = () => {
         <div className="space-y-5 my-20 lg:flex">
           <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2"><img src={gymPic} alt="" className="h-full object-contain" /></div>
 
-          <div className="w-full lg:w-1/2 space-y-4 flex-col justify-center lg:flex">
+          <div className="w-full px-5 lg:w-1/2 space-y-4 flex-col justify-center lg:flex">
             <p className="text-yellow-500 text-xs lg:text-lg">WELCOME TO FUTURE</p>
             <p className="text-3xl lg:text-6xl">WELCOME TO KITBAG JOURNEY.
               AN ATHLETE MANAGEMENT COMPANY.
@@ -179,7 +182,7 @@ const Home = () => {
 
 
       {/* Banner  */}
-      <section className="w-full py-28 text-2xl px-3 h-[10vh] lg:h-[60vh] font-bold lg:text-[10vh] flex flex-col lg:space-y-32 lg:px-20">
+      <section className="w-full my-10 py-28 text-2xl px-3 h-[10vh] lg:h-[60vh] font-bold lg:text-[10vh] flex flex-col lg:space-y-32 lg:px-20">
 
         <p className="text-left">WE CREATE</p>
         <p className="text-right">BRANDS AND IP'S</p>
@@ -189,20 +192,47 @@ const Home = () => {
 
 
       {/* players section */}
-      <section className="w-full py-20 space-y-10 px-5">
-  <h1 className="text-4xl text-yellow-500 text-center">OUR PLAYERS</h1>
+      <section className="w-full my-20 py-20 space-y-10 px-5">
+        <h1 className="text-4xl text-yellow-500 text-center">OUR PLAYERS</h1>
 
-  {/* Scroll container */}
-  <div className="overflow-x-auto overscroll-x-contain">
-    <div className="whitespace-nowrap space-x-2 lg:flex">
-      <PlayerCard img={playerImg} title="Virat Singh" />
-      <PlayerCard img={playerImg} title="Virat Singh" />
-      <PlayerCard img={playerImg} title="Virat Singh" />
-      <PlayerCard img={playerImg} title="Virat Singh" />
+        {/* Scroll container */}
+        <div className="overflow-x-auto overscroll-x-contain">
+          <div className="whitespace-nowrap space-x-2 lg:flex">
+            <PlayerCard img={playerImg} title="Virat Singh" />
+            <PlayerCard img={playerImg} title="Virat Singh" />
+            <PlayerCard img={playerImg} title="Virat Singh" />
+            <PlayerCard img={playerImg} title="Virat Singh" />
+          </div>
+        </div>
+        <div className="w-[30%] mx-auto justify-between flex invert lg:hidden"><img src={rightArrow} alt="" className="transform rotate-180" /><img src={rightArrow} alt="" /></div>
+      </section>
+
+      <section className="px-5">
+  <div className="space-y-10">
+    <h1 className="text-yellow-500 text-4xl text-center">
+      TESTIMONIALS
+    </h1>
+    <h1 className="text-center text-5xl">
+      WHAT OUR CLIENTS SAY
+    </h1>
+
+    {/* Scroll only on mobile */}
+    <div className="overflow-x-auto overscroll-x-contain lg:overflow-visible">
+      <div className="flex gap-10 w-max lg:w-full lg:justify-around">
+        <TestimonialCard />
+        <TestimonialCard />
+        <TestimonialCard />
+      </div>
     </div>
+    <div className="w-[30%] mx-auto justify-between flex invert lg:hidden"><img src={rightArrow} alt="" className="transform rotate-180" /><img src={rightArrow} alt="" /></div>
   </div>
 </section>
 
+
+
+<footer>
+        
+</footer> 
 
 
     </div>
