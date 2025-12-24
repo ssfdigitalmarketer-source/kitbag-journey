@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import video from "../assets/sports-center.mp4";
 import serviceImg from "../assets/service.jpg";
 import ServiceCard from "../components/ServiceCard";
+import PlayerCard from "../components/PlayerCard";
 import logo from "../assets/kitbag-logo.svg"
+import playerImg from "../assets/playerImage.jpeg"
 
 const Home = () => {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
@@ -148,20 +150,39 @@ const Home = () => {
 
 
       {/* About Section */}
-      <section className="py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
-
-
+      <section className="py-10 px-8 text-xl font-semibold bg-[url('./assets/bg.jpg')] text-center bg-no-repeat bg-cover lg:text-6xl">
+      <div className=" space-y-10 mx-auto lg:w-[70%]">
+        <p className="">EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
+        <p>WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT REACHING THEIR FULL <span className="text-yellow-400">POTENTIAL.</span></p>
+        <div>
+          <p className="text-2xl">Shahbaz Nadeem</p>
+          <p className="text-yellow-500 text-sm">MENTOR, KITBAG JOURNEY.</p>
+        </div>
+      </div>
       </section>
 
 
       {/* Banner  */}
-      <section className="w-full py-20 text-2xl px-3 h-[10vh] lg:h-[60vh] font-bold lg:text-[15vh] flex flex-col lg:space-y-24">
+      <section className="w-full py-28 text-2xl px-3 h-[10vh] lg:h-[60vh] font-bold lg:text-[10vh] flex flex-col lg:space-y-32 lg:px-20">
 
-        <p className="text-left">PROMOTING AND</p>
-        <p className="text-right">MANAGING TALENT</p>
-        <p className="text-center">EVERYWHERE</p>
+        <p className="text-left">WE CREATE</p>
+        <p className="text-right">BRANDS AND IP'S</p>
+        <p className="text-center">WE ARE KITBAG JOURNEY</p>
 
       </section>
+
+
+        {/* players section */}
+        <section className="py-20 space-y-5 px-5">
+          <h1 className="text-4xl text-yellow-500 text-center">OUR PLAYERS</h1>
+          <div className="flex">
+            <PlayerCard img={playerImg} title="Virat Singh"/>
+            <PlayerCard img={playerImg} title="Virat Singh"/>
+            <PlayerCard img={playerImg} title="Virat Singh"/>
+            <PlayerCard img={playerImg} title="Virat Singh"/>
+
+          </div>
+        </section>
 
 
     </div>
