@@ -167,7 +167,6 @@ const Home = () => {
       <section className="w-full my-20 py-20 space-y-10 px-5">
         <h1 className="text-4xl text-yellow-500 text-center">OUR PLAYERS</h1>
 
-        {/* Scroll container */}
         <div className="overflow-x-auto overscroll-x-contain">
           <div className="whitespace-nowrap space-x-2 lg:flex">
             <PlayerCard img={playerImg} title="Virat Singh" />
@@ -177,6 +176,16 @@ const Home = () => {
           </div>
         </div>
         <div className="w-[30%] mx-auto justify-between flex invert lg:hidden"><img src={rightArrow} alt="" className="transform rotate-180" /><img src={rightArrow} alt="" /></div>
+        <div className="overflow-hidden w-full py-4">
+          <div className="flex whitespace-nowrap w-max animate-marquee">
+            <span className="text-white text-xl md:text-2xl mr-8">
+              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+            </span>
+            <span className="text-white text-xl md:text-2xl mr-8">
+              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+            </span>
+          </div>
+        </div>
       </section>
 
       <section className="px-5">
@@ -188,7 +197,6 @@ const Home = () => {
             WHAT OUR CLIENTS SAY
           </h1>
 
-          {/* Scroll only on mobile */}
           <div className="overflow-x-auto overscroll-x-contain lg:overflow-visible">
             <div className="flex gap-10 w-max lg:w-full lg:justify-around">
               <TestimonialCard />
@@ -198,44 +206,45 @@ const Home = () => {
           </div>
           <div className="w-[30%] mx-auto justify-between flex invert lg:hidden"><img src={rightArrow} alt="" className="transform rotate-180" /><img src={rightArrow} alt="" /></div>
         </div>
+
       </section>
 
 
 
       {/* Footer */}
-<footer className="p-10 mt-32">
-  <div className="border-y-[0.5px] py-20 border-yellow-500 flex flex-col gap-10 lg:justify-around lg:flex-row lg:gap-10">
+      <footer className="p-10 mt-32">
+        <div className="border-y-[0.5px] py-20 border-yellow-500 flex flex-col gap-10 lg:justify-around lg:flex-row lg:gap-10">
 
-    <div className="lg:w-[20%] space-y-4">
-      <h2 className="text-yellow-500 text-2xl">ABOUT US</h2>
-      <p className="text-lg font-sans">
-        Kitbag Journey is an athlete management company dedicated to nurturing
-        and promoting sports talent. Our mission is to provide athletes with the
-        guidance, resources, and opportunities they need to excel both on and
-        off the field.
-      </p>
-    </div>
+          <div className="lg:w-[20%] space-y-4">
+            <h2 className="text-yellow-500 text-2xl">ABOUT US</h2>
+            <p className="text-lg font-sans">
+              Kitbag Journey is an athlete management company dedicated to nurturing
+              and promoting sports talent. Our mission is to provide athletes with the
+              guidance, resources, and opportunities they need to excel both on and
+              off the field.
+            </p>
+          </div>
 
-    <div className="lg:w-[20%] space-y-4">
-      <h2 className="text-yellow-500 text-2xl">CONTACT</h2>
-      <p className="text-lg font-sans">
-        kitbag@email.com <br />
-        +91 9876543210
-      </p>
-    </div>
+          <div className="lg:w-[20%] space-y-4">
+            <h2 className="text-yellow-500 text-2xl">CONTACT</h2>
+            <p className="text-lg font-sans">
+              kitbag@email.com <br />
+              +91 9876543210
+            </p>
+          </div>
 
-     <div className="lg:w-[20%] space-y-4">
-      <h2 className="text-yellow-500 text-2xl">LINKS</h2>
-      <div className="text-lg font-sans space-y-2">
-        <div>HOME</div>
-        <div>PAGES</div>
-        <div>ABOUT US</div>
-        <div>CONTACT</div>
-      </div>
-    </div>
+          <div className="lg:w-[20%] space-y-4">
+            <h2 className="text-yellow-500 text-2xl">LINKS</h2>
+            <div className="text-lg font-sans space-y-2">
+              <div>HOME</div>
+              <div>PAGES</div>
+              <div>ABOUT US</div>
+              <div>CONTACT</div>
+            </div>
+          </div>
 
-  </div>
-</footer>
+        </div>
+      </footer>
 
 
 
