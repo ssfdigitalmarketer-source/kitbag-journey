@@ -15,6 +15,7 @@ import rightArrow from '../assets/right-arrow.svg'
 import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import MovingBanner from "../components/MovingBanner";
 
 const Home = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -160,13 +161,14 @@ const Home = () => {
 
 
       {/* Banner  */}
-      <section className="w-full my-10 py-28 text-2xl px-3 h-[10vh] lg:h-[60vh] font-bold lg:text-[10vh] flex flex-col lg:space-y-32 lg:px-20">
+      {/* <section className="w-full my-10 py-28 text-2xl px-3 h-[10vh] lg:h-[60vh] font-bold lg:text-[10vh] flex flex-col lg:space-y-32 lg:px-20">
 
         <p className="text-left">WE CREATE</p>
         <p className="text-right">BRANDS AND IP'S</p>
         <p className="text-center">WE ARE KITBAG JOURNEY</p>
 
-      </section>
+      </section> */}
+      <MovingBanner/>
 
 
       {/* players section */}
