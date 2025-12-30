@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import video from "../assets/sports-center.mp4";
 import serviceImg from "../assets/service.jpg";
 import serviceImg2 from "../assets/service2.jpg";
@@ -16,6 +16,8 @@ import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import MovingBanner from "../components/MovingBanner";
+import logo from "../assets/kitbag-logo.svg"
+
 
 const Home = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -23,12 +25,32 @@ const Home = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const headingRef = useRef<HTMLHeadingElement | null>(null);
 
+  const [showMenu,setShowMenu] = useState(false);
+
   useEffect(() => {
     const wrapper = wrapperRef.current;
     const videoEl = videoRef.current;
     const section = sectionRef.current;
 
     if (!wrapper || !videoEl || !section) return;
+
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // entry.isIntersecting === false means fully out of viewport
+        setShowMenu(entry.isIntersecting);
+        console.log(showMenu);
+        
+      },
+      {
+        root: null,        // viewport
+        threshold: 0,      // triggers when fully out
+      }
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+
+
 
     const setStickyTop = () => {
       const rect = videoEl.getBoundingClientRect();
@@ -74,13 +96,19 @@ const Home = () => {
       videoEl.removeEventListener("loadedmetadata", setStickyTop);
       window.removeEventListener("resize", setStickyTop);
       window.removeEventListener("scroll", handleScroll);
+      observer.disconnect();
     };
   }, []);
 
   return (
     <div className="w-full relative">
       {/* Navbar */}
-      <Navbar />
+      <Navbar showMenu={showMenu}/>
+              <img
+          src={logo}
+          alt="Kitbag Logo"
+          className="h-[100px] mr-5 absolute top-0 z-10 left-1 lg:h-[150px]"
+        />
 
       {/* Hero section */}
       <section
