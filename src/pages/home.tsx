@@ -17,7 +17,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import MovingBanner from "../components/MovingBanner";
 import logo from "../assets/kitbag-logo.svg"
-import NewsCard from "../components/newsCard";
+import NewsCard from "../components/NewsCard";
 import CTAButton1 from "../components/CTAButton1";
 
 
@@ -244,7 +244,7 @@ building.
           </h1>
 
           <div className="overflow-x-auto overscroll-x-contain lg:overflow-visible">
-            <div className="flex gap-10 w-max lg:w-full lg:justify-evenly">
+            <div className="w-max lg:w-full lg:justify-evenly">
               <TestimonialCard />
             </div>
           </div>
