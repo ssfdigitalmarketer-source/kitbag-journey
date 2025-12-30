@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import video from "../assets/sports-center.mp4";
 import serviceImg from "../assets/service.jpg";
-import serviceImg2 from "../assets/service2.jpg";
+import serviceImg2 from "../assets/service2.png";
 import serviceImg3 from "../assets/service3.jpg";
 import serviceImg4 from "../assets/service4.jpg";
 import ServiceCard from "../components/ServiceCard";
@@ -17,6 +17,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import MovingBanner from "../components/MovingBanner";
 import logo from "../assets/kitbag-logo.svg"
+import NewsCard from "../components/newsCard";
 
 
 const Home = () => {
@@ -25,7 +26,7 @@ const Home = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const headingRef = useRef<HTMLHeadingElement | null>(null);
 
-  const [showMenu,setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
     const wrapper = wrapperRef.current;
@@ -40,7 +41,7 @@ const Home = () => {
         // entry.isIntersecting === false means fully out of viewport
         setShowMenu(entry.isIntersecting);
         console.log(showMenu);
-        
+
       },
       {
         root: null,        // viewport
@@ -103,12 +104,12 @@ const Home = () => {
   return (
     <div className="w-full relative">
       {/* Navbar */}
-      <Navbar showMenu={showMenu}/>
-              <img
-          src={logo}
-          alt="Kitbag Logo"
-          className="h-[100px] mr-5 absolute top-0 z-10 left-1 lg:h-[150px]"
-        />
+      <Navbar showMenu={showMenu} />
+      <img
+        src={logo}
+        alt="Kitbag Logo"
+        className="h-[100px] mr-5 absolute top-0 z-10 left-1 lg:h-[150px]"
+      />
 
       {/* Hero section */}
       <section
@@ -134,28 +135,6 @@ const Home = () => {
             loop
             className="w-[50%] transition-transform duration-500"
           />
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="w-full py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
-        <div className="overflow-hidden w-full py-4">
-          <div className="flex whitespace-nowrap w-max animate-marquee">
-            <span className="text-white text-xl md:text-2xl mr-8">
-              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
-            </span>
-            <span className="text-white text-xl md:text-2xl mr-8">
-              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
-            </span>
-          </div>
-        </div>
-
-
-        <div className="flex flex-col my-8 lg:flex-row lg:mx-0">
-          <ServiceCard img={serviceImg} text="Management" />
-          <ServiceCard img={serviceImg2} text="Management" />
-          <ServiceCard img={serviceImg3} text="Managememt" />
-          <ServiceCard img={serviceImg4} text="Managememt" />
         </div>
       </section>
 
@@ -187,6 +166,35 @@ const Home = () => {
 
       </section>
 
+      {/* Services Section */}
+      <section className="w-full py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
+
+        <h1 className="text-4xl text-yellow-500 text-center">WHAT WE MANAGE</h1>
+
+
+        <div className="flex flex-col my-8 lg:flex-row lg:mx-0">
+          <ServiceCard img={serviceImg} title="Career Representation" text="We represent athletes with complete dedication and ensure they are showcased
+correctly in the global sports market."/>
+          <ServiceCard img={serviceImg2} title="Brand & Image Positioning" text="From media appearances to digital identity, we help develop an impactful personal
+brand."/>
+          <ServiceCard img={serviceImg3} title="Endorsement & Sponsorship Deals" text="We source high-value commercial opportunities and negotiate deals that match
+athlete potential"/>
+          <ServiceCard img={serviceImg4} title="Mentorship & Skill Advisory" text="We support athletic growth through expert mentoring & professional environment
+building.
+" />
+        </div>
+
+        <div className="flex mx-auto justify-center items-center space-x-2 cursor-pointer">
+          <p className="text-center text-xl font-sans">View More </p>
+          <img src={rightArrow} alt="Right Arrow" className="w-6 h-6 invert" />
+        </div>
+
+
+      </section>
+
+
+
+
 
       {/* Banner  */}
       {/* <section className="w-full my-10 py-28 text-2xl px-3 h-[10vh] lg:h-[60vh] font-bold lg:text-[10vh] flex flex-col lg:space-y-32 lg:px-20">
@@ -196,7 +204,7 @@ const Home = () => {
         <p className="text-center">WE ARE KITBAG JOURNEY</p>
 
       </section> */}
-      <MovingBanner/>
+      <MovingBanner />
 
 
       {/* players section */}
@@ -245,6 +253,24 @@ const Home = () => {
 
       </section>
 
+
+      <section className="px-5 mt-6 space-y-10 py-20">
+        <h1 className="text-yellow-500 text-4xl text-center">LATEST NEWS</h1>
+        <div className="justify-around lg:flex">
+          <NewsCard image={playerImg} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially u" date="2024-05-15" />
+          <NewsCard image={playerImg2} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially u" date="2024-05-10" />
+          <NewsCard image={playerImg2} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially u" date="2024-05-10" />
+        </div>
+      </section>
+
+
+      <section className="w-full my-20 py-20 space-y-10 px-5">
+        <h1 className="text-yellow-500 text-4xl text-center">CONTACT US</h1>
+        <p className="font-extralight text-center text-xl">Let’s build a future that celebrates your passion.</p>
+        <p className="font-extralight text-center text-xl">Whether you are an athlete looking for representation or a brand seeking
+          meaningful collaborations — we’re here to help.</p>
+        <p className="font-extralight text-center text-xl">Reach out and take the first step toward your dream career</p>
+      </section>
 
 
       {/* Footer */}

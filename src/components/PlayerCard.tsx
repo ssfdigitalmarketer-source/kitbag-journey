@@ -12,7 +12,7 @@ const PlayerCard = ({ img, title }: any) => {
             <div className="w-[90%] absolute m-5 bottom-0">
                 <div className='flex justify-between translate-y-10 group-hover:translate-y-0 transition-all duration-300 mb-2'>
                     <p className="text-2xl text-yellow-500">{title}</p>
-                    <img src={rightArrow} alt="Right Arrow" className="w-8 h-8 invert"/>
+                    <img src={rightArrow} alt="Right Arrow" className="w-8 h-8 invert" />
                 </div>
 
                 <div className="opacity-0 justify-between items-center -translate-x-6 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
