@@ -2,7 +2,7 @@ import rightArrow from '../assets/right-arrow.svg'
 
 const ServiceCard = ({ img, title, text }: any) => {
   return (
-    <div className="relative inline-block h-[60vh] border-[0.5px] border-yellow-500 border-collapse w-full cursor-pointer lg:block overflow-hidden group">
+    <div className="relative inline-block h-[60vh] border-collapse w-full cursor-pointer lg:block overflow-hidden group">
       <img
         src={img}
         alt="background"

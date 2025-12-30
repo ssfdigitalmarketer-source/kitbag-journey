@@ -18,6 +18,7 @@ import Footer from "../components/Footer";
 import MovingBanner from "../components/MovingBanner";
 import logo from "../assets/kitbag-logo.svg"
 import NewsCard from "../components/newsCard";
+import CTAButton1 from "../components/CTAButton1";
 
 
 const Home = () => {
@@ -142,7 +143,7 @@ const Home = () => {
       {/* About Section */}
       <section className="py-20 space-y-32 px-8 text-xl font-semibold bg-[url('./assets/bg.jpg')] text-left bg-no-repeat bg-cover">
 
-        <div className=" space-y-10 mx-auto lg:w-[70%] lg:text-6xl">
+        <div className=" space-y-10 mx-auto lg:w-[70%] lg:text-5xl">
           <p className="">EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
           <p>WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL.</span></p>
           <div>
@@ -159,20 +160,24 @@ const Home = () => {
             <p className="text-3xl lg:text-6xl">WELCOME TO KITBAG JOURNEY.
               AN ATHLETE MANAGEMENT COMPANY.
             </p>
-            <button className="px-8 py-4 border-2 border-white lg:w-[25%] hover:border-yellow-500 hover:text-yellow-500 transition-all duration-300">ABOUT US</button>
+            <button className="px-8 py-4 border-2 border-white lg:w-[25%] hover:bg-white hover:text-black transition-all duration-300">ABOUT US</button>
           </div>
 
         </div>
 
       </section>
 
+      <section className="bg-[#090909] px-5">
+        <CTAButton1 />
+      </section>
+
       {/* Services Section */}
-      <section className="w-full py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
+      <section className="w-full px-5 py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
 
         <h1 className="text-4xl text-yellow-500 text-center">WHAT WE MANAGE</h1>
 
 
-        <div className="flex flex-col my-8 lg:flex-row lg:mx-0">
+        <div className="flex gap-3 flex-col my-8 lg:flex-row lg:mx-0">
           <ServiceCard img={serviceImg} title="Career Representation" text="We represent athletes with complete dedication and ensure they are showcased
 correctly in the global sports market."/>
           <ServiceCard img={serviceImg2} title="Brand & Image Positioning" text="From media appearances to digital identity, we help develop an impactful personal
@@ -193,9 +198,6 @@ building.
       </section>
 
 
-
-
-
       {/* Banner  */}
       {/* <section className="w-full my-10 py-28 text-2xl px-3 h-[10vh] lg:h-[60vh] font-bold lg:text-[10vh] flex flex-col lg:space-y-32 lg:px-20">
 
@@ -212,7 +214,7 @@ building.
         <h1 className="text-4xl text-yellow-500 text-center">OUR PLAYERS</h1>
 
         <div className="overflow-x-auto overscroll-x-contain">
-          <div className="whitespace-nowrap space-x-2 lg:flex">
+          <div className="whitespace-nowrap gap-3 lg:flex">
             <PlayerCard img={playerImg} title="Virat Singh" />
             <PlayerCard img={playerImg2} title="Virat Singh" />
             <PlayerCard img={playerImg3} title="Virat Singh" />
@@ -242,9 +244,7 @@ building.
           </h1>
 
           <div className="overflow-x-auto overscroll-x-contain lg:overflow-visible">
-            <div className="flex gap-10 w-max lg:w-full lg:justify-around">
-              <TestimonialCard />
-              <TestimonialCard />
+            <div className="flex gap-10 w-max lg:w-full lg:justify-evenly">
               <TestimonialCard />
             </div>
           </div>
@@ -264,12 +264,17 @@ building.
       </section>
 
 
-      <section className="w-full my-20 py-20 space-y-10 px-5">
+      <section className="w-full my-20 py-20 space-y-7 px-5">
         <h1 className="text-yellow-500 text-4xl text-center">CONTACT US</h1>
-        <p className="font-extralight text-center text-xl">Let’s build a future that celebrates your passion.</p>
-        <p className="font-extralight text-center text-xl">Whether you are an athlete looking for representation or a brand seeking
+        <p className="font-extralight text-center text-2xl">Let’s build a future that celebrates your passion.</p>
+        <p className="font-extralight text-center text-2xl">Whether you are an athlete looking for representation or a brand seeking
           meaningful collaborations — we’re here to help.</p>
-        <p className="font-extralight text-center text-xl">Reach out and take the first step toward your dream career</p>
+        <p className="font-extralight text-center text-2xl">Reach out and take the first step toward your dream career</p>
+
+        <div className="">
+
+        </div>
+
       </section>
 
 
