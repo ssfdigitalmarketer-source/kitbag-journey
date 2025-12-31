@@ -210,7 +210,7 @@ building.
 
 
       {/* players section */}
-      <section className="w-full my-20 py-20 space-y-10 px-5">
+      <section className="w-full py-20 space-y-10 px-5">
         <h1 className="text-4xl text-yellow-500 text-center">OUR PLAYERS</h1>
 
         <div className="overflow-x-auto overscroll-x-contain">
@@ -223,7 +223,13 @@ building.
         </div>
         <div className="w-[30%] mx-auto justify-between flex invert lg:hidden"><img src={rightArrow} alt="" className="transform rotate-180" /><img src={rightArrow} alt="" /></div>
         <div className="overflow-hidden w-full py-4">
-          <div className="flex whitespace-nowrap w-max animate-marquee">
+          <div className="flex whitespace-nowrap w-max animate-marquee-right">
+            <span className="text-white text-xl md:text-2xl mr-8">
+              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+            </span>
+            <span className="text-white text-xl md:text-2xl mr-8">
+              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+            </span>
             <span className="text-white text-xl md:text-2xl mr-8">
               PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
             </span>

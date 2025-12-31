@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
         animation: {
-  marquee: "marquee 15s linear infinite",
+  'marquee-right': "marquee 15s linear infinite",
 },
 keyframes: {
   marquee: {
