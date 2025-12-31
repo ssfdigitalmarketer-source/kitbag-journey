@@ -6,7 +6,7 @@ const ServiceCard = ({ img, title, text }: any) => {
       <img
         src={img}
         alt="background"
-        className="w-full h-full object-cover brightness-100 group-hover:brightness-50 transition-all duration-300"
+        className="w-full h-full object-cover brightness-100 grayscale group-hover:brightness-50 group-hover:grayscale-0 transition-all duration-300"
       />
 
       <div className="w-[90%] absolute m-4 bottom-0">

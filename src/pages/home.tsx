@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import video from "../assets/sports-center.mp4";
+import video from "../assets/cricket-video.mp4";
 import serviceImg from "../assets/service.jpg";
 import serviceImg2 from "../assets/service2.png";
 import serviceImg3 from "../assets/service3.jpg";
@@ -10,7 +10,7 @@ import playerImg from "../assets/playerImage.jpeg"
 import playerImg2 from "../assets/playerImage2.jpeg"
 import playerImg3 from "../assets/playerImage3.jpeg"
 import playerImg4 from "../assets/playerImage4.jpeg"
-import gymPic from "../assets/gymPicture.jpg"
+import cricketImg from "../assets/cricket-image.jpg"
 import rightArrow from '../assets/right-arrow.svg'
 import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
@@ -153,7 +153,7 @@ const Home = () => {
         </div>
 
         <div className="space-y-5 my-20 text-center lg:flex lg:text-left">
-          <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2"><img src={gymPic} alt="" className="h-full object-contain mx-auto" /></div>
+          <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2"><img src={cricketImg} alt="" className="h-full object-contain grayscale mx-auto hover:grayscale-0" /></div>
 
           <div className="w-full px-5 lg:w-1/2 space-y-4 flex-col justify-center lg:flex">
             <p className="text-yellow-500 text-xs lg:text-lg">WELCOME TO FUTURE</p>
@@ -214,7 +214,7 @@ building.
         <h1 className="text-4xl text-yellow-500 text-center">OUR PLAYERS</h1>
 
         <div className="overflow-x-auto overscroll-x-contain">
-          <div className="whitespace-nowrap gap-3 lg:flex">
+          <div className="whitespace-nowrap space-x-3 lg:flex">
             <PlayerCard img={playerImg} title="Virat Singh" />
             <PlayerCard img={playerImg2} title="Virat Singh" />
             <PlayerCard img={playerImg3} title="Virat Singh" />
@@ -244,8 +244,10 @@ building.
           </h1>
 
           <div className="overflow-x-auto overscroll-x-contain lg:overflow-visible">
-            <div className="w-max lg:w-full lg:justify-evenly">
-              <TestimonialCard />
+            <div className="flex gap-10 w-max lg:w-full lg:justify-around">
+              <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" />
+              <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. o" />
+              <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, em ipsum dolor sit amet, consectetur adipiscing elit," />
             </div>
           </div>
           <div className="w-[30%] mx-auto justify-between flex invert lg:hidden"><img src={rightArrow} alt="" className="transform rotate-180" /><img src={rightArrow} alt="" /></div>

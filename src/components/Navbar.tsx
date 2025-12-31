@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Navbar = ({ showMenu, } : any) => {
+const Navbar = ({ showMenu } : any) => {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
   return (
