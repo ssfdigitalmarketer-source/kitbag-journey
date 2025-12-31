@@ -4,19 +4,17 @@ const Navbar = ({ showMenu } : any) => {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-30 w-[100%] p-10 font-semibold lg:flex">
+    <nav className="sticky top-0 z-30 w-[100%] p-10 font-semibold lg:flex pointer-events-none">
 
       <div className="flex mx-auto">
 
         <button
-          className={`text-2xl mx-6 absolute right-0
-    ${showMenu? "lg:hidden" : "block"}
-  `}
+          className="text-2xl mx-6 absolute right-0 lg:hidden" 
           onClick={() => setShowBurgerMenu(true)}
         >
           ☰
         </button>
-        {showMenu && (<ul className="hidden list-none tracking-widest text-[15px] lg:flex lg:gap-6">
+        {showMenu && (<ul className="hidden list-none tracking-widest text-[15px] lg:flex lg:gap-6 pointer-events-auto cursor-pointer">
           <li>HOME</li>
           <li>PAGES</li>
           <li>BLOG</li>
@@ -26,7 +24,7 @@ const Navbar = ({ showMenu } : any) => {
       </div>
 
       {/* Burger menu */}
-      {(showBurgerMenu && !showMenu )&& (
+      {(showBurgerMenu)&& (
         <>
           {/* Overlay (does NOT affect layout) */}
           <div

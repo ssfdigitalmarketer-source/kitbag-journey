@@ -258,23 +258,25 @@ building.
 
       <section className="px-5 mt-6 space-y-10 py-20">
         <h1 className="text-yellow-500 text-4xl text-center">LATEST NEWS</h1>
-        <div className="justify-around lg:flex">
-          <NewsCard image={playerImg} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially u" date="2024-05-15" />
-          <NewsCard image={playerImg2} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially u" date="2024-05-10" />
-          <NewsCard image={playerImg2} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially u" date="2024-05-10" />
+        <div className="justify-evenly lg:flex">
+          <NewsCard image={playerImg} description="Virat Singh gets selected in IPL" date="2024-05-15" />
+          <NewsCard image={playerImg2} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the" date="2024-05-10" />
+          <NewsCard image={playerImg2} description=" simply dummy text of the printinpsum has been the industry's standard dummy text ever" date="2024-05-10" />
+          <NewsCard image={playerImg2} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry" date="2024-05-10" />
         </div>
       </section>
 
 
       <section className="w-full my-20 py-20 space-y-7 px-5">
         <h1 className="text-yellow-500 text-4xl text-center">CONTACT US</h1>
-        <p className="font-extralight text-center text-2xl">Let’s build a future that celebrates your passion.</p>
-        <p className="font-extralight text-center text-2xl">Whether you are an athlete looking for representation or a brand seeking
+        <p className="font-extralight font-sans text-center text-2xl">Let’s build a future that celebrates your passion.</p>
+        <p className="font-extralight font-sans text-center text-2xl">Whether you are an athlete looking for representation or a brand seeking
           meaningful collaborations — we’re here to help.</p>
-        <p className="font-extralight text-center text-2xl">Reach out and take the first step toward your dream career</p>
+        <p className="font-extralight font-sans text-center text-2xl">Reach out and take the first step toward your dream career</p>
 
-        <div className="">
-
+        <div className="text-lg justify-between lg:flex mx-auto lg:w-[40%]">
+          <button className="text-white border-2 px-8 py-4 mt-4 hover:bg-white hover:text-black transition-all duration-300">JOIN US AS AN ATHLETE</button>
+          <button>BUSINESS AND SPONSORSHIP INQUIRIES</button>
         </div>
 
       </section>
