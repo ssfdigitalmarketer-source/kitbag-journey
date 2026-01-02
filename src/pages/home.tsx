@@ -19,6 +19,11 @@ import MovingBanner from "../components/MovingBanner";
 import logo from "../assets/kitbag-logo.svg"
 import NewsCard from "../components/NewsCard";
 import CTAButton1 from "../components/CTAButton1";
+import HeroHeadline from "../animations/HeroHeadline";
+import FadeInLeftToRight from "../animations/FadeInLeftToRight";
+import stadiumVideo from "../assets/stadium.mp4";
+import CharFadeLeftToRight from "../animations/CharFadeLeftToRight";
+
 
 
 const Home = () => {
@@ -121,9 +126,9 @@ const Home = () => {
       >
         <h1
           ref={headingRef}
-          className="text-[8vh] mx-auto font-extrabold mt-[10px] text-white lg:text-[11vw] "
+          className="text-[8vh] mx-auto font-extrabold mt-[10px] text-white lg:text-[11vw]"
         >
-          PROMOTING TALENT
+          <HeroHeadline text="PROMOTING TALENT" />
         </h1>
 
         {/* Sticky video wrapper */}
@@ -143,23 +148,28 @@ const Home = () => {
       {/* About Section */}
       <section className="py-20 space-y-32 px-8 text-xl font-semibold bg-[url('./assets/bg.jpg')] text-left bg-no-repeat bg-cover">
 
-        <div className=" space-y-10 mx-auto lg:w-[70%] lg:text-5xl">
-          <p className="">EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
-          <p>WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL.</span></p>
-          <div>
-            <p className="text-lg lg:text-2xl">Shahbaz Nadeem</p>
-            <p className="text-yellow-500 text-xs lg:text-sm">MENTOR, KITBAG JOURNEY.</p>
+        <FadeInLeftToRight>
+          <div className="space-y-10 font-sans text-2xl text-center mx-auto lg:w-[70%] lg:text-3xl">
+            <p className="italic"><span className="text-yellow-400">" </span>EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
+            <p className="italic">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL</span>.<span className="text-yellow-400"> "</span></p>
+            <div>
+              <p className="text-lg font-oswald lg:text-2xl">SHAHBAZ NADEEM</p>
+              <p className="text-yellow-500 text-xs lg:text-sm">MENTOR, KITBAG JOURNEY.</p>
+            </div>
           </div>
-        </div>
+        </FadeInLeftToRight>
 
-        <div className="space-y-5 my-20 text-center lg:flex lg:text-left">
+        <div className="space-y-5 px-5 my-20 text-center lg:flex lg:text-left">
           <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2"><img src={cricketImg} alt="" className="h-full object-contain grayscale mx-auto hover:grayscale-0" /></div>
 
-          <div className="w-full px-5 lg:w-1/2 space-y-4 flex-col justify-center lg:flex">
-            <p className="text-yellow-500 text-xs lg:text-lg">WELCOME TO FUTURE</p>
-            <p className="text-3xl lg:text-6xl">WELCOME TO KITBAG JOURNEY.
+          <div className="w-full lg:w-1/2 space-y-4 flex-col justify-center lg:flex">
+            <p className="text-yellow-500 text-sm lg:text-lg">WELCOME TO FUTURE</p>
+            <h1 className="text-3xl lg:text-6xl">WELCOME TO KITBAG JOURNEY.
               AN ATHLETE MANAGEMENT COMPANY.
-            </p>
+            </h1>
+            <p className="font-sans text-lg">Our athlete management framework brings together elite professionals across
+              performance, branding, legal, and commercial domains. We help athletes unlock
+              career milestones through strategic guidance tailored to their ambitions.</p>
             <button className="px-8 py-4 border-2 border-white lg:w-[25%] hover:bg-white hover:text-black transition-all duration-300">ABOUT US</button>
           </div>
 
@@ -167,15 +177,12 @@ const Home = () => {
 
       </section>
 
-      <section className="bg-[#090909] px-5">
-        <CTAButton1 />
-      </section>
+
 
       {/* Services Section */}
       <section className="w-full px-5 py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
 
         <h1 className="text-4xl text-yellow-500 text-center">WHAT WE MANAGE</h1>
-
 
         <div className="flex gap-3 flex-col my-8 lg:flex-row lg:mx-0">
           <ServiceCard img={serviceImg} title="Career Representation" text="We represent athletes with complete dedication and ensure they are showcased
@@ -197,6 +204,23 @@ building.
 
       </section>
 
+
+      <section className="bg-[#090909] relative px-5 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <video
+            src={stadiumVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover grayscale brightness-50"
+          />
+        </div>
+
+        <div className="relative z-10">
+          <CTAButton1 />
+        </div>
+      </section>
 
       {/* Banner  */}
       {/* <section className="w-full my-10 py-28 text-2xl px-3 h-[10vh] lg:h-[60vh] font-bold lg:text-[10vh] flex flex-col lg:space-y-32 lg:px-20">

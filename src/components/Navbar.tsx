@@ -9,7 +9,7 @@ const Navbar = ({ showMenu } : any) => {
       <div className="flex mx-auto">
 
         <button
-          className="text-2xl mx-6 absolute right-0 lg:hidden" 
+          className="text-2xl mx-6 absolute right-0 lg:hidden pointer-events-auto" 
           onClick={() => setShowBurgerMenu(true)}
         >
           ☰
@@ -24,11 +24,11 @@ const Navbar = ({ showMenu } : any) => {
       </div>
 
       {/* Burger menu */}
-      {(showBurgerMenu)&& (
+      { showBurgerMenu && (
         <>
           {/* Overlay (does NOT affect layout) */}
           <div
-            className="fixed inset-0 z-30"
+            className="fixed inset-0 z-50 pointer-events-auto"
             onClick={() => setShowBurgerMenu(false)}
           />
 
