@@ -31,17 +31,24 @@ export default function CharFadeLeftToRight({ text, className = "" }) {
       variants={container}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.6 }} // 👈 triggers when 60% visible
-      className={`inline-block ${className}`}
+      viewport={{ once: true, amount: 0.6 }}
+      className={`inline-flex flex-wrap justify-center ${className} align-middle`}
     >
-      {text.split("").map((c, i) => (
-        <motion.span
-          key={i}
-          variants={char}
-          className="inline-block"
+      {text.split(" ").map((word, wordIndex) => (
+        <span
+          key={wordIndex}
+          className="inline-block whitespace-nowrap mr-2"
         >
-          {c === " " ? "\u00A0" : c}
-        </motion.span>
+          {word.split("").map((charText, charIndex) => (
+            <motion.span
+              key={charIndex}
+              variants={char}
+              className="inline-block"
+            >
+              {charText}
+            </motion.span>
+          ))}
+        </span>
       ))}
     </motion.span>
   );

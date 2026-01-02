@@ -16,7 +16,7 @@ const Navbar = ({ showMenu } : any) => {
         </button>
         {showMenu && (<ul className="hidden list-none tracking-widest text-[15px] lg:flex lg:gap-6 pointer-events-auto cursor-pointer">
           <li>HOME</li>
-          <li>PAGES</li>
+          <li>SERVICES</li>
           <li>BLOG</li>
           <li>CONTACT</li>
         </ul>)}
@@ -36,7 +36,7 @@ const Navbar = ({ showMenu } : any) => {
           <div className="w-full absolute z-40 top-0 left-0 lg:w-[20vw] lg:h-[100vh]">
             <ul className="list-none h-full space-y-4 w-full px-8 text py-8 bg-black tracking-widest text-[20px] text-white cursor-pointer" onClick={(e) => e.stopPropagation()}>
               <li className="border-b-[0.5px] border-white py-2 hover:text-yellow-500">HOME</li>
-              <li className="border-b-[0.5px] border-white py-2 hover:text-yellow-500">PAGES</li>
+              <li className="border-b-[0.5px] border-white py-2 hover:text-yellow-500">SERVICES</li>
               <li className="border-b-[0.5px] border-white py-2 hover:text-yellow-500">BLOG</li>
               <li className="border-b-[0.5px] border-white py-2 hover:text-yellow-500">CONTACT</li>
             </ul>

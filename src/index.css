@@ -50,3 +50,7 @@ body {
   color: white;
   background-color: #090909;
 }
+
+.stroke-text {
+  -webkit-text-stroke: 2px rgb(255, 174, 0);
+}

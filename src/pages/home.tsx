@@ -22,7 +22,6 @@ import CTAButton1 from "../components/CTAButton1";
 import HeroHeadline from "../animations/HeroHeadline";
 import FadeInLeftToRight from "../animations/FadeInLeftToRight";
 import stadiumVideo from "../assets/stadium.mp4";
-import CharFadeLeftToRight from "../animations/CharFadeLeftToRight";
 
 
 
@@ -149,7 +148,7 @@ const Home = () => {
       <section className="py-20 space-y-32 px-8 text-xl font-semibold bg-[url('./assets/bg.jpg')] text-left bg-no-repeat bg-cover">
 
         <FadeInLeftToRight>
-          <div className="space-y-10 font-sans text-2xl text-center mx-auto lg:w-[70%] lg:text-3xl">
+          <div className="space-y-10 font-bold font-sans text-2xl text-center mx-auto lg:w-[70%] lg:text-3xl">
             <p className="italic"><span className="text-yellow-400">" </span>EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
             <p className="italic">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL</span>.<span className="text-yellow-400"> "</span></p>
             <div>
@@ -204,6 +203,7 @@ building.
 
       </section>
 
+      <MovingBanner />
 
       <section className="bg-[#090909] relative px-5 overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -230,8 +230,6 @@ building.
         <p className="text-center">WE ARE KITBAG JOURNEY</p>
 
       </section> */}
-      <MovingBanner />
-
 
       {/* players section */}
       <section className="w-full py-20 space-y-10 px-5">
@@ -286,7 +284,7 @@ building.
       </section>
 
 
-      <section className="px-5 mt-6 space-y-10 py-20">
+      <section className="px-5 mt-6 space-y-6 py-20">
         <h1 className="text-yellow-500 text-4xl text-center">LATEST NEWS</h1>
         <div className="justify-evenly lg:flex">
           <NewsCard image={playerImg} description="Virat Singh gets selected in IPL" date="2024-05-15" />
@@ -297,11 +295,10 @@ building.
       </section>
 
 
-      <section className="w-full my-20 py-20 space-y-7 px-5">
+      <section className="py-20 space-y-6 px-5">
         <h1 className="text-yellow-500 text-4xl text-center">CONTACT US</h1>
         <p className="font-extralight font-sans text-center text-2xl">Let’s build a future that celebrates your passion.</p>
-        <p className="font-extralight font-sans text-center text-2xl">Whether you are an athlete looking for representation or a brand seeking
-          meaningful collaborations — we’re here to help.</p>
+        <p className="font-extralight font-sans text-center text-2xl">Whether you are an athlete looking for representation or a brand seeking meaningful collaborations — we’re here to help.</p>
         <p className="font-extralight font-sans text-center text-2xl">Reach out and take the first step toward your dream career</p>
 
         <div className="text-lg justify-between lg:flex mx-auto lg:w-[40%]">
@@ -312,7 +309,6 @@ building.
       </section>
 
 
-      {/* Footer */}
       <Footer />
 
 
