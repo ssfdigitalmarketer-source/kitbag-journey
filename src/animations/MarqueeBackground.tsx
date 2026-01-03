@@ -1,6 +1,7 @@
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-const MarqueeLine = ({ text, direction = "left" }) => {
+const MarqueeLine = ({ text, direction = "left", fontSize }: { text: string; direction?: string; fontSize: number }) => {
   return (
     <div className="overflow-hidden whitespace-nowrap">
       <motion.div
@@ -18,13 +19,13 @@ const MarqueeLine = ({ text, direction = "left" }) => {
         {[...Array(6)].map((_, i) => (
           <span
             key={i}
+            style={{ fontSize }}
             className="
-              text-[8vh] lg:text-[8rem]
-              font-extrabold uppercase
+              font-extrabold uppercase italic
               text-transparent
-              leading-none
               stroke-text
               mr-24
+              leading-none
             "
           >
             {text}
@@ -35,14 +36,34 @@ const MarqueeLine = ({ text, direction = "left" }) => {
   );
 };
 
-
 const MarqueeBackground = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [fontSize, setFontSize] = useState(40); // default fallback
+
+  useEffect(() => {
+    const updateFontSize = () => {
+      if (containerRef.current) {
+        const containerHeight = containerRef.current.offsetHeight;
+        const lines = 4; // we want exactly 4 lines visible
+        // divide height by lines and adjust slightly for spacing
+        setFontSize(containerHeight / lines * 0.9);
+      }
+    };
+
+    updateFontSize();
+    window.addEventListener("resize", updateFontSize);
+    return () => window.removeEventListener("resize", updateFontSize);
+  }, []);
+
   return (
-    <div className="absolute h-full italic inset-0 -z-10 flex flex-col gap-6 opacity-25 py-5 overflow-hidden">
-      <MarqueeLine text="PROMOTING TALENT" direction="left" />
-      <MarqueeLine text="KITBAG JOURNEY" direction="right" />
-      <MarqueeLine text="PROMOTING TALENT" direction="left" />
-      <MarqueeLine text="KITBAG JOURNEY" direction="right" />
+    <div
+      ref={containerRef}
+      className="absolute inset-0 -z-10 flex flex-col justify-evenly opacity-25 overflow-hidden"
+    >
+      <MarqueeLine text="PROMOTING TALENT" direction="left" fontSize={fontSize} />
+      <MarqueeLine text="KITBAG JOURNEY" direction="right" fontSize={fontSize} />
+      <MarqueeLine text="PROMOTING TALENT" direction="left" fontSize={fontSize} />
+      <MarqueeLine text="KITBAG JOURNEY" direction="right" fontSize={fontSize} />
     </div>
   );
 };

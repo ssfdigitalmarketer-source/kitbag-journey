@@ -22,7 +22,7 @@ import CTAButton1 from "../components/CTAButton1";
 import HeroHeadline from "../animations/HeroHeadline";
 import FadeInLeftToRight from "../animations/FadeInLeftToRight";
 import stadiumVideo from "../assets/stadium.mp4";
-
+import ContactUs from "../components/ContactUs";
 
 
 const Home = () => {
@@ -32,6 +32,34 @@ const Home = () => {
   const headingRef = useRef<HTMLHeadingElement | null>(null);
 
   const [showMenu, setShowMenu] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const slideRef = useRef<HTMLDivElement | null>(null);
+
+  function moveRight() {
+    if (!slideRef.current) return;
+
+    const slideWidth = slideRef.current.children[0].clientWidth;
+    const totalSlides = slideRef.current.children.length;
+
+    const nextIndex = Math.min(currentIndex + 1, totalSlides - 1);
+
+    slideRef.current.style.transform = `translateX(-${slideWidth * nextIndex}px)`;
+    setCurrentIndex(nextIndex);
+  }
+
+
+  function moveLeft() {
+    if (!slideRef.current) return;
+
+    const slideWidth = slideRef.current.children[0].clientWidth;
+    const prevIndex = Math.max(currentIndex - 1, 0);
+
+    slideRef.current.style.transform = `translateX(-${slideWidth * prevIndex}px)`;
+    setCurrentIndex(prevIndex);
+  }
+
+
 
   useEffect(() => {
     const wrapper = wrapperRef.current;
@@ -143,54 +171,35 @@ const Home = () => {
         </div>
       </section>
 
-
-      {/* About Section */}
-      <section className="py-20 space-y-32 px-8 text-xl font-semibold bg-[url('./assets/bg.jpg')] text-left bg-no-repeat bg-cover">
-
-        <FadeInLeftToRight>
-          <div className="space-y-10 font-bold font-sans text-2xl text-center mx-auto lg:w-[70%] lg:text-3xl">
-            <p className="italic"><span className="text-yellow-400">" </span>EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
-            <p className="italic">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL</span>.<span className="text-yellow-400"> "</span></p>
-            <div>
-              <p className="text-lg font-oswald lg:text-2xl">SHAHBAZ NADEEM</p>
-              <p className="text-yellow-500 text-xs lg:text-sm">MENTOR, KITBAG JOURNEY.</p>
-            </div>
-          </div>
-        </FadeInLeftToRight>
-
-        <div className="space-y-5 px-5 my-20 text-center lg:flex lg:text-left">
-          <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2"><img src={cricketImg} alt="" className="h-full object-contain grayscale mx-auto hover:grayscale-0" /></div>
-
-          <div className="w-full lg:w-1/2 space-y-4 flex-col justify-center lg:flex">
-            <p className="text-yellow-500 text-sm lg:text-lg">WELCOME TO FUTURE</p>
-            <h1 className="text-3xl lg:text-6xl">WELCOME TO KITBAG JOURNEY.
-              AN ATHLETE MANAGEMENT COMPANY.
-            </h1>
-            <p className="font-sans text-lg">Our athlete management framework brings together elite professionals across
-              performance, branding, legal, and commercial domains. We help athletes unlock
-              career milestones through strategic guidance tailored to their ambitions.</p>
-            <button className="px-8 py-4 border-2 border-white lg:w-[25%] hover:bg-white hover:text-black transition-all duration-300">ABOUT US</button>
-          </div>
-
-        </div>
-
-      </section>
-
-
-
       {/* Services Section */}
       <section className="w-full px-5 py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
+        <div className="overflow-hidden w-full py-4">
+          <div className="flex whitespace-nowrap w-max animate-marquee-right">
+            <span className="text-white text-xl md:text-2xl mr-8">
+              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+            </span>
+            <span className="text-white text-xl md:text-2xl mr-8">
+              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+            </span>
+            <span className="text-white text-xl md:text-2xl mr-8">
+              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+            </span>
+            <span className="text-white text-xl md:text-2xl mr-8">
+              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+            </span>
+          </div>
+        </div>
 
         <h1 className="text-4xl text-yellow-500 text-center">WHAT WE MANAGE</h1>
 
         <div className="flex gap-3 flex-col my-8 lg:flex-row lg:mx-0">
-          <ServiceCard img={serviceImg} title="Career Representation" text="We represent athletes with complete dedication and ensure they are showcased
+          <ServiceCard img={serviceImg} title="Player Management" text="We represent athletes with complete dedication and ensure they are showcased
 correctly in the global sports market."/>
-          <ServiceCard img={serviceImg2} title="Brand & Image Positioning" text="From media appearances to digital identity, we help develop an impactful personal
+          <ServiceCard img={serviceImg2} title="Social Media and P.R" text="From media appearances to digital identity, we help develop an impactful personal
 brand."/>
-          <ServiceCard img={serviceImg3} title="Endorsement & Sponsorship Deals" text="We source high-value commercial opportunities and negotiate deals that match
+          <ServiceCard img={serviceImg3} title="Event Management" text="We source high-value commercial opportunities and negotiate deals that match
 athlete potential"/>
-          <ServiceCard img={serviceImg4} title="Mentorship & Skill Advisory" text="We support athletic growth through expert mentoring & professional environment
+          <ServiceCard img={serviceImg4} title="Legal Consultancy" text="We support athletic growth through expert mentoring & professional environment
 building.
 " />
         </div>
@@ -202,6 +211,38 @@ building.
 
 
       </section>
+
+
+      {/* About Section */}
+      <section className="py-20 space-y-32 px-8 text-xl font-semibold bg-[url('./assets/bg.jpg')] text-left bg-no-repeat bg-cover">
+
+        <FadeInLeftToRight>
+          <div className="space-y-10 font-bold font-sans text-2xl text-center mx-auto lg:w-[70%] lg:text-2xl">
+            <p className="italic"><span className="text-yellow-400">" </span>EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
+            <p className="italic">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL</span>.<span className="text-yellow-400"> "</span></p>
+            <div>
+              <p className="text-sm font-oswald lg:text-xl">SHAHBAZ NADEEM</p>
+              <p className="text-yellow-500 text-xs lg:text-sm">MENTOR, KITBAG JOURNEY.</p>
+            </div>
+          </div>
+        </FadeInLeftToRight>
+
+        <div className="space-y-5 px-5 my-20 text-center lg:flex lg:text-left">
+          <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2"><img src={cricketImg} alt="" className="h-full object-contain grayscale mx-auto hover:grayscale-0" /></div>
+
+          <div className="w-full lg:w-1/2 space-y-4 flex-col justify-center lg:flex">
+            <h1 className="text-3xl text-yellow-500 lg:text-6xl">WELCOME TO KITBAG JOURNEY.</h1>
+            <h2 className="text-xl lg:text-2xl font-regular">AN ATHLETE MANAGEMENT COMPANY</h2>
+            <p className="font-sans text-lg">Our athlete management framework brings together elite professionals across
+              performance, branding, legal, and commercial domains. We help athletes unlock
+              career milestones through strategic guidance tailored to their ambitions.</p>
+            <button className="px-8 py-4 border-2 border-white lg:w-[25%] hover:bg-white hover:text-black transition-all duration-300">ABOUT US</button>
+          </div>
+
+        </div>
+
+      </section>
+
 
       <MovingBanner />
 
@@ -271,14 +312,14 @@ building.
             WHAT OUR CLIENTS SAY
           </h1>
 
-          <div className="overflow-x-auto overscroll-x-contain lg:overflow-visible">
-            <div className="flex gap-10 w-max lg:w-full lg:justify-around">
+          <div className="overflow-x-scroll overscroll-x-contain lg:overflow-hidden">
+            <div className="flex lg:w-full transition-all duration-300 ease-in-out" ref={slideRef}>
               <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" />
               <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. o" />
               <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, em ipsum dolor sit amet, consectetur adipiscing elit," />
             </div>
           </div>
-          <div className="w-[30%] mx-auto justify-between flex invert lg:hidden"><img src={rightArrow} alt="" className="transform rotate-180" /><img src={rightArrow} alt="" /></div>
+          <div className="w-[30%] mx-auto justify-center gap-8 flex invert"><img src={rightArrow} alt="left-arrow" className="transform rotate-180 cursor-pointer" onClick={moveLeft} /><img src={rightArrow} alt="right-arrow" className="cursor-pointer" onClick={moveRight} /></div>
         </div>
 
       </section>
@@ -294,17 +335,9 @@ building.
         </div>
       </section>
 
-
-      <section className="py-20 space-y-6 px-5">
-        <h1 className="text-yellow-500 text-4xl text-center">CONTACT US</h1>
-        <p className="font-extralight font-sans text-center text-2xl">Let’s build a future that celebrates your passion.</p>
-        <p className="font-extralight font-sans text-center text-2xl">Whether you are an athlete looking for representation or a brand seeking meaningful collaborations — we’re here to help.</p>
-        <p className="font-extralight font-sans text-center text-2xl">Reach out and take the first step toward your dream career</p>
-
-        <div className="text-lg justify-between lg:flex mx-auto lg:w-[40%]">
-          <button className="text-white border-2 px-8 py-4 mt-4 hover:bg-white hover:text-black transition-all duration-300">JOIN US AS AN ATHLETE</button>
-          <button>BUSINESS AND SPONSORSHIP INQUIRIES</button>
-        </div>
+      {/* Contact Us */}
+      <section className="py-20 space-y-6 px-5 font-sans text-center">
+        <ContactUs />
 
       </section>
 

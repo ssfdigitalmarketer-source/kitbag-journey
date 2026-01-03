@@ -6,15 +6,15 @@ const MovingBanner = () => {
   return (
     <section className="relative text-center text-4xl font-bold px-5 space-y-6 py-14 lg:py-20 lg:text-9xl overflow-hidden lg:text-left">
         <MarqueeBackground />
-      <p className="">
+      <p className="text-left">
         WE CREATE
       </p>
 
-      <p className="" >
+      <p className="text-right" >
         BRANDS AND IP&apos;S
       </p>
 
-      <p className="" >
+      <p className="text-center" >
         WE ARE KITBAG JOURNEY
       </p>
     </section>
