@@ -232,7 +232,7 @@ building.
 
           <div className="w-full lg:w-1/2 space-y-4 flex-col justify-center lg:flex">
             <h1 className="text-3xl text-yellow-500 lg:text-6xl">WELCOME TO KITBAG JOURNEY.</h1>
-            <h2 className="text-xl lg:text-2xl font-regular">AN ATHLETE MANAGEMENT COMPANY</h2>
+            <h2 className="text-xl lg:text-3xl font-regular">AN ATHLETE MANAGEMENT COMPANY</h2>
             <p className="font-sans text-lg">Our athlete management framework brings together elite professionals across
               performance, branding, legal, and commercial domains. We help athletes unlock
               career milestones through strategic guidance tailored to their ambitions.</p>
@@ -304,22 +304,31 @@ building.
       </section>
 
       <section className="px-5">
-        <div className="space-y-10">
+        <div className="relative space-y-10 group">
           <h1 className="text-yellow-500 text-4xl text-center">
             TESTIMONIALS
           </h1>
-          <h1 className="text-center text-5xl">
+          <h1 className="text-center text-3xl">
             WHAT OUR CLIENTS SAY
           </h1>
 
-          <div className="overflow-x-scroll overscroll-x-contain lg:overflow-hidden">
+          <div className="overscroll-x-contain overflow-hidden">
             <div className="flex lg:w-full transition-all duration-300 ease-in-out" ref={slideRef}>
               <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" />
               <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. o" />
               <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, em ipsum dolor sit amet, consectetur adipiscing elit," />
             </div>
           </div>
-          <div className="w-[30%] mx-auto justify-center gap-8 flex invert"><img src={rightArrow} alt="left-arrow" className="transform rotate-180 cursor-pointer" onClick={moveLeft} /><img src={rightArrow} alt="right-arrow" className="cursor-pointer" onClick={moveRight} /></div>
+
+          {/* <div className="mx-auto justify-center gap-8 flex"> */}
+            <button className="absolute top-1/2 left-0 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveLeft} ><img src={rightArrow}
+              alt="left-arrow" className="cursor-pointer transform rotate-180" />
+            </button>
+
+            <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveRight} ><img src={rightArrow} alt="right-arrow" className="cursor-pointer" />
+            </button>
+
+
         </div>
 
       </section>
@@ -331,12 +340,12 @@ building.
           <NewsCard image={playerImg} description="Virat Singh gets selected in IPL" date="2024-05-15" />
           <NewsCard image={playerImg2} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the" date="2024-05-10" />
           <NewsCard image={playerImg2} description=" simply dummy text of the printinpsum has been the industry's standard dummy text ever" date="2024-05-10" />
-          <NewsCard image={playerImg2} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry" date="2024-05-10" />
+          {/* <NewsCard image={playerImg2} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry" date="2024-05-10" /> */}
         </div>
       </section>
 
       {/* Contact Us */}
-      <section className="py-20 space-y-6 px-5 font-sans text-center">
+      <section className="py-20 text-left space-y-6 px-5 font-sans">
         <ContactUs />
 
       </section>
