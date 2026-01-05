@@ -33,7 +33,7 @@ const Navbar = ({ showMenu } : any) => {
           />
 
           {/* Menu (original positioning preserved) */}
-          <div className="w-full absolute z-40 top-0 left-0 lg:w-[20vw] lg:h-[100vh]">
+          <div className={`w-full absolute z-40 top-0 -translate-y-80 ${showBurgerMenu ? 'translate-y-0' : '' } left-0 lg:w-[20vw] lg:h-[100vh] transition-all duration-300 ease-in-out`}>
             <ul className="list-none h-full space-y-4 w-full px-8 text py-8 bg-black tracking-widest text-[20px] text-white cursor-pointer" onClick={(e) => e.stopPropagation()}>
               <li className="border-b-[0.5px] border-white py-2 hover:text-yellow-500">HOME</li>
               <li className="border-b-[0.5px] border-white py-2 hover:text-yellow-500">SERVICES</li>

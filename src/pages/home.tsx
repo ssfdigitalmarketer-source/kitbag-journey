@@ -321,12 +321,12 @@ building.
           </div>
 
           {/* <div className="mx-auto justify-center gap-8 flex"> */}
-            <button className="absolute top-1/2 left-0 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveLeft} ><img src={rightArrow}
-              alt="left-arrow" className="cursor-pointer transform rotate-180" />
-            </button>
+          <button className="absolute top-1/2 left-0 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveLeft} ><img src={rightArrow}
+            alt="left-arrow" className="cursor-pointer transform rotate-180" />
+          </button>
 
-            <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveRight} ><img src={rightArrow} alt="right-arrow" className="cursor-pointer" />
-            </button>
+          <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveRight} ><img src={rightArrow} alt="right-arrow" className="cursor-pointer" />
+          </button>
 
 
         </div>
@@ -353,6 +353,11 @@ building.
 
       <Footer />
 
+      <div className="w-full overflow-hidden text-center">
+        <h1 className="whitespace-nowrap text-[15vw] leading-none relative -bottom-2 lg:-bottom-10">
+          KITBAG JOURNEY
+        </h1>
+      </div>
 
     </div>
   );
