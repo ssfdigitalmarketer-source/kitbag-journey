@@ -141,7 +141,7 @@ const Home = () => {
       <img
         src={logo}
         alt="Kitbag Logo"
-        className="h-[100px] mr-5 absolute top-0 z-10 left-1 lg:h-[150px]"
+        className="h-[100px] mr-5 absolute top-0 z-20 lg:z-50 left-1 lg:h-[150px]"
       />
 
       {/* Hero section */}
@@ -354,7 +354,7 @@ building.
       <Footer />
 
       <div className="w-full overflow-hidden text-center">
-        <h1 className="whitespace-nowrap text-[15vw] leading-none relative -bottom-2 lg:-bottom-10">
+        <h1 className="whitespace-nowrap font-bold text-[13vw] leading-none relative -bottom-2 lg:-bottom-10">
           KITBAG JOURNEY
         </h1>
       </div>

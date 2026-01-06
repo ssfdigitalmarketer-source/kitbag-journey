@@ -1,10 +1,11 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
-const Navbar = ({ showMenu } : any) => {
+const Navbar = ({ showMenu = true} : any) => {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-30 w-[100%] p-10 font-semibold lg:flex pointer-events-none">
+    <nav className="sticky top-0 z-30 w-[100%] py-8 font-semibold lg:flex lg:pointer-events-none">
 
       <div className="flex mx-auto">
 
@@ -16,7 +17,7 @@ const Navbar = ({ showMenu } : any) => {
         </button>
         {showMenu && (<ul className="hidden list-none tracking-widest text-[15px] lg:flex lg:gap-6 pointer-events-auto cursor-pointer">
           <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out">HOME</li>
-          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out">SERVICES</li>
+          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to="/services">SERVICES</Link></li>
           <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out">ABOUT US</li>
           <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out">CONTACT</li>
         </ul>)}
@@ -28,17 +29,17 @@ const Navbar = ({ showMenu } : any) => {
         <>
           {/* Overlay (does NOT affect layout) */}
           <div
-            className="fixed inset-0 z-50 pointer-events-auto"
+            className="fixed inset-0 z-40 bg-black/40"
             onClick={() => setShowBurgerMenu(false)}
           />
 
           {/* Menu (original positioning preserved) */}
-          <div className={`w-full absolute z-40 top-0 -translate-y-80 ${showBurgerMenu ? 'translate-y-0' : '' } left-0 lg:w-[20vw] lg:h-[100vh] transition-all duration-300 ease-in-out`}>
-            <ul className="list-none h-full space-y-4 w-full px-8 text py-8 bg-black tracking-widest text-[20px] text-white cursor-pointer" onClick={(e) => e.stopPropagation()}>
-              <li className="border-b-[0.5px] border-white py-2 hover:text-yellow-500">HOME</li>
-              <li className="border-b-[0.5px] border-white py-2 hover:text-yellow-500">SERVICES</li>
-              <li className="border-b-[0.5px] border-white py-2 hover:text-yellow-500">ABOUT US</li>
-              <li className="border-b-[0.5px] border-white py-2 hover:text-yellow-500">CONTACT</li>
+          <div className="w-full absolute z-40 top-0 left-0 lg:w-[20vw] lg:h-[100vh] transition-all duration-300 ease-in-out">
+            <ul className="list-none h-full space-y-4 w-full px-8 text-center text py-3 bg-black tracking-widest text-[20px] text-white cursor-pointer pointer-events-auto" onClick={(e) => e.stopPropagation()}>
+              <li className=" border-white py-2 hover:text-yellow-500">HOME</li>
+              <li className=" border-white py-2 hover:text-yellow-500"><Link to="/services">SERVICES</Link></li>
+              <li className=" border-white py-2 hover:text-yellow-500">ABOUT US</li>
+              <li className=" border-white py-2 hover:text-yellow-500">CONTACT</li>
             </ul>
           </div>
         </>

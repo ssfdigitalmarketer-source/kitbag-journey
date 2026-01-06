@@ -16,7 +16,7 @@ const MarqueeLine = ({ text, direction = "left", fontSize }: { text: string; dir
           duration: 25,
         }}
       >
-        {[...Array(6)].map((_, i) => (
+        {[...Array(15)].map((_, i) => (
           <span
             key={i}
             style={{ fontSize }}
