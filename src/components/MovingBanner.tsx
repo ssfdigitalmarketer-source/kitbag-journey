@@ -1,66 +1,57 @@
 import MarqueeBackground from "../animations/MarqueeBackground";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const MovingBanner = () => {
-  const targetRef = useRef<HTMLDivElement | null>(null);
- const scrollBlockCount = useRef(0);
-  const isLocked = useRef(false);
+  const targetDiv = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !isLocked.current) {
-          console.log("🛑 Center reached — locking scroll");
-          isLocked.current = true;
-          scrollBlockCount.current = 2;
-        }
-      },
-      {
-        root: null,
-        threshold: 0,
-        rootMargin: "-50% 0px -50% 0px",
-      }
-    );
+  // useGSAP(
+  //   () => {
+  //     const paragraphs = gsap.utils.toArray<HTMLParagraphElement>(
+  //       ".moving-paragraph"
+  //     );
 
-    if (targetRef.current) observer.observe(targetRef.current);
+  //     const tl = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: targetDiv.current,
+  //         pin: true,
+  //         scrub: true,
+  //         start: "top center",
+  //         end: "+=200%",
+  //       },
+  //     });
 
-    return () => observer.disconnect();
-  }, []);
+  //     tl.to(paragraphs[0], { x: 40 }, 0)
+  //       .to(paragraphs[1], { x: -40 }, 0)
+  //       .to(paragraphs[2], { x: 40 }, 0);
 
-  useEffect(() => {
-    const onWheel = (e: WheelEvent) => {
-      if (!isLocked.current) return;
-
-      e.preventDefault();
-      scrollBlockCount.current -= 1;
-
-      console.log("⛔ Scroll blocked", scrollBlockCount.current);
-
-      if (scrollBlockCount.current <= 0) {
-        console.log("✅ Scroll unlocked");
-        isLocked.current = false;
-      }
-    };
-
-    window.addEventListener("wheel", onWheel, { passive: false });
-
-    return () => {
-      window.removeEventListener("wheel", onWheel);
-    };
-  }, []);
+  //     tl.to(paragraphs[0], { x: 80 })
+  //       .to(paragraphs[1], { x: -80 })
+  //       .to(paragraphs[2], { x: 80 });
+  //   },
+  //   { scope: targetDiv }
+  // );
 
   return (
-    <section className="relative text-center text-4xl font-bold px-5 space-y-6 py-14 lg:py-20 lg:text-9xl overflow-hidden lg:text-left" ref={targetRef}>
+    <section
+      ref={targetDiv}
+      className="relative overflow-hidden px-5 py-14 text-4xl font-bold lg:py-20 lg:text-9xl"
+    >
       <MarqueeBackground />
-      <p className="text-left">
+
+      <p className="moving-paragraph relative text-left">
         WE CREATE
       </p>
 
-      <p className="text-right" >
+      <p className="moving-paragraph relative text-right">
         BRANDS AND IP&apos;S
       </p>
 
-      <p className="text-center" >
+      <p className="moving-paragraph relative text-center">
         WE ARE KITBAG JOURNEY
       </p>
     </section>

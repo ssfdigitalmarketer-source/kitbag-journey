@@ -6,12 +6,12 @@ import serviceImg3 from "../assets/service3.jpg";
 import serviceImg4 from "../assets/service4.jpg";
 import ServiceCard from "../components/ServiceCard";
 import PlayerCard from "../components/PlayerCard";
-import playerImg from "../assets/playerImage.jpeg"
-import playerImg2 from "../assets/playerImage2.jpeg"
-import playerImg3 from "../assets/playerImage3.jpeg"
-import playerImg4 from "../assets/playerImage4.jpeg"
-import cricketImg from "../assets/cricket-image.jpg"
-import rightArrow from '../assets/right-arrow.svg'
+import playerImg from "../assets/playerImage.jpeg";
+import playerImg2 from "../assets/playerImage2.jpeg";
+import playerImg3 from "../assets/playerImage3.jpeg";
+import playerImg4 from "../assets/playerImage4.jpeg";
+import newsBG from "../assets/news-bg.jpg";
+import rightArrow from '../assets/right-arrow.svg';
 import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -23,6 +23,7 @@ import HeroHeadline from "../animations/HeroHeadline";
 import FadeInLeftToRight from "../animations/FadeInLeftToRight";
 import stadiumVideo from "../assets/stadium.mp4";
 import ContactUs from "../components/ContactUs";
+import shIm from "../assets/sh-sirImage.JPG"
 
 
 const Home = () => {
@@ -175,22 +176,22 @@ const Home = () => {
       <section className="w-full px-5 py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
         <div className="overflow-hidden w-full py-4">
           <div className="flex whitespace-nowrap w-max animate-marquee-right">
-            <span className="text-white text-xl md:text-2xl mr-8">
+            <span className="text-white text-3xl md:text-2xl mr-8">
               PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
             </span>
-            <span className="text-white text-xl md:text-2xl mr-8">
+            <span className="text-white text-3xl md:text-2xl mr-8">
               PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
             </span>
-            <span className="text-white text-xl md:text-2xl mr-8">
+            <span className="text-white text-3xl md:text-2xl mr-8">
               PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
             </span>
-            <span className="text-white text-xl md:text-2xl mr-8">
+            <span className="text-white text-3xl md:text-2xl mr-8">
               PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
             </span>
           </div>
         </div>
 
-        <h1 className="text-4xl text-yellow-500 text-center">WHAT WE MANAGE</h1>
+        {/* <h1 className="text-4xl text-yellow-500 text-center">WHAT WE MANAGE</h1> */}
 
         <div className="flex gap-3 flex-col my-8 lg:flex-row lg:mx-0">
           <ServiceCard img={serviceImg} title="Player Management" text="We represent athletes with complete dedication and ensure they are showcased
@@ -214,9 +215,9 @@ building.
 
 
       {/* About Section */}
-      <section className="py-20 space-y-32 px-8 text-xl font-semibold bg-[url('./assets/bg.jpg')] text-left bg-no-repeat bg-cover">
 
-        <FadeInLeftToRight>
+      <section className=" px-5">
+         <FadeInLeftToRight>
           <div className="space-y-10 font-bold font-sans text-2xl text-center mx-auto lg:w-[70%] lg:text-2xl">
             <p className="italic"><span className="text-yellow-400">" </span>EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
             <p className="italic">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL</span>.<span className="text-yellow-400"> "</span></p>
@@ -226,16 +227,28 @@ building.
             </div>
           </div>
         </FadeInLeftToRight>
+      </section>
+
+
+
+      <section className="px-5 text-xl font-semibold bg-[url('./assets/bg.jpg')] text-left bg-no-repeat bg-cover">
 
         <div className="space-y-5 px-5 my-20 text-center lg:flex lg:text-left">
-          <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2"><img src={cricketImg} alt="" className="h-full object-contain grayscale mx-auto hover:grayscale-0" /></div>
+          <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2">
+            <div className="lg:w-[80%] h-full">
+              <img src={shIm} alt="" className="h-full object-cover grayscale mx-auto hover:grayscale-0" />
+
+            </div>
+          </div>
 
           <div className="w-full lg:w-1/2 space-y-4 flex-col justify-center lg:flex">
             <h1 className="text-3xl text-yellow-500 lg:text-6xl">WELCOME TO KITBAG JOURNEY.</h1>
             <h2 className="text-xl lg:text-3xl font-regular">AN ATHLETE MANAGEMENT COMPANY</h2>
+            <p className="font-sans text-lg">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years. </p>
             <p className="font-sans text-lg">Our athlete management framework brings together elite professionals across
               performance, branding, legal, and commercial domains. We help athletes unlock
               career milestones through strategic guidance tailored to their ambitions.</p>
+
             <button className="px-8 py-4 border-2 border-white lg:w-[25%] hover:bg-white hover:text-black transition-all duration-300">ABOUT US</button>
           </div>
 
@@ -246,7 +259,7 @@ building.
 
       <MovingBanner />
 
-      <section className="bg-[#090909] relative px-5 overflow-hidden">
+      <section className="bg-[#090909] py-20 relative px-5 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <video
             src={stadiumVideo}
@@ -288,16 +301,19 @@ building.
         <div className="overflow-hidden w-full py-4">
           <div className="flex whitespace-nowrap w-max animate-marquee-right">
             <span className="text-white text-xl md:text-2xl mr-8">
-              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+              AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
             </span>
             <span className="text-white text-xl md:text-2xl mr-8">
-              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+              AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
+
             </span>
             <span className="text-white text-xl md:text-2xl mr-8">
-              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+              AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
+
             </span>
             <span className="text-white text-xl md:text-2xl mr-8">
-              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
+              AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
+
             </span>
           </div>
         </div>
@@ -334,8 +350,8 @@ building.
       </section>
 
 
-      <section className="px-5 mt-6 space-y-6 py-20">
-        <h1 className="text-yellow-500 text-4xl text-center">LATEST NEWS</h1>
+      <section className="px-5 mt-6 space-y-6 py-20 ">
+        <h1 className="text-yellow-500 text-4xl text-center">LATEST BLOGS</h1>
         <div className="justify-evenly lg:flex">
           <NewsCard image={playerImg} description="Virat Singh gets selected in IPL" date="2024-05-15" />
           <NewsCard image={playerImg2} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the" date="2024-05-10" />
@@ -345,10 +361,10 @@ building.
       </section>
 
       {/* Contact Us */}
-      <section className="py-20 text-left space-y-6 px-5 font-sans">
+      {/* <section className="py-20 text-left space-y-6 px-5 font-sans">
         <ContactUs />
 
-      </section>
+      </section> */}
 
 
       <Footer />

@@ -1,10 +1,12 @@
 import logo from '../assets/kitbag-logo.svg'
+import { User } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="font-sans border-t-[1px] border-yellow-500 text-left">
       <div className="mx-auto max-w-7xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="flex flex-col gap-12 lg:gap-8 text-center lg:text-left lg:flex-row lg:justify-between">
           <div>
             <img src={logo} alt="Kitbag Logo" className="w-36 h-auto mx-auto lg:mx-0" />
             <p className="w-full lg:max-w-xs">
@@ -47,9 +49,13 @@ const Footer = () => {
               </li>
               
             </ul>
+            
+        <p className="text-lg mt-6 text-yellow-500">
+          © 2026. Kitbag Journey. All rights reserved.
+        </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+
             <div>
               <p className="text-xl text-yellow-500 font-oswald">SERVICES</p>
 
@@ -86,89 +92,35 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
-              <p className="text-xl text-yellow-500 font-oswald">COMPANY</p>
+            <div className="space-y-6 lg:w-[40%]">
+                  <h1 className="text-xl text-yellow-500 font-oswald">CONTACT US</h1>
+                    <form action="">
+                        <div className="space-y-4 flex flex-col font-sans">
+                            <div className='flex items-center bg-[#1a1a1a] rounded-lg px-3'>
+                                <User className="w-6 h-6 text-[#505050]" />
+                                <input type="text" className="w-full bg-transparent rounded-lg py-4 px-3 focus:border-none focus:outline-none " placeholder="Name" required />
 
-              <ul className="mt-6 text-lg space-y-6">
-                <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                    About
-                  </a>
-                </li>
+                            </div>
+                            <div className='flex items-center bg-[#1a1a1a] rounded-lg px-3'>
+                                <Mail className="w-6 h-6 text-[#505050]" />
+                                <input type="text" className="w-full bg-[#1a1a1a] rounded-lg py-4 px-3 focus:border-none focus:outline-none" placeholder="Email" required />
+                            </div>
+                            <textarea name="" id="" cols={30} rows={8} className="w-full bg-[#1a1a1a] rounded-lg py-4 px-3 focus:border-none focus:outline-none" placeholder="Your Message" required></textarea>
+                            <button className="group relative overflow-hidden font-oswald px-8 py-4 mt-4 text-lg bg-yellow-500 text-black transition-transform duration-300 ease-in-out lg:w-[50%] mx-auto">
 
-                <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                    Meet the Team
-                  </a>
-                </li>
+                                <span className="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
 
-                <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                    Accounts Review
-                  </a>
-                </li>
-              </ul>
-            </div>
+                                <span className="relative z-10">Send</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
 
-            <div>
-              <p className="text-xl text-yellow-500 font-oswald">LINKS</p>
+            
 
-              <ul className="mt-6 text-lg space-y-6">
-                <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                    Contact
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                    FAQs
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                    Live Chat
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <p className="text-xl text-yellow-500 font-oswald">LEGAL</p>
-
-              <ul className="mt-6 text-lg space-y-6">
-                <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                    Accessibility
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                    Returns Policy
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                    Refund Policy
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                    Hiring-3 Statistics
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          
         </div>
 
-        <p className="text-lg text-yellow-500">
-          © 2026. Kitbag Journey. All rights reserved.
-        </p>
       </div>
     </footer>
   )
