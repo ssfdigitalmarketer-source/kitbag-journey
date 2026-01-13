@@ -259,7 +259,7 @@ building.
 
       <MovingBanner />
 
-      <section className="bg-[#090909] py-20 relative px-5 overflow-hidden">
+      <section className="bg-[#090909] relative px-5 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <video
             src={stadiumVideo}
@@ -319,7 +319,7 @@ building.
         </div>
       </section>
 
-      <section className="px-5">
+      <section className="lg:px-5">
         <div className="relative space-y-10 group">
           <h1 className="text-yellow-500 text-4xl text-center">
             TESTIMONIALS
