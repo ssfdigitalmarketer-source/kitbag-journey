@@ -24,6 +24,7 @@ import FadeInLeftToRight from "../animations/FadeInLeftToRight";
 import stadiumVideo from "../assets/stadium.mp4";
 import ContactUs from "../components/ContactUs";
 import shIm from "../assets/sh-sirImage.JPG"
+import testimonialBackground from "../assets/testimonialBackground1.jpg"
 
 
 const Home = () => {
@@ -217,7 +218,7 @@ building.
       {/* About Section */}
 
       <section className=" px-5">
-         <FadeInLeftToRight>
+        <FadeInLeftToRight>
           <div className="space-y-10 font-bold font-sans text-2xl text-center mx-auto lg:w-[70%] lg:text-2xl">
             <p className="italic"><span className="text-yellow-400">" </span>EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
             <p className="italic">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL</span>.<span className="text-yellow-400"> "</span></p>
@@ -319,12 +320,23 @@ building.
         </div>
       </section>
 
-      <section className="lg:px-5">
+      <section className="lg:px-32 relative py-20">
+        <div className="w-full h-full inset-0 overflow-hidden absolute top-0 left-0 z-0">
+          <img src={testimonialBackground} alt="testimonial background" className="object-cover w-full h-full" />
+          <div className="
+    absolute inset-0
+    bg-gradient-to-r
+    from-black
+    via-black
+    via-[30%]
+    to-transparent
+  " />
+        </div>
         <div className="relative space-y-10 group">
-          <h1 className="text-yellow-500 text-4xl text-center">
+          <h1 className="text-yellow-500 text-4xl">
             TESTIMONIALS
           </h1>
-          <h1 className="text-center text-3xl">
+          <h1 className="text-6xl">
             WHAT OUR CLIENTS SAY
           </h1>
 

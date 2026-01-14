@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar"
 import managementImage from "../assets/management.jpg"
+import Footer from "../components/Footer"
 
 const Services = () => {
   return (
@@ -57,6 +58,10 @@ const Services = () => {
 
         </div>
       </section>
+
+      <Footer />
+
+ 
     </div>
   )
 }
