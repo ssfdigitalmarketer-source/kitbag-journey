@@ -1,16 +1,13 @@
 import { useEffect, useRef, useState } from "react";
+import PlayerSection from "../components/PlayerSection";
 import video from "../assets/cricket-video.mp4";
 import serviceImg from "../assets/service.jpg";
-import serviceImg2 from "../assets/service2.png";
+import serviceImg2 from "../assets/service2.jpg";
 import serviceImg3 from "../assets/service3.jpg";
 import serviceImg4 from "../assets/service4.jpg";
 import ServiceCard from "../components/ServiceCard";
-import PlayerCard from "../components/PlayerCard";
-import playerImg from "../assets/playerImage.jpeg";
-import playerImg2 from "../assets/playerImage2.jpeg";
-import playerImg3 from "../assets/playerImage3.jpeg";
-import playerImg4 from "../assets/playerImage4.jpeg";
-import newsBG from "../assets/news-bg.jpg";
+import playerImg from "../assets/players/virat-singh.jpeg";
+import playerImg2 from "../assets/players/virat-singh.jpeg";
 import rightArrow from '../assets/right-arrow.svg';
 import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
@@ -25,6 +22,7 @@ import stadiumVideo from "../assets/stadium.mp4";
 import ContactUs from "../components/ContactUs";
 import shIm from "../assets/sh-sirImage.JPG"
 import testimonialBackground from "../assets/testimonialBackground1.jpg"
+import { Link } from "react-router";
 
 
 const Home = () => {
@@ -151,7 +149,7 @@ const Home = () => {
         ref={sectionRef}
         className="w-full py-10 px-5 text-center relative
                    h-[60vh] lg:h-[200vh] lg:px-20 lg:pb-40
-                   bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover"
+                    bg-no-repeat bg-cover"
       >
         <h1
           ref={headingRef}
@@ -191,8 +189,6 @@ const Home = () => {
             </span>
           </div>
         </div>
-
-        {/* <h1 className="text-4xl text-yellow-500 text-center">WHAT WE MANAGE</h1> */}
 
         <div className="flex gap-3 flex-col my-8 lg:flex-row lg:mx-0">
           <ServiceCard img={serviceImg} title="Player Management" text="We represent athletes with complete dedication and ensure they are showcased
@@ -277,48 +273,29 @@ building.
         </div>
       </section>
 
-      {/* Banner  */}
-      {/* <section className="w-full my-10 py-28 text-2xl px-3 h-[10vh] lg:h-[60vh] font-bold lg:text-[10vh] flex flex-col lg:space-y-32 lg:px-20">
-
-        <p className="text-left">WE CREATE</p>
-        <p className="text-right">BRANDS AND IP'S</p>
-        <p className="text-center">WE ARE KITBAG JOURNEY</p>
-
-      </section> */}
-
       {/* players section */}
-      <section className="w-full py-20 space-y-10 px-5">
-        <h1 className="text-4xl text-yellow-500 text-center">OUR PLAYERS</h1>
+      <PlayerSection />
 
-        <div className="overflow-x-auto overscroll-x-contain">
-          <div className="whitespace-nowrap space-x-3 lg:flex">
-            <PlayerCard img={playerImg} title="Virat Singh" />
-            <PlayerCard img={playerImg2} title="Virat Singh" />
-            <PlayerCard img={playerImg3} title="Virat Singh" />
-            <PlayerCard img={playerImg4} title="Virat Singh" />
-          </div>
+
+      <div className="overflow-hidden w-full py-4">
+        <div className="flex whitespace-nowrap w-max animate-marquee-right">
+          <span className="text-white text-xl md:text-2xl mr-8">
+            AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
+          </span>
+          <span className="text-white text-xl md:text-2xl mr-8">
+            AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
+
+          </span>
+          <span className="text-white text-xl md:text-2xl mr-8">
+            AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
+
+          </span>
+          <span className="text-white text-xl md:text-2xl mr-8">
+            AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
+
+          </span>
         </div>
-        <div className="w-[30%] mx-auto justify-between flex invert lg:hidden"><img src={rightArrow} alt="" className="transform rotate-180" /><img src={rightArrow} alt="" /></div>
-        <div className="overflow-hidden w-full py-4">
-          <div className="flex whitespace-nowrap w-max animate-marquee-right">
-            <span className="text-white text-xl md:text-2xl mr-8">
-              AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
-            </span>
-            <span className="text-white text-xl md:text-2xl mr-8">
-              AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
-
-            </span>
-            <span className="text-white text-xl md:text-2xl mr-8">
-              AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
-
-            </span>
-            <span className="text-white text-xl md:text-2xl mr-8">
-              AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
-
-            </span>
-          </div>
-        </div>
-      </section>
+      </div>
 
       <section className="lg:px-32 relative py-20">
         <div className="w-full h-full inset-0 overflow-hidden absolute top-0 left-0 z-0">
@@ -348,7 +325,6 @@ building.
             </div>
           </div>
 
-          {/* <div className="mx-auto justify-center gap-8 flex"> */}
           <button className="absolute top-1/2 left-0 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveLeft} ><img src={rightArrow}
             alt="left-arrow" className="cursor-pointer transform rotate-180" />
           </button>
@@ -368,17 +344,9 @@ building.
           <NewsCard image={playerImg} description="Virat Singh gets selected in IPL" date="2024-05-15" />
           <NewsCard image={playerImg2} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the" date="2024-05-10" />
           <NewsCard image={playerImg2} description=" simply dummy text of the printinpsum has been the industry's standard dummy text ever" date="2024-05-10" />
-          {/* <NewsCard image={playerImg2} description=" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry" date="2024-05-10" /> */}
+
         </div>
       </section>
-
-      {/* Contact Us */}
-      {/* <section className="py-20 text-left space-y-6 px-5 font-sans">
-        <ContactUs />
-
-      </section> */}
-
-
       <Footer />
 
       <div className="w-full overflow-hidden text-center">

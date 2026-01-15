@@ -3,11 +3,15 @@ import rightArrow from '../assets/right-arrow.svg'
 const ServiceCard = ({ img, title, text }: any) => {
   return (
     <div className="relative inline-block h-[60vh] border-collapse w-full cursor-pointer lg:block overflow-hidden group">
-      <img
-        src={img}
-        alt="background"
-        className="w-full h-full object-cover brightness-100 grayscale group-hover:brightness-50 group-hover:grayscale-0 transition-all duration-300"
-      />
+      <div className="absolute inset-0 z-0">
+        <img
+          src={img}
+          alt="background"
+          className="w-full h-full object-cover brightness-100 grayscale group-hover:brightness-50 group-hover:grayscale-0 transition-all duration-300"
+        />
+      </div>
+
+    
 
       <div className="w-[90%] absolute m-4 bottom-0">
         <div className='flex justify-between translate-y-10 group-hover:translate-y-0 transition-all duration-300 mb-2'>

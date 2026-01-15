@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar"
-import playerImg from "../assets/playerImage.jpeg"
+import playerImg from "../assets/players/virat-singh.jpeg"
 
 const PlayerPage = () => {
   return (
@@ -11,7 +11,6 @@ const PlayerPage = () => {
             <h1 className="text-4xl font-bold lg:text-6xl">VIRAT SINGH</h1>
             <h2 className="text-yellow-500 font-sans">Right Handed Batsman</h2>
             </div>
-
 
             <div className="px-8 font-sans gap-4 lg:flex">
                 <div className="mb-5 lg:w-1/3"><img src={playerImg} alt="Player" className="w-full rounded-lg shadow-lg" /></div>

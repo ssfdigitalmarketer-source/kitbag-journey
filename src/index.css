@@ -59,3 +59,22 @@ body {
   background-color: #6e6e6e;
   color: #ffffff;
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE + Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.drag-scroll {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.drag-scroll img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
