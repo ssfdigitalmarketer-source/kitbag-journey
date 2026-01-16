@@ -17,6 +17,7 @@ keyframes: {
 },
        fontFamily: {
         oswald: ["Oswald", "sans-serif"],
+        bilmond: ['Bilmond', 'sans-serif']
       },
     },
   },

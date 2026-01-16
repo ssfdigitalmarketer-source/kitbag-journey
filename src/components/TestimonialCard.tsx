@@ -6,8 +6,8 @@ const TestimonialCard = ({text, img, name} : any) => {
         <div className='w-full shrink-0'>
 
         <div className="w-full lg:w-[40%] font-sans rounded-lg space-y-8 cursor-pointer">
-            <p className='text-lg'><span className='text-yellow-500 text-xl'>" </span>{text}<span className='text-yellow-500 text-xl'> "</span></p>
-            <div className="flex gap-4 space-y-2 lg:space-y-0 ">
+            <p className='text-lg font-bilmond'><span className='text-yellow-500 text-xl'>" </span>{text}<span className='text-yellow-500 text-xl'> "</span></p>
+            <div className="flex items-center gap-4 space-y-2 lg:space-y-0 ">
                 <div className='rounded-full w-20 border-[1px] border-yellow-500 h-auto overflow-hidden'>
                     <img src={testimonialImg} alt="picture" className='object-cover' />
                 </div>

@@ -1,28 +1,32 @@
 import Navbar from "../components/Navbar"
-import playerImg from "../assets/players/virat-singh.jpeg"
+import playerImg from "../assets/players/kounain-quraishi.png"
+import { useParams } from "react-router"
 
 const PlayerPage = () => {
+  const { slug } = useParams();
+
   return (
     <div>
-        <Navbar />
+      <Navbar />
 
-        <section className="py-20 space-y-16 text-center">
-            <div className="space-y-4">
-            <h1 className="text-4xl font-bold lg:text-6xl">VIRAT SINGH</h1>
-            <h2 className="text-yellow-500 font-sans">Right Handed Batsman</h2>
+      <section className="py-20 space-y-16 text-center">
+
+        <div className="px-8 font-sans gap-20 lg:flex">
+          <div className="mb-5 lg:w-[45%]"><img src={playerImg} alt={slug} className="w-full object-contain shadow-lg grayscale relative z-20" /></div>
+          <div className="space-y-4 flex-1 lg:text-left ">
+            <div className="bg-yellow-500 -skew-x-12 py-3 space-y-3 relative -left-6">
+            <h1 className="text-4xl font-bold lg:text-6xl font-oswald text-center text-black">KOUNAIN QURAISHI</h1>
             </div>
-
-            <div className="px-8 font-sans gap-4 lg:flex">
-                <div className="mb-5 lg:w-1/3"><img src={playerImg} alt="Player" className="w-full rounded-lg shadow-lg" /></div>
-                <p className="text-left text-lg flex-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, harum eius iure aperiam eos culpa ullam labore consequatur et fugiat alias veritatis sunt odit asperiores veniam! Fugit laudantium provident repellat?
-                Eum quos deserunt incidunt dolor nulla explicabo, odit praesentium facere reiciendis ipsa minus. Exercitationem, error recusandae? Corporis inventore assumenda minus. Dignissimos id iusto maxime. Soluta in dolore quae numquam ipsam?
-                Optio id veritatis nostrum perspiciatis expedita facere, voluptatum nesciunt ducimus, consectetur aliquid voluptatem error. Nisi, nesciunt sunt ipsum veniam illo doloribus dignissimos quaerat non possimus explicabo unde inventore nihil similique.
-                Necessitatibus velit inventore doloremque voluptate temporibus, debitis quae fuga fugiat, voluptatem expedita, beatae optio laudantium. Itaque quod deserunt omnis laudantium error, perspiciatis nostrum odit vitae voluptatibus provident aut, architecto ullam.
-                Delectus nulla minima harum laudantium omnis numquam possimus a veniam atque natus aspernatur, voluptas hic! Adipisci, omnis? Delectus, id quos enim nostrum vero saepe dolore incidunt ipsam molestias inventore aliquam.</p>
-            </div>
+            <h2 className="text-yellow-500 font-sans relative -top-3 text-right right-10">Right Handed Batsman</h2>
+            <p className="text-left text-lg text-yellow-500">Date of Birth : <span className="text-white">29-09-2002</span></p>
+            <p className="text-left text-lg text-yellow-500">Father’s Name : <span className="text-white">Shamim Quraishi</span></p>
+            <p className="text-left text-lg text-yellow-500">Place of Birth : <span className="text-white">Hyderabad</span></p>
+            <p className="text-left text-lg text-yellow-500">First Class Debut : <span className="text-white">Hyderabad</span></p>
+          </div>
+        </div>
 
 
-        </section>
+      </section>
     </div>
   )
 }

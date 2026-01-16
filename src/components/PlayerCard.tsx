@@ -1,7 +1,10 @@
-const PlayerCard = ({ img, title }: any) => {
+import { useNavigate } from "react-router";
+
+const PlayerCard = ({ img, title, link }: any) => {
+    const navigate = useNavigate();
     return (
-        <div className="relative shrink-0 py-20 h-[60vh] w-[100%] -skew-x-6 cursor-pointer group lg:block lg:w-[20%] group will-change-transform transform-gpu backface-hidden">
-            <div className="w-full h-[90%] border-[0.5px] border-white absolute top-3 left-3 group-hover:border-yellow-500 transition-all duration-300"></div>
+        <div className="relative shrink-0 py-20 h-[60vh] w-[100%] -skew-x-6 cursor-pointer group lg:block lg:w-[20%] group will-change-transform transform-gpu backface-hidden" onClick={() => navigate(`/players/${link}`)}>
+            <div className="w-full h-[90%] border-[0.5px] border-white absolute top-3 left-3 group-hover:border-yellow-500 transition-all duration-300 "></div>
 
             <div className="w-full h-[90%] absolute top-0 left-0 overflow-hidden">
                 <img
@@ -26,13 +29,7 @@ const PlayerCard = ({ img, title }: any) => {
                     </div>
                 </div>
 
-                <div className="
-         absolute bottom-0 left-0 w-full h-[40%] z-10
-    bg-gradient-to-t from-yellow-500/70 via-yellow-500/30 to-transparent
-    opacity-0 translate-y-6
-    group-hover:opacity-100 group-hover:translate-y-0
-    transition-all duration-300
-      " />
+                <div className="absolute bottom-0 left-0 w-full h-[40%] z-10 bg-gradient-to-t from-yellow-500/70 via-yellow-500/30 to-transparent opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300" />
 
             </div>
 

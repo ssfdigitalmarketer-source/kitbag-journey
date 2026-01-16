@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import bg from '../assets/bg.jpg'
 import PlayerSection from "../components/PlayerSection";
 import video from "../assets/cricket-video.mp4";
 import serviceImg from "../assets/service.jpg";
@@ -172,25 +173,10 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="w-full px-5 py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
-        <div className="overflow-hidden w-full py-4">
-          <div className="flex whitespace-nowrap w-max animate-marquee-right">
-            <span className="text-white text-3xl md:text-2xl mr-8">
-              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
-            </span>
-            <span className="text-white text-3xl md:text-2xl mr-8">
-              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
-            </span>
-            <span className="text-white text-3xl md:text-2xl mr-8">
-              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
-            </span>
-            <span className="text-white text-3xl md:text-2xl mr-8">
-              PROMOTING TALENT • PROMOTING TALENT • PROMOTING TALENT •
-            </span>
-          </div>
-        </div>
+      <section className="w-full px-5 py-20 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${bg})` }}>
 
-        <div className="flex gap-3 flex-col my-8 lg:flex-row lg:mx-0">
+
+        <div className="flex gap-3 flex-col my-8 justify-around lg:flex-row lg:mx-0">
           <ServiceCard img={serviceImg} title="Player Management" text="We represent athletes with complete dedication and ensure they are showcased
 correctly in the global sports market."/>
           <ServiceCard img={serviceImg2} title="Social Media and P.R" text="From media appearances to digital identity, we help develop an impactful personal
@@ -228,7 +214,7 @@ building.
 
 
 
-      <section className="px-5 text-xl font-semibold bg-[url('./assets/bg.jpg')] text-left bg-no-repeat bg-cover">
+      <section className="px-5 text-xl font-semibold text-left bg-no-repeat bg-cover" style={{ backgroundImage: `url(${bg})` }}>
 
         <div className="space-y-5 px-5 my-20 text-center lg:flex lg:text-left">
           <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2">
@@ -297,17 +283,10 @@ building.
         </div>
       </div>
 
-      <section className="lg:px-32 relative py-20">
+      <section className="px-5 lg:px-32 relative py-20 group">
         <div className="w-full h-full inset-0 overflow-hidden absolute top-0 left-0 z-0">
           <img src={testimonialBackground} alt="testimonial background" className="object-cover w-full h-full" />
-          <div className="
-    absolute inset-0
-    bg-gradient-to-r
-    from-black
-    via-black
-    via-[30%]
-    to-transparent
-  " />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black via-[30%] to-transparent" />
         </div>
         <div className="relative space-y-10 group">
           <h1 className="text-yellow-500 text-4xl">
@@ -325,15 +304,15 @@ building.
             </div>
           </div>
 
-          <button className="absolute top-1/2 left-0 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveLeft} ><img src={rightArrow}
-            alt="left-arrow" className="cursor-pointer transform rotate-180" />
-          </button>
-
-          <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveRight} ><img src={rightArrow} alt="right-arrow" className="cursor-pointer" />
-          </button>
 
 
         </div>
+          <button className="absolute top-1/2 left-0 lg:left-10 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveLeft} ><img src={rightArrow}
+            alt="left-arrow" className="cursor-pointer transform rotate-180" />
+          </button>
+
+          <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 lg:right-10 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveRight} ><img src={rightArrow} alt="right-arrow" className="cursor-pointer" />
+          </button>
 
       </section>
 
