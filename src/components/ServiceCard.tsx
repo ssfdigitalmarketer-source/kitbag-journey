@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router"
 
 
-const ServiceCard = ({ img, title, text }: any) => {
+const ServiceCard = ({ img, title}: any) => {
   const navigate = useNavigate();
   return (
     <div className="relative shrink-0 py-20 h-[50vh] lg:h-[60vh] w-[80%] -skew-x-6 cursor-pointer group lg:block lg:w-[20%] group will-change-transform transform-gpu backface-hidden" onClick={() => navigate(`/services/`)}>

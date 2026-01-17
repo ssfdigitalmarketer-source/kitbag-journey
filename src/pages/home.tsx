@@ -163,7 +163,7 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-        <ServicesSection />
+      <ServicesSection />
 
 
       {/* About Section */}
@@ -200,7 +200,13 @@ const Home = () => {
               performance, branding, legal, and commercial domains. We help athletes unlock
               career milestones through strategic guidance tailored to their ambitions.</p>
 
-            <button className="px-8 py-4 border-2 border-white lg:w-[25%] hover:bg-white hover:text-black transition-all duration-300">ABOUT US</button>
+            <button className="group relative overflow-hidden font-oswald px-8 py-4 mt-4 text-lg bg-yellow-500 text-black skew-x-[-12deg] transition-transform duration-300 ease-in-out lg:w-[30%]">
+              {/* White fill layer */}
+              <span className="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
+
+              {/* Button text */}
+              <span className="relative z-10">ABOUT US</span>
+            </button>
           </div>
 
         </div>
@@ -275,12 +281,12 @@ const Home = () => {
 
 
         </div>
-          <button className="absolute top-1/2 left-0 lg:left-10 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveLeft} ><img src={rightArrow}
-            alt="left-arrow" className="cursor-pointer transform rotate-180" />
-          </button>
+        <button className="absolute top-1/2 left-0 lg:left-10 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveLeft} ><img src={rightArrow}
+          alt="left-arrow" className="cursor-pointer transform rotate-180" />
+        </button>
 
-          <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 lg:right-10 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveRight} ><img src={rightArrow} alt="right-arrow" className="cursor-pointer" />
-          </button>
+        <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 lg:right-10 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveRight} ><img src={rightArrow} alt="right-arrow" className="cursor-pointer" />
+        </button>
 
       </section>
 
