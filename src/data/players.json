@@ -1,0 +1,258 @@
+[
+    {
+        "id": 1,
+        "name": "Virat Singh",
+        "fatherName": "Binod singh",
+        "dateOfBirth": "08-12-1997",
+        "placeOfBirth": "Jamshedpur",
+        "debuts": [
+            {
+                "title": "First Class Debut",
+                "value": "December 2014 against Assam"
+            },
+            {
+                "title": "List A Debut",
+                "value": "March 2014 against Bengal"
+            }
+        ],
+        "playingRole": "Batsman",
+        "battingStyle": "Left-Handed",
+        "bowlingStyle": "Right Arm Off",
+        "achievement": "U19 Ind, U23 Ind, Deodhar Trophy, Duleep Trophy",
+        "bio": "Virat Singh is an Indian professional cricketer and a left-handed top-order batsman who plays for Jharkhand in domestic cricket. He was born on 8 December 1997. Virat made his domestic debut after impressing at the junior level and quickly became a reliable run-scorer in longer formats. Known for his composure and strong technique, he has delivered several impactful innings for Jharkhand across formats. His consistent domestic performances led to his selection by Sunrisers Hyderabad in the Indian Premier League, where he gained exposure at the highest T20 level in India.",
+        "best": [
+            {
+                "title": "Best Score",
+                "value": "102* against Assam in SMAT"
+            },
+            {
+                "title": "Best Bowling Figure",
+                "value": "1 for something"
+            }
+        ],
+        "videos": []
+    },
+    {
+        "id": 2,
+        "name": "Shikhar Mohan",
+        "fatherName": "Suraj Mohan",
+        "dateOfBirth": "18-05-2005",
+        "placeOfBirth": "Ranchi",
+        "debuts": [
+            {
+                "title": "First Class Debut",
+                "value": "15th October, 2025"
+            }
+        ],
+        "playingRole": "Opening Batsman",
+        "battingStyle": "Left-Handed",
+        "bowlingStyle": "Left Arm Orthodox",
+        "achievement": "Ranji Trophy, U-23 Rest Of India, Under-23 Emerging India Camp",
+        "bio": "",
+        "best": [
+            {
+                "title": "Best Score",
+                "value": "207"
+            }
+        ],
+        "videos": []
+    },
+    {
+        "id": 3,
+        "name": "Amit Kumar",
+        "fatherName": "Janardan Prasad Chandrabanshi",
+        "dateOfBirth": "02-11-2002",
+        "placeOfBirth": "Sasaram, Bihar",
+        "debuts": [
+            {
+                "title": "T-20 Debut",
+                "value": "2nd December, 2025"
+            }
+        ],
+        "playingRole": "Leg Spinner",
+        "battingStyle": "Right-Handed",
+        "bowlingStyle": "Leg spinner",
+        "achievement": "Seventh highest wicket taker in India in U-23 Men’s State A Trophy 2025-26",
+        "bio": "Amit Kumar is an Indian cricketer who represents Jharkhand in domestic cricket. Born on 2 November 2002 in Ranchi, Jharkhand, he is a right-arm leg-spin bowler known for his control and variations. Amit progressed through Jharkhand’s age-group system before making his senior domestic debut. He came into the spotlight with consistent performances in India’s domestic tournaments, which earned him attention at the IPL level. His ability to bowl attacking lines in the middle overs makes him a valuable whiteball option. Amit was signed by Sunrisers Hyderabad as part of their IPL squad, marking an important step in his professional career.",
+        "best": [
+            {
+                "title": "Best Score",
+                "value": "26 not out"
+            },
+            {
+                "title": "Best Bowling Figure",
+                "value": "10 over 34 runs 5 wickets"
+            }
+        ],
+        "videos": []
+    },
+    {
+        "id": 5,
+        "name": "Rajandeep Singh",
+        "fatherName": "Kulwant singh",
+        "dateOfBirth": "05-09-2002",
+        "placeOfBirth": "Ranchi",
+        "debuts": [
+            {
+                "title": "List A Debut",
+                "value": "February 2021"
+            }
+        ],
+        "playingRole": "Batting All Rounder",
+        "battingStyle": "Right-Handed",
+        "bowlingStyle": "Right Arm Medium",
+        "achievement": "Done under 23 emerging India camp in 2022",
+        "bio": "Rajandeep Singh is a promising batting all-rounder known for his right-hand  batting  and  effective  right-arm  medium  pace  bowling.  Born  in Ranchi, he has developed into a dependable all-round option who can contribute with both bat and ball. A key milestone in his career came with his selection for the Under-23 Emerging India Camp in 2022, reflecting  his  potential  and  performance  at  competitive  levels.  With continued exposure and opportunities, Rajandeep is progressing toward higher levels of domestic cricket.",
+        "best": [
+            {
+                "title": "Best Score",
+                "value": "208* vs Assam 2024"
+            },
+            {
+                "title": "Best Bowling Figure",
+                "value": "14/ 45 vs J&K 2025"
+            }
+        ],
+        "videos": []
+    },
+    {
+        "id": 6,
+        "name": "Md Kounain Quraishi",
+        "fatherName": "Md Shamim Quraishi",
+        "dateOfBirth": "29-09-2002",
+        "placeOfBirth": "",
+        "debuts": [],
+        "playingRole": "Batting All Rounder",
+        "battingStyle": "Right-Handed Middle Order",
+        "bowlingStyle": "Right Arm Off Break",
+        "achievement": "Quarter Finals col CK Nayadu Trophy against Karnataka - 103 runs",
+        "bio": "Md Kounain Quraishi is a promising batting all-rounder known for his strong middle-order batting and effective right-arm off-break bowling. With  the  ability  to  build  innings  under  pressure  and  contribute  with disciplined  off-spin,  he  has  displayed  match-winning  potential  in competitive tournaments. His performances in knockout games and his ability  to  play  long  innings  highlight  his  temperament  and  future potential as a complete all-rounder.",
+        "best": [
+            {
+                "title": "Best Score",
+                "value": "155 not out"
+            },
+            {
+                "title": "Best Bowling Figure",
+                "value": "15 over 30 runs 4 wickets"
+            }
+        ],
+        "videos": []
+    },
+    {
+        "id": 7,
+        "name": "Sharandeep Singh",
+        "fatherName": "Jasvinder Singh",
+        "dateOfBirth": "27-11-2002",
+        "placeOfBirth": "Jamshedpur",
+        "debuts": [
+            {
+                "title": "First Class Debut",
+                "value": "26th October, 2024 Keenan Stadium, Jamshedpur"
+            },
+            {
+                "title": "List A Debut",
+                "value": "23rd December, 2024, Jaipur"
+            }
+        ],
+        "playingRole": "Opening Batsman",
+        "battingStyle": "Right-Handed",
+        "bowlingStyle": "Right Arm Off Break",
+        "achievement": "Duleep Trophy, Ranji Trophy, Syed Mushtaq Ali Trophy, Vijay hazare Trophy",
+        "bio": "Sharandeep Singh (bornNovember 27, 2002) is an Indian right-handed batsman and a right-arm medium-pace bowler who represents Jharkhand and East Zone in domestic cricket. A native of Jamshedpur, India, he is known for his all-round capabilities and has established himself as a reliable top-orderplayer. Singh made his First-Class debut in late 2024 and quickly made an impact, including a century (115 runs) against Andhra in November 2025. His ability to contribute significantly with both bat and ball makes him a valuable asset to his teams.",
+        "best": [
+            {
+                "title": "Best Score",
+                "value": "115 against Andhra Pradesh"
+            }
+        ],
+        "videos": []
+    },
+    {
+        "id": 8,
+        "name": "Manishi",
+        "fatherName": "Tarkeshwar Singh",
+        "dateOfBirth": "03-11-2003",
+        "placeOfBirth": "Jamshedpur",
+        "debuts": [
+            {
+                "title": "First Class Debut",
+                "value": "16th December, 2022"
+            },
+            {
+                "title": "List A Debut",
+                "value": "23rd December, 2024"
+            }
+        ],
+        "playingRole": "Bowling All Rounder",
+        "battingStyle": "Right-Handed",
+        "bowlingStyle": "Left Arm Spinner",
+        "achievement": "Duleep trophy, U 19 India",
+        "bio": "Manishi is an Indian domestic cricketer who represents Jharkhand. He is primarily known as a left-arm spin bowlerand has been a regular presence in Jharkhand’s bowling lineup in domestic competitions. Manishi gained recognition for his match-winning spells, particularly in red-ball cricket, where his accuracy and ability to extract turn proved effective. His performances in domestic tournaments brought him wider attention as a dependable spin option. Detailed personal and early-life information has not been officially published, and therefore is not included.",
+        "best": [
+            {
+                "title": "Best Score",
+                "value": ""
+            },
+            {
+                "title": "Best Bowling Figure",
+                "value": ""
+            }
+        ],
+        "videos": []
+    },
+    {
+        "id": 9,
+        "name": "Pankaj Kumar",
+        "fatherName": "Kishor Kumar",
+        "dateOfBirth": "12-11-1999",
+        "placeOfBirth": "Jehanabad, Bihar",
+        "debuts": [
+            {
+                "title": "First Class Debut",
+                "value": "17th December, 2019"
+            }
+        ],
+        "playingRole": "Wicket Keeper",
+        "battingStyle": "Right-Handed",
+        "bowlingStyle": "",
+        "achievement": "Mumbai Indians Trail",
+        "bio": "Pankaj Kumar is an Indian domestic cricketer from Jharkhand who primarily plays as a right-handed wicketkeeper-batsman. Hailing from Jehanabad, Bihar, he began his professional career with the Bihar U-19 team before moving to the Jharkhand state side.Known for his athleticism behind the stumps and solid batting technique, Pankaj made his First-Class debut for Jharkhand in the 2019–20 Ranji Trophy. He made his T20 debut in the 2020–21 Syed Mushtaq Ali Trophy. His consistent performances in the domestic circuit position him as a reliable middle-order player for the state team.",
+        "best": [
+            {
+                "title": "Best Score",
+                "value": "123"
+            }
+        ],
+        "videos": []
+    },
+    {
+        "id": 10,
+        "name": "Jatin Kumar Pandey",
+        "fatherName": "Dinesh Pandey",
+        "dateOfBirth": "01-05-2004",
+        "placeOfBirth": "Lohardaga",
+        "debuts": [
+            {
+                "title": "First Class Debut",
+                "value": "16th October, 2025"
+            }
+        ],
+        "playingRole": "Right Arm Fast Bowler",
+        "battingStyle": "Right-Handed",
+        "bowlingStyle": "Right Arm",
+        "achievement": "",
+        "bio": "Jatin Kumar Pandey is a professional Indian cricketer who plays for Jharkhand in domestic matches, primarily as a right-arm fast-medium bowler. He is known for an impressive Ranji Trophy debut where he took a five-wicket haulagainst Tamil Nadu. Pandey made his First-Class (FC) debut for Jharkhand in October 2025 and immediately made an impact by claiming a five-for (five wickets for35 runs). He was inspired to become a fast bowler by former Jharkhand player Ashish Kumar, who was also his neighbor. Prior to cricket, Pandey was a state-level swimming champion.",
+        "best": [
+            {
+                "title": "Best Score",
+                "value": "25 runs"
+            },
+             {
+                "title": "Best Bowling Figure",
+                "value": "15 overs - 35 runs - 5 wickets"
+            }
+        ],
+        "videos": []
+    }
+]

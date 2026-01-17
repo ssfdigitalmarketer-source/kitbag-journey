@@ -2,11 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import bg from '../assets/bg.jpg'
 import PlayerSection from "../components/PlayerSection";
 import video from "../assets/cricket-video.mp4";
-import serviceImg from "../assets/service.jpg";
-import serviceImg2 from "../assets/service2.jpg";
-import serviceImg3 from "../assets/service3.jpg";
-import serviceImg4 from "../assets/service4.jpg";
-import ServiceCard from "../components/ServiceCard";
 import playerImg from "../assets/players/virat-singh.jpeg";
 import playerImg2 from "../assets/players/virat-singh.jpeg";
 import rightArrow from '../assets/right-arrow.svg';
@@ -14,17 +9,12 @@ import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import MovingBanner from "../components/MovingBanner";
-import logo from "../assets/kitbag-logo.svg"
 import NewsCard from "../components/NewsCard";
 import CTAButton1 from "../components/CTAButton1";
 import HeroHeadline from "../animations/HeroHeadline";
 import FadeInLeftToRight from "../animations/FadeInLeftToRight";
 import stadiumVideo from "../assets/stadium.mp4";
-import ContactUs from "../components/ContactUs";
-import shIm from "../assets/sh-sirImage.JPG"
-import testimonialBackground from "../assets/testimonialBackground1.jpg"
-import { Link } from "react-router";
-
+import ServicesSection from "../components/ServicesSection";
 
 const Home = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -140,8 +130,8 @@ const Home = () => {
       {/* Navbar */}
       <Navbar showMenu={showMenu} />
       <img
-        src={logo}
-        alt="Kitbag Logo"
+        src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632392/kitbag-logo_fmwuly.svg'
+        alt="Kitbag-Logo"
         className="h-[100px] mr-5 absolute top-0 z-20 lg:z-50 left-1 lg:h-[150px]"
       />
 
@@ -173,32 +163,10 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="w-full px-5 py-20 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${bg})` }}>
-
-
-        <div className="flex gap-3 flex-col my-8 justify-around lg:flex-row lg:mx-0">
-          <ServiceCard img={serviceImg} title="Player Management" text="We represent athletes with complete dedication and ensure they are showcased
-correctly in the global sports market."/>
-          <ServiceCard img={serviceImg2} title="Social Media and P.R" text="From media appearances to digital identity, we help develop an impactful personal
-brand."/>
-          <ServiceCard img={serviceImg3} title="Event Management" text="We source high-value commercial opportunities and negotiate deals that match
-athlete potential"/>
-          <ServiceCard img={serviceImg4} title="Legal Consultancy" text="We support athletic growth through expert mentoring & professional environment
-building.
-" />
-        </div>
-
-        <div className="flex mx-auto justify-center items-center space-x-2 cursor-pointer">
-          <p className="text-center text-xl font-sans">View More </p>
-          <img src={rightArrow} alt="Right Arrow" className="w-6 h-6 invert" />
-        </div>
-
-
-      </section>
+        <ServicesSection />
 
 
       {/* About Section */}
-
       <section className=" px-5">
         <FadeInLeftToRight>
           <div className="space-y-10 font-bold font-sans text-2xl text-center mx-auto lg:w-[70%] lg:text-2xl">
@@ -219,12 +187,12 @@ building.
         <div className="space-y-5 px-5 my-20 text-center lg:flex lg:text-left">
           <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2">
             <div className="lg:w-[80%] h-full">
-              <img src={shIm} alt="" className="h-full object-cover grayscale mx-auto hover:grayscale-0" />
+              <img src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632490/sh-sirImage_pb0kj3.jpg' alt="" className="h-full object-cover grayscale mx-auto hover:grayscale-0" />
 
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 space-y-4 flex-col justify-center lg:flex">
+          <div className="w-full lg:w-1/2 space-y-4 flex-col relative lg:-top-14 justify-center lg:flex">
             <h1 className="text-3xl text-yellow-500 lg:text-6xl">WELCOME TO KITBAG JOURNEY.</h1>
             <h2 className="text-xl lg:text-3xl font-regular">AN ATHLETE MANAGEMENT COMPANY</h2>
             <p className="font-sans text-lg">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years. </p>
@@ -285,7 +253,7 @@ building.
 
       <section className="px-5 lg:px-32 relative py-20 group">
         <div className="w-full h-full inset-0 overflow-hidden absolute top-0 left-0 z-0">
-          <img src={testimonialBackground} alt="testimonial background" className="object-cover w-full h-full" />
+          <img src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632570/testimonialBackground1_j7khty.jpg' alt="testimonial background" className="object-cover w-full h-full" />
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black via-[30%] to-transparent" />
         </div>
         <div className="relative space-y-10 group">
@@ -298,9 +266,9 @@ building.
 
           <div className="overscroll-x-contain overflow-hidden">
             <div className="flex lg:w-full transition-all duration-300 ease-in-out" ref={slideRef}>
-              <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" />
-              <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. o" />
-              <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, em ipsum dolor sit amet, consectetur adipiscing elit," />
+              <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632786/testimonialImage_tdlohi.jpg" />
+              <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. o" img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632786/testimonialImage_tdlohi.jpg" />
+              <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, em ipsum dolor sit amet, consectetur adipiscing elit," img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632786/testimonialImage_tdlohi.jpg" />
             </div>
           </div>
 

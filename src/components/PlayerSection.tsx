@@ -10,10 +10,38 @@ import Manishi from "../assets/players/manishi.jpeg";
 import KounainQuraishi from "../assets/players/kounain-quraishi.jpeg";
 import PankajKumar from "../assets/players/pankaj-kumar.jpeg";
 import JatinPandey from "../assets/players/jatin-pandey.jpeg";
+import { useEffect } from 'react';
 
 
 const PlayerSection = () => {
-    const { ref, handlers } = useDragScroll();
+     const { ref, handlers, isDragging } = useDragScroll();
+    
+      useEffect(() => {
+        const container = ref.current;
+        if (!container) return;
+    
+        const scrollStep = 280;
+        const interval = setInterval(() => {
+          if (isDragging.current) return;
+    
+          const maxScroll =
+            container.scrollWidth - container.clientWidth;
+    
+          if (container.scrollLeft >= maxScroll - 10) {
+            container.scrollTo({
+              left: 0,
+              behavior: "smooth",
+            });
+          } else {
+            container.scrollBy({
+              left: scrollStep,
+              behavior: "smooth",
+            });
+          }
+        }, 3000);
+    
+        return () => clearInterval(interval);
+      }, []);
     const playerData = [
         { img: ViratSingh, title: "Virat Singh", link : "virat-singh"},
         { img: ShikharMohan, title: "Shikhar Mohan" },

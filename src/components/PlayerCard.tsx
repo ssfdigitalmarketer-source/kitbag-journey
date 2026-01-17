@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 const PlayerCard = ({ img, title, link }: any) => {
     const navigate = useNavigate();
     return (
-        <div className="relative shrink-0 py-20 h-[60vh] w-[100%] -skew-x-6 cursor-pointer group lg:block lg:w-[20%] group will-change-transform transform-gpu backface-hidden" onClick={() => navigate(`/players/${link}`)}>
+        <div className="relative shrink-0 py-20 h-[50vh] lg:h-[60vh] w-[80%] -skew-x-6 cursor-pointer group lg:block lg:w-[20%] group will-change-transform transform-gpu backface-hidden" onClick={() => navigate(`/players/${link}`)}>
             <div className="w-full h-[90%] border-[0.5px] border-white absolute top-3 left-3 group-hover:border-yellow-500 transition-all duration-300 "></div>
 
             <div className="w-full h-[90%] absolute top-0 left-0 overflow-hidden">
