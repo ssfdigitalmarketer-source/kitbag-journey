@@ -16,11 +16,11 @@ const Navbar = ({ showMenu = true} : any) => {
           ☰
         </button>
         {showMenu && (<ul className="hidden list-none tracking-widest text-[15px] lg:flex lg:gap-6 pointer-events-auto cursor-pointer">
-          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out">HOME</li>
+          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/"}>HOME</Link></li>
           <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out">SERVICES</li>
-          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out">ATHLETES</li>
+          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/players"}>ATHLETES</Link></li>
           <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out">ABOUT US</li>
-          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out">CONTACT</li>
+          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/contact"}>CONTACT</Link></li>
         </ul>)}
 
       </div>
@@ -39,7 +39,7 @@ const Navbar = ({ showMenu = true} : any) => {
             <ul className="list-none h-full space-y-4 w-full px-8 text-center text py-3 bg-black tracking-widest text-[20px] text-white cursor-pointer pointer-events-auto" onClick={(e) => e.stopPropagation()}>
               <li className=" border-white py-2 hover:text-yellow-500">HOME</li>
               <li className=" border-white py-2 hover:text-yellow-500">SERVICES</li>
-              <li className=" border-white py-2 hover:text-yellow-500">ATHLETES</li>
+              <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/players"}>ATHLETES</Link></li>
               <li className=" border-white py-2 hover:text-yellow-500">ABOUT US</li>
               <li className=" border-white py-2 hover:text-yellow-500">CONTACT</li>
             </ul>

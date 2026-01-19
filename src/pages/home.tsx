@@ -302,7 +302,7 @@ const Home = () => {
       </section>
       <Footer />
 
-      <div className="w-full overflow-hidden text-center">
+      <div className="w-full overflow-hidden text-center bg-[#0e0e0e]">
         <h1 className="whitespace-nowrap font-bold text-[13vw] leading-none relative -bottom-2 lg:-bottom-10">
           KITBAG JOURNEY
         </h1>

@@ -47,18 +47,6 @@ const PlayerSection = () => {
         return () => clearInterval(interval);
       }, []);
       
-    const playerData = [
-        { img: ViratSingh, title: "Virat Singh", link : "virat-singh"},
-        { img: ShikharMohan, title: "Shikhar Mohan" },
-        { img: AmitKumar, title: "Amit Kumar" },
-        { img: ShashiMathur, title: "Shashi Mathur" },
-        { img: RajandeepSingh, title: "Rajandeep Singh" },
-        { img: SharandeepSingh, title: "Sharandeep Singh" },
-        { img: Manishi, title: "Manishi" },
-        { img: KounainQuraishi, title: "Kounain Quraishi" },
-        { img: PankajKumar, title: "Pankaj Kumar" },
-        { img: JatinPandey, title: "Jatin Pandey" },
-    ];
 
     return (
 
@@ -68,7 +56,7 @@ const PlayerSection = () => {
                     <div className="whitespace-nowrap space-x-8 px-10 gap-10 flex scrollbar-hide overflow-x-auto cursor-grab active:cursor-grabbing" ref={ref}
                         {...handlers}>
                         {playersData.map((player, index) => (
-                            <PlayerCard key={index} img={player.image} title={player.name} link={player.link} />
+                            <PlayerCard key={index} img={player.image} title={player.name} link={player.link} className="h-[50vh] lg:h-[60vh] w-[80%] lg:w-[20%]"/>
                         ))}
                     </div>
 
