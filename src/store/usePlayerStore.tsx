@@ -1,17 +1,22 @@
 import { create } from "zustand";
+import { createJSONStorage, persist } from "zustand/middleware";
+import players from "../data/players.json";
 
-export const usePlayerStore = create((set, get) => ({
-  players: [],
-  loaded: false,
+export const usePlayerStore = create(persist(
+  (set, get) => ({
+    players: [],
+    loaded: false,
 
-  fetchPlayers: async () => {
-    if (get().loaded) return;
-
-    const res = await fetch("../data/players.json"); // or API
-    const data = await res.json();
-    console.log(data);
-    
-
-    set({ players: data, loaded: true });
+    fetchPlayers: async () => {
+      if (get().loaded) return;
+      set({ players, loaded: true });
+    }
+  }),
+  {
+    name: "players-store",
+    storage: createJSONStorage(() => sessionStorage),
+    onRehydrateStorage: () => () => {
+      usePlayerStore.setState({ hasHydrated: true });
+    }
   }
-}));
+));

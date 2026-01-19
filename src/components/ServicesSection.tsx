@@ -4,7 +4,7 @@ import { useDragScroll } from "../hooks/useDragScroll";
 import { useEffect } from "react";
 
 const ServicesSection = () => {
-    const { ref, handlers, isDragging } = useDragScroll();
+  const { ref, handlers, isDragging } = useDragScroll();
 
   useEffect(() => {
     const container = ref.current;
@@ -34,15 +34,15 @@ const ServicesSection = () => {
   }, []);
 
   return (
-          <section className="w-full py-20 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${bg})` }}>
-            <div className="flex whitespace-nowrap px-8 lg:px-12 gap-10 space-x-8 my-8 lg:mx-0 scrollbar-hide overflow-x-auto cursor-grab active:cursor-grabbing" ref={ref} {...handlers}>
-              <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631738/service_h5odoj.jpg' title="Player Management"/>
-              <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631787/service2_q8sjvo.jpg' title="Social Media and P.R"/>
-              <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631645/service3_dyonnu.jpg' title="Event Management"/>
-              <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631845/service4_xlxk51.jpg' title="Legal Consultancy" />
-              <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631845/service4_xlxk51.jpg' title="IT Services" />
-            </div>
-          </section>
+    <section className="w-full py-20 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${bg})` }}>
+      <div className="flex whitespace-nowrap px-8 lg:px-12 gap-10 space-x-8 my-8 lg:mx-0 scrollbar-hide overflow-x-auto cursor-grab active:cursor-grabbing" ref={ref} {...handlers}>
+        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631738/service_h5odoj.jpg' title="Player Management" />
+        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631787/service2_q8sjvo.jpg' title="Social Media and P.R" />
+        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631645/service3_dyonnu.jpg' title="Event Management" />
+        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631845/service4_xlxk51.jpg' title="Legal Consultancy" />
+        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631845/service4_xlxk51.jpg' title="IT Services" />
+      </div>
+    </section>
   )
 }
 

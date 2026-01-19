@@ -7,11 +7,13 @@ import { useEffect } from "react";
 const App = () => {
   const fetchPlayers = usePlayerStore(s => s.fetchPlayers);
   const loaded = usePlayerStore(s => s.loaded);
+  const hasHydrated = usePlayerStore(s => s.hasHydrated);
 
   useEffect(() => {
-    if (!loaded) fetchPlayers();
-    
-  }, [loaded]);
+    if (!loaded) {
+      fetchPlayers();
+    }
+  }, [loaded, fetchPlayers]);
   return (
     <>
       <Routes>

@@ -11,10 +11,11 @@ import KounainQuraishi from "../assets/players/kounain-quraishi.jpeg";
 import PankajKumar from "../assets/players/pankaj-kumar.jpeg";
 import JatinPandey from "../assets/players/jatin-pandey.jpeg";
 import { useEffect } from 'react';
-
+import { usePlayerStore } from '../store/usePlayerStore';
 
 const PlayerSection = () => {
      const { ref, handlers, isDragging } = useDragScroll();
+     const playersData = usePlayerStore(s => s.players);
     
       useEffect(() => {
         const container = ref.current;
@@ -40,8 +41,12 @@ const PlayerSection = () => {
           }
         }, 3000);
     
+        console.log(playersData);
+        
+
         return () => clearInterval(interval);
       }, []);
+      
     const playerData = [
         { img: ViratSingh, title: "Virat Singh", link : "virat-singh"},
         { img: ShikharMohan, title: "Shikhar Mohan" },
@@ -62,8 +67,8 @@ const PlayerSection = () => {
                 <div className="overflow-x-auto overscroll-x-contain">
                     <div className="whitespace-nowrap space-x-8 px-10 gap-10 flex scrollbar-hide overflow-x-auto cursor-grab active:cursor-grabbing" ref={ref}
                         {...handlers}>
-                        {playerData.map((player, index) => (
-                            <PlayerCard key={index} img={player.img} title={player.title} link={player.link} />
+                        {playersData.map((player, index) => (
+                            <PlayerCard key={index} img={player.image} title={player.name} link={player.link} />
                         ))}
                     </div>
 
