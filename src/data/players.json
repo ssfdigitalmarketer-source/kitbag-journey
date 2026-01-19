@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631030/virat-singh_mqvvpp.jpg",
         "name": "Virat Singh",
         "fatherName": "Binod singh",
         "dateOfBirth": "08-12-1997",
@@ -30,11 +31,13 @@
                 "value": "1 for something"
             }
         ],
+        "link" : "virat-singh",
         "videos": []
     },
     {
         "id": 2,
         "name": "Shikhar Mohan",
+        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/shikhar-mohan_wjo2jq.jpg",
         "fatherName": "Suraj Mohan",
         "dateOfBirth": "18-05-2005",
         "placeOfBirth": "Ranchi",
@@ -55,11 +58,13 @@
                 "value": "207"
             }
         ],
+        "link" : "shikhar-mohan",
         "videos": []
     },
     {
         "id": 3,
         "name": "Amit Kumar",
+        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631028/amit-kumar_ds78rd.jpg",
         "fatherName": "Janardan Prasad Chandrabanshi",
         "dateOfBirth": "02-11-2002",
         "placeOfBirth": "Sasaram, Bihar",
@@ -84,10 +89,43 @@
                 "value": "10 over 34 runs 5 wickets"
             }
         ],
+        "link" : "amit-kumar",
+        "videos": []
+    },
+    {
+        "id": 4,
+        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/shashi-mathur_sff0dk.jpg",
+        "name": "Shashi Mathur",
+        "fatherName": "Jaiveer Singh",
+        "dateOfBirth": "09-03-1995",
+        "placeOfBirth": "Sarurpur Kalan, Baghpat",
+        "debuts": [
+            {
+                "title": "First Class Debut",
+                "value": "2014-15, U-19"
+            },
+            {
+                "title": "List A Debut",
+                "value": "2016-17"
+            }
+        ],
+        "playingRole": "Opening Batter",
+        "battingStyle": "Right-Handed",
+        "bowlingStyle": "Off Break (part time)",
+        "achievement": "U-19, 19 zone, U -23, currently representing senior women's One-Day and T20 trophies from last few years.She was part of Delhi Capitals and U.P Warriors WPL camps and mega+mini auctions for last two years.",
+        "bio": "Shashi Mathur is an Indian cricketer who has represented Jharkhand Womenin domestic cricket. Born on 9 March 1995, she is a right-handed batterwho hascompeted in India’s women’s domestic tournaments. Shashi has contributed as a steady batting option for her state side and has been part of multiple domestic campaigns. Her role has primarily been focused on strengthening the batting unit in competitive domestic fixtures. Further personal background details are not officially available in public cricket databases.",
+        "best": [
+            {
+                "title": "Best Score",
+                "value": " 102*"
+            }
+        ],
+        "link" : "shashi-mathur",
         "videos": []
     },
     {
         "id": 5,
+        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/rajandeep-singh_jbqwuw.jpg",
         "name": "Rajandeep Singh",
         "fatherName": "Kulwant singh",
         "dateOfBirth": "05-09-2002",
@@ -113,10 +151,12 @@
                 "value": "14/ 45 vs J&K 2025"
             }
         ],
+        "link" : "rajandeep-singh",
         "videos": []
     },
     {
         "id": 6,
+        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631030/kounain-quraishi_otrsqs.png",
         "name": "Md Kounain Quraishi",
         "fatherName": "Md Shamim Quraishi",
         "dateOfBirth": "29-09-2002",
@@ -137,11 +177,13 @@
                 "value": "15 over 30 runs 4 wickets"
             }
         ],
+        "link" : "kounain-quraishi",
         "videos": []
     },
     {
         "id": 7,
         "name": "Sharandeep Singh",
+        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/sharandeep-singh_qtwlig.jpg",
         "fatherName": "Jasvinder Singh",
         "dateOfBirth": "27-11-2002",
         "placeOfBirth": "Jamshedpur",
@@ -166,10 +208,12 @@
                 "value": "115 against Andhra Pradesh"
             }
         ],
+        "link" : "sharandeep-singh",
         "videos": []
     },
     {
         "id": 8,
+        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631028/manishi_ar4dty.jpg",
         "name": "Manishi",
         "fatherName": "Tarkeshwar Singh",
         "dateOfBirth": "03-11-2003",
@@ -199,10 +243,12 @@
                 "value": ""
             }
         ],
+        "link" : "manishi",
         "videos": []
     },
     {
         "id": 9,
+        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/pankaj-kumar_lsxsiu.jpg",
         "name": "Pankaj Kumar",
         "fatherName": "Kishor Kumar",
         "dateOfBirth": "12-11-1999",
@@ -224,10 +270,12 @@
                 "value": "123"
             }
         ],
+        "link" : "pankaj-kumar",
         "videos": []
     },
     {
         "id": 10,
+        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631028/jatin-pandey_zqh8cs.jpg",
         "name": "Jatin Kumar Pandey",
         "fatherName": "Dinesh Pandey",
         "dateOfBirth": "01-05-2004",
@@ -253,6 +301,7 @@
                 "value": "15 overs - 35 runs - 5 wickets"
             }
         ],
+        "link" : "jatin-kumar",
         "videos": []
     }
 ]

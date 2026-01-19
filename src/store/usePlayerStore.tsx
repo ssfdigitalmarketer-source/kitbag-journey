@@ -9,6 +9,8 @@ export const usePlayerStore = create((set, get) => ({
 
     const res = await fetch("../data/players.json"); // or API
     const data = await res.json();
+    console.log(data);
+    
 
     set({ players: data, loaded: true });
   }
