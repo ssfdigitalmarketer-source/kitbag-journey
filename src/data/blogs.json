@@ -1,0 +1,43 @@
+[
+    {
+        "id" : "1",
+        "title" : "Amit – The Charismatic Leg Spinner Raring to Play in the IPL",
+        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768886879/Amit_Kumar_wuqqhr.jpg",
+        "content": [
+            "Amit is an exciting and highly skilled leg spinner who has steadily climbed the ranks of Indian cricket through sheer determination and hard work.",
+            "Born with a natural flair for spin bowling, Amit’s early days were marked by struggle, perseverance, and relentless practice. Recognizing his raw talent, he joined a professional cricket academy where he refined his technique and developed his signature variations.",
+            "His breakthrough moment came when former Indian captain MS Dhoni personally recommended him, acknowledging his potential and temperament. This endorsement further fueled his confidence and motivation.",
+            "Amit’s consistent performance and disciplined training earned him a place in the state team, where he showcased his ability to turn matches with his clever spin and control. Very early in his career, he was also selected in an IPL scouting team, a rare achievement that highlights his promise.",
+            "His talent caught the attention of major franchises, leading to interest from Royal Challengers Bangalore (RCB), and eventually being picked up by Sunrisers Hyderabad (SRH).",
+            "With his charismatic presence, sharp cricketing mind, and hunger to perform at the highest level, Amit is truly a leg spinner raring to make his mark in the IPL."
+        ],
+        "date": "19-01-26"
+    },
+    {
+        "id" : "2",
+        "title" : "Virat – The Flamboyant Left-Handed Batsman and Complete Brand",
+        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768886880/VintageVirat-Kitbagjourney2_o8pfmz.png",
+        "content": [
+            "Virat is a naturally gifted left-handed batsman, known for his stylish stroke play, elegance, and match-winning temperament.",
+            "Born in Jamshedpur, Virat began playing cricket at a very young age, displaying exceptional hand-eye coordination and an aggressive yet calculated batting style. His passion for the game set him apart from his peers from childhood itself.",
+            "Over the years, he became a permanent member of the Ranji Trophy team, proving his consistency in India’s most prestigious domestic tournament. His leadership qualities also earned him the role of team captain, where he demonstrated maturity, strategic thinking, and composure under pressure",
+            "In addition to Ranji, Virat has also represented his team in the Duleep Trophy and Deodhar Trophy, gaining valuable experience against top-tier domestic players.",
+            "His outstanding performances led to his selection in the Emerging India Team, marking him as one of the brightest future prospects in Indian cricket.",
+            "Beyond his batting skills, Virat has developed into a flamboyant batsman and a complete cricketing brand, inspiring young cricketers with his dedication, discipline, and flair."
+        ],
+        "date": "18-01-26"
+    },
+    {
+        "id" : "3",
+        "title" : "Shikhar Mohan  –One of India’s Most Promising Rising Cricketers",
+        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768886880/Sharandeep_Singh_xb8k3j.png",
+        "content": [
+            "Shikhar Mohan is a talented and dynamic cricketer from Ranchi, a city known for producing world-class players like MS Dhoni.",
+            "From an early age, Shikhar displayed exceptional cricketing instincts. His natural ability and sharp reflexes caught the attention of local coaches, who guided him into professional training at a young age.",
+            "During his formative years, Shikhar emerged as the highest run-scorer in the Under-23 age group, a remarkable achievement that established him as a batting prodigy.",
+            "His impressive performances led to an early selection in the Ranji Trophy team, where he continued to shine. One of the highlights of his domestic career was scoring a double century in Ranji Trophy, showcasing his endurance, technique, and temperament.",
+            "With his consistent performances, strong work ethic, and hunger for success, Shikhar Mohan is widely regarded as one of the most rising and promising cricketers in India."
+        ],
+        "date": "20-01-26"
+    }
+]

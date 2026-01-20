@@ -1,6 +1,6 @@
 import rightArrow from '../assets/right-arrow.svg'
 
-const NewsCard = ({ image, description, date }: any) => {
+const BlogCard = ({ image, description, date }: any) => {
   return (
     <div className='w-full bg-white/5 text-white my-10 lg:min-h-[30vh] lg:w-[23%] overflow-hidden font-sans group rounded-lg hover:scale-105 hover:bg-white/20 transition-all duration-300 ease-in-out cursor-pointer'>
       <img src={image} alt="News" className='w-full h-[50vh] lg:h-[30vh] grayscale object-cover group-hover:grayscale-0' />
@@ -20,4 +20,4 @@ const NewsCard = ({ image, description, date }: any) => {
   )
 }
 
-export default NewsCard
+export default BlogCard
