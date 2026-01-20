@@ -9,6 +9,11 @@ import { usePlayerStore } from "./store/usePlayerStore";
 import { useBlogStore } from "./store/useBlogStore";
 import { useEffect } from "react";
 import About from "./pages/about";
+import AtheleteManagement from "./pages/service pages/atheleteManagement";
+import SocialMedia from "./pages/service pages/socialMedia";
+import EventManagement from "./pages/service pages/eventManagement";
+import LegalConsultancy from "./pages/service pages/legalConsultancy";
+import ITServices from "./pages/service pages/itServices";
 
 const App = () => {
   const fetchPlayers = usePlayerStore(s => s.fetchPlayers);
@@ -39,7 +44,12 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:slug" element={<Blog />} />
         <Route path="/about" element={<About />} />
-
+        <Route path="/athlete-management" element={<AtheleteManagement />} />
+        <Route path="/social-media&pr" element={<SocialMedia />} />
+        <Route path="/event-management" element={<EventManagement />} />
+        <Route path="/legal-consultancy" element={<LegalConsultancy />} />
+        <Route path="/it-services" element={<ITServices />} />
+        
 
       </Routes>
     </>

@@ -36,11 +36,11 @@ const ServicesSection = () => {
   return (
     <section className="w-full py-20 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${bg})` }}>
       <div className="flex whitespace-nowrap px-8 lg:px-12 gap-10 space-x-8 my-8 lg:mx-0 scrollbar-hide overflow-x-auto cursor-grab active:cursor-grabbing" ref={ref} {...handlers}>
-        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631738/service_h5odoj.jpg' title="Player Management" />
-        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631787/service2_q8sjvo.jpg' title="Social Media and P.R" />
-        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631645/service3_dyonnu.jpg' title="Event Management" />
-        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631845/service4_xlxk51.jpg' title="Legal Consultancy" />
-        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631845/service4_xlxk51.jpg' title="IT Services" />
+        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631738/service_h5odoj.jpg' title="Player Management" link={"athlete-management"}/>
+        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631787/service2_q8sjvo.jpg' title="Social Media and P.R" link={"social-media&pr"} />
+        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631645/service3_dyonnu.jpg' title="Event Management" link={"event-management"}/>
+        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631845/service4_xlxk51.jpg' title="Legal Consultancy" link={"legal-consultancy"} />
+        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768914345/male-data-scientist-works-on-personal-computer-wea-2026-01-09-10-11-30-utc_wdsuz6.jpg' title="IT Services" link={"it-services"} />
       </div>
     </section>
   )

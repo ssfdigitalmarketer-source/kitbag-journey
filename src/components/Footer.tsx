@@ -129,7 +129,7 @@
 // export default Footer
 
 
-
+import { Link } from "react-router"
 const Footer = () => {
   return (
     <div>
@@ -140,9 +140,9 @@ const Footer = () => {
           <div><h1 className='text-4xl text-yellow-500 uppercase'>Kitbag Journey</h1></div>
           <div>
             <ul className='list-none text-md font-sans space-y-5 lg:space-y-0 lg:flex gap-20'>
-              <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300">Home</li>
-              <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300">About</li>
-              <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300">Contact Us</li>
+              <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/"}>Home</Link></li>
+              <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/about"}>About</Link></li>
+              <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/contact"}>Contact Us</Link></li>
             </ul>
           </div>
           <div className=''>
@@ -182,7 +182,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <p className='font-sans text-lg text-yellow-500 text-center'>© 2026. Kitbag Journey. All rights reserved.</p>
+        <p className='font-sans text-lg text-yellow-500 text-center'>©2026. Kitbag Journey. All rights reserved.</p>
       </footer>
       <div className="w-full overflow-hidden text-center bg-[#0e0e0e]">
         <h1 className="whitespace-nowrap font-bold text-[13vw] leading-none relative -bottom-2 lg:-bottom-10">

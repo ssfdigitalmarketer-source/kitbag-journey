@@ -1,0 +1,33 @@
+import Navbar from "../../components/Navbar"
+import Footer from "../../components/Footer"
+
+const LegalConsultancy = () => {
+    return (
+        <div>
+            <Navbar />
+            <section className="">
+                <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631845/service4_xlxk51.jpg" alt="social media and pr" className="w-full" />
+                <div className="py-20 space-y-8">
+                    <h1 className="text-4xl text-yellow-500 text-center">LEGAL CONSULTANCY</h1>
+                    <div className="text-lg font-sans px-5 lg:w-[70%] mx-auto space-y-10">
+                        <p className="">Protection, fairness and compliance — the pillars of a secure athletic career.</p>
+                        <p className="">Our specialized sports legal experts provide complete assistance in:</p>
+                        {/* <h2 className="text-3xl font-oswald text-yellow-500 text-center">WHAT WE MANAGE</h2> */}
+                        <ul className="space-y-2 list-disc">
+                            <li>Contract drafting, negotiations & reviews.</li>
+                            <li>Financial governance & earnings protection.</li>
+                            <li>Sponsorship and endorsement audits</li>
+                            <li>Media rights & licensing guidance</li>
+                            <li>Dispute resolution & legal representation.</li>
+                            <li>We ensure all agreements honor the athlete’s rights, image, and future value.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <Footer />
+        </div>
+    )
+}
+
+export default LegalConsultancy;
