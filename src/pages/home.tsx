@@ -2,19 +2,17 @@ import { useEffect, useRef, useState } from "react";
 import bg from '../assets/bg.jpg'
 import PlayerSection from "../sections/PlayerSection";
 import video from "../assets/cricket-video.mp4";
-import playerImg from "../assets/players/virat-singh.jpeg";
-import playerImg2 from "../assets/players/virat-singh.jpeg";
 import rightArrow from '../assets/right-arrow.svg';
 import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import MovingBanner from "../sections/MovingBanner";
-import NewsCard from "../components/BlogCard";
 import CTAButton1 from "../sections/CTAButton1";
 import HeroHeadline from "../animations/HeroHeadline";
 import FadeInLeftToRight from "../animations/FadeInLeftToRight";
 import stadiumVideo from "../assets/stadium.mp4";
 import ServicesSection from "../sections/ServicesSection";
+import BlogSection from "../sections/blogSection";
 
 const Home = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -290,7 +288,7 @@ const Home = () => {
 
       </section>
 
-
+      <BlogSection />
 
       <section className="py-20 px-5 space-y-8 text-center">
         <h1 className="text-center text-2xl lg:text-5xl text-yellow-500">READY TO TAKE YOUR CAREER TO NEXT LEVEL?</h1>

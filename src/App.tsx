@@ -4,9 +4,11 @@ import PlayerPage from "./pages/playerPage";
 import Players from "./pages/players";
 import Contact from "./pages/contact";
 import Blogs from "./pages/blogs";
+import Blog from "./pages/blog";
 import { usePlayerStore } from "./store/usePlayerStore";
 import { useBlogStore } from "./store/useBlogStore";
 import { useEffect } from "react";
+import About from "./pages/about";
 
 const App = () => {
   const fetchPlayers = usePlayerStore(s => s.fetchPlayers);
@@ -14,7 +16,7 @@ const App = () => {
 
   const fetchBlogs = useBlogStore(s => s.fetchBlogs);
   const blogsLoaded = useBlogStore(s => s.loaded);
-  
+
   useEffect(() => {
     if (!playersLoaded) {
       fetchPlayers();
@@ -35,6 +37,8 @@ const App = () => {
         <Route path="/players/:slug" element={<PlayerPage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/:slug" element={<Blog />} />
+        <Route path="/about" element={<About />} />
 
 
       </Routes>

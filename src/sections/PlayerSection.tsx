@@ -30,10 +30,7 @@ const PlayerSection = () => {
             });
           }
         }, 3000);
-    
-        console.log(playersData);
-        
-
+         
         return () => clearInterval(interval);
       }, []);
       

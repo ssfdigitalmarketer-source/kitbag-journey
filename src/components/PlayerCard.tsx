@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router";
 import clsx from "clsx";
 
-const PlayerCard = ({ img, title, link,className }: any) => {
+const PlayerCard = ({ img, title, link, className }: any) => {
     const navigate = useNavigate();
     return (
-        <div className={clsx("relative shrink-0 py-20 -skew-x-6 cursor-pointer group will-change-transform transform-gpu backface-hidden transition-all", className)} 
-        onClick={() => navigate(`/players/${link}`)}>
+        <div className={clsx("relative shrink-0 py-20 -skew-x-6 cursor-pointer group will-change-transform transform-gpu backface-hidden transition-all", className)}
+            onClick={() => navigate(`/players/${link}`)}>
             <div className="w-full h-[90%] border-[0.5px] border-white absolute top-3 left-3 group-hover:border-yellow-500 transition-all duration-300 "></div>
 
             <div className="w-full h-[90%] absolute top-0 left-0 overflow-hidden">

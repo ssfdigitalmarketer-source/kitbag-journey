@@ -9,11 +9,11 @@ export const useBlogStore = create(persist(
 
     fetchBlogs: async () => {
       if (get().loaded) return;
-      set({ blogs, loaded: true });
+      set({ blogs, loaded: true }); 
     }
   }),
   {
-    name: "players-store",
+    name: "blogs-store",
     storage: createJSONStorage(() => sessionStorage),
     onRehydrateStorage: () => () => {
       useBlogStore.setState({ hasHydrated: true });

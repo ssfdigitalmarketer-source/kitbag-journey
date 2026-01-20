@@ -19,7 +19,7 @@ const Navbar = ({ showMenu = true} : any) => {
           <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/"}>HOME</Link></li>
           <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out">SERVICES</li>
           <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/players"}>ATHLETES</Link></li>
-          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out">ABOUT US</li>
+          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/about"}>ABOUT US</Link></li>
           <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/contact"}>CONTACT</Link></li>
         </ul>)}
 
@@ -37,11 +37,11 @@ const Navbar = ({ showMenu = true} : any) => {
           {/* Menu (original positioning preserved) */}
           <div className="w-full absolute z-40 top-0 left-0 lg:w-[20vw] lg:h-[100vh] transition-all duration-300 ease-in-out">
             <ul className="list-none h-full space-y-4 w-full px-8 text-center text py-3 bg-black tracking-widest text-[20px] text-white cursor-pointer pointer-events-auto" onClick={(e) => e.stopPropagation()}>
-              <li className=" border-white py-2 hover:text-yellow-500">HOME</li>
+              <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/"}>HOME</Link></li>
               <li className=" border-white py-2 hover:text-yellow-500">SERVICES</li>
               <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/players"}>ATHLETES</Link></li>
-              <li className=" border-white py-2 hover:text-yellow-500">ABOUT US</li>
-              <li className=" border-white py-2 hover:text-yellow-500">CONTACT</li>
+              <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/about"}>ABOUT US</Link></li>
+              <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/contact"}>CONTACT</Link></li>
             </ul>
           </div>
         </>

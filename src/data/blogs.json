@@ -1,6 +1,6 @@
 [
     {
-        "id" : "1",
+        "id" : 1,
         "title" : "Amit – The Charismatic Leg Spinner Raring to Play in the IPL",
         "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768886879/Amit_Kumar_wuqqhr.jpg",
         "content": [
@@ -11,10 +11,10 @@
             "His talent caught the attention of major franchises, leading to interest from Royal Challengers Bangalore (RCB), and eventually being picked up by Sunrisers Hyderabad (SRH).",
             "With his charismatic presence, sharp cricketing mind, and hunger to perform at the highest level, Amit is truly a leg spinner raring to make his mark in the IPL."
         ],
-        "date": "19-01-26"
+        "date": "18-01-26"
     },
     {
-        "id" : "2",
+        "id" : 2,
         "title" : "Virat – The Flamboyant Left-Handed Batsman and Complete Brand",
         "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768886880/VintageVirat-Kitbagjourney2_o8pfmz.png",
         "content": [
@@ -25,11 +25,11 @@
             "His outstanding performances led to his selection in the Emerging India Team, marking him as one of the brightest future prospects in Indian cricket.",
             "Beyond his batting skills, Virat has developed into a flamboyant batsman and a complete cricketing brand, inspiring young cricketers with his dedication, discipline, and flair."
         ],
-        "date": "18-01-26"
+        "date": "19-01-26"
     },
     {
-        "id" : "3",
-        "title" : "Shikhar Mohan  –One of India’s Most Promising Rising Cricketers",
+        "id" : 3,
+        "title" : "Shikhar Mohan – One of India’s Most Promising Rising Cricketers",
         "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768886880/Sharandeep_Singh_xb8k3j.png",
         "content": [
             "Shikhar Mohan is a talented and dynamic cricketer from Ranchi, a city known for producing world-class players like MS Dhoni.",
