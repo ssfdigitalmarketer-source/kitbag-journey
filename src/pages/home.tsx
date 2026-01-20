@@ -300,14 +300,13 @@ const Home = () => {
 
         </div>
       </section>
+
+      <section className="py-20 px-5 space-y-8 text-center">
+        <h1 className="text-center text-2xl lg:text-5xl text-yellow-500">READY TO TAKE YOUR CAREER TO NEXT LEVEL?</h1>
+        <p className="text-center lg:text-xl font-sans">Our scouts are always looking for the next generation of elite talent. Send us your portfolio and let's discuss your future today.</p>
+        <button className="px-6 py-4 border bg-white font-sans text-black rounded-lg uppercase">Apply for Representation</button>
+      </section>
       <Footer />
-
-      <div className="w-full overflow-hidden text-center bg-[#0e0e0e]">
-        <h1 className="whitespace-nowrap font-bold text-[13vw] leading-none relative -bottom-2 lg:-bottom-10">
-          KITBAG JOURNEY
-        </h1>
-      </div>
-
     </div>
   );
 };

@@ -94,26 +94,26 @@
 
 //             <div className="space-y-6 lg:w-[40%]">
 //                   <h1 className="text-xl text-yellow-500 font-oswald">CONTACT US</h1>
-//                     <form action="">
-//                         <div className="space-y-4 flex flex-col font-sans">
-//                             <div className='flex items-center bg-[#1a1a1a] rounded-lg px-3'>
-//                                 <User className="w-6 h-6 text-[#505050]" />
-//                                 <input type="text" className="w-full bg-transparent rounded-lg py-4 px-3 focus:border-none focus:outline-none " placeholder="Name" required />
+                    // <form action="">
+                    //     <div className="space-y-4 flex flex-col font-sans">
+                    //         <div className='flex items-center bg-[#1a1a1a] rounded-lg px-3'>
+                    //             <User className="w-6 h-6 text-[#505050]" />
+                    //             <input type="text" className="w-full bg-transparent rounded-lg py-4 px-3 focus:border-none focus:outline-none " placeholder="Name" required />
 
-//                             </div>
-//                             <div className='flex items-center bg-[#1a1a1a] rounded-lg px-3'>
-//                                 <Mail className="w-6 h-6 text-[#505050]" />
-//                                 <input type="text" className="w-full bg-[#1a1a1a] rounded-lg py-4 px-3 focus:border-none focus:outline-none" placeholder="Email" required />
-//                             </div>
-//                             <textarea name="" id="" cols={30} rows={8} className="w-full bg-[#1a1a1a] rounded-lg py-4 px-3 focus:border-none focus:outline-none" placeholder="Your Message" required></textarea>
-//                             <button className="group relative overflow-hidden font-oswald px-8 py-4 mt-4 text-lg bg-yellow-500 text-black transition-transform duration-300 ease-in-out lg:w-[50%] mx-auto">
+                    //         </div>
+                    //         <div className='flex items-center bg-[#1a1a1a] rounded-lg px-3'>
+                    //             <Mail className="w-6 h-6 text-[#505050]" />
+                    //             <input type="text" className="w-full bg-[#1a1a1a] rounded-lg py-4 px-3 focus:border-none focus:outline-none" placeholder="Email" required />
+                    //         </div>
+                    //         <textarea name="" id="" cols={30} rows={8} className="w-full bg-[#1a1a1a] rounded-lg py-4 px-3 focus:border-none focus:outline-none" placeholder="Your Message" required></textarea>
+                    //         <button className="group relative overflow-hidden font-oswald px-8 py-4 mt-4 text-lg bg-yellow-500 text-black transition-transform duration-300 ease-in-out lg:w-[50%] mx-auto">
 
-//                                 <span className="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
+                    //             <span className="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
 
-//                                 <span className="relative z-10">Send</span>
-//                             </button>
-//                         </div>
-//                     </form>
+                    //             <span className="relative z-10">Send</span>
+                    //         </button>
+                    //     </div>
+                    // </form>
 //                 </div>
 
 
@@ -132,14 +132,14 @@
 
 const Footer = () => {
   return (
-    <footer className='py-10 px-10 bg-[#0e0e0e]'>
+    <footer className='pt-10 px-10 bg-[#0e0e0e]'>
       <div className='lg:flex space-y-6 justify-between items-center'>
         <div><h1 className='text-4xl text-yellow-500 uppercase'>Kitbag Journey</h1></div>
         <div>
-          <ul className='list-none text-md font-sans lg:flex gap-20'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact Us</li>
+          <ul className='list-none text-md font-sans space-y-5 lg:space-y-0 lg:flex gap-20'>
+            <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300">Home</li>
+            <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300">About</li>
+            <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300">Contact Us</li>
           </ul>
         </div>
         <div className=''>
@@ -180,6 +180,11 @@ const Footer = () => {
         </div>
       </div>
       <p className='font-sans text-lg text-yellow-500 text-center my-8'>© 2026. Kitbag Journey. All rights reserved.</p>
+       <div className="w-full overflow-hidden text-center">
+        <h1 className="whitespace-nowrap font-bold text-[13vw] leading-none relative -bottom-2 lg:-bottom-10">
+          KITBAG JOURNEY
+        </h1>
+      </div>
     </footer>
 
   )
