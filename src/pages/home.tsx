@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import bg from '../assets/bg.jpg'
-import PlayerSection from "../components/PlayerSection";
+import PlayerSection from "../sections/PlayerSection";
 import video from "../assets/cricket-video.mp4";
 import playerImg from "../assets/players/virat-singh.jpeg";
 import playerImg2 from "../assets/players/virat-singh.jpeg";
@@ -8,13 +8,13 @@ import rightArrow from '../assets/right-arrow.svg';
 import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import MovingBanner from "../components/MovingBanner";
+import MovingBanner from "../sections/MovingBanner";
 import NewsCard from "../components/NewsCard";
-import CTAButton1 from "../components/CTAButton1";
+import CTAButton1 from "../sections/CTAButton1";
 import HeroHeadline from "../animations/HeroHeadline";
 import FadeInLeftToRight from "../animations/FadeInLeftToRight";
 import stadiumVideo from "../assets/stadium.mp4";
-import ServicesSection from "../components/ServicesSection";
+import ServicesSection from "../sections/ServicesSection";
 
 const Home = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);

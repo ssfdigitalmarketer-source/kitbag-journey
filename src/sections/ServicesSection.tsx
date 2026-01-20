@@ -1,4 +1,4 @@
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "../components/ServiceCard";
 import bg from '../assets/bg.jpg';
 import { useDragScroll } from "../hooks/useDragScroll";
 import { useEffect } from "react";

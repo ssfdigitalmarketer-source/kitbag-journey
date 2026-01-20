@@ -1,15 +1,5 @@
-import PlayerCard from './PlayerCard'
+import PlayerCard from '../components/PlayerCard'
 import { useDragScroll } from "../hooks/useDragScroll";
-import ViratSingh from "../assets/players/virat-singh.jpeg";
-import ShikharMohan from "../assets/players/shikhar-mohan.jpeg";
-import AmitKumar from "../assets/players/amit-kumar.jpeg";
-import ShashiMathur from "../assets/players/shashi-mathur.jpeg";
-import RajandeepSingh from "../assets/players/rajandeep-singh.jpeg";
-import SharandeepSingh from "../assets/players/sharandeep-singh.jpeg";
-import Manishi from "../assets/players/manishi.jpeg";
-import KounainQuraishi from "../assets/players/kounain-quraishi.jpeg";
-import PankajKumar from "../assets/players/pankaj-kumar.jpeg";
-import JatinPandey from "../assets/players/jatin-pandey.jpeg";
 import { useEffect } from 'react';
 import { usePlayerStore } from '../store/usePlayerStore';
 
