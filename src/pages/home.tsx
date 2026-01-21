@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import bg from '../assets/bg.jpg'
 import PlayerSection from "../sections/PlayerSection";
-import video from "../assets/cricket-video.mp4";
 import rightArrow from '../assets/right-arrow.svg';
 import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
@@ -10,9 +9,9 @@ import MovingBanner from "../sections/MovingBanner";
 import CTAButton1 from "../sections/CTAButton1";
 import HeroHeadline from "../animations/HeroHeadline";
 import FadeInLeftToRight from "../animations/FadeInLeftToRight";
-import stadiumVideo from "../assets/stadium.mp4";
 import ServicesSection from "../sections/ServicesSection";
 import BlogSection from "../sections/blogSection";
+import { useNavigate } from "react-router";
 
 const Home = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -22,6 +21,8 @@ const Home = () => {
 
   const [showMenu, setShowMenu] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const navigate = useNavigate();
 
   const slideRef = useRef<HTMLDivElement | null>(null);
 
@@ -126,12 +127,12 @@ const Home = () => {
   return (
     <div className="w-full relative">
       {/* Navbar */}
-      <Navbar showMenu={showMenu} />
-      <img
+      <Navbar  />
+      {/* <img
         src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632392/kitbag-logo_fmwuly.svg'
         alt="Kitbag-Logo"
         className="h-[100px] mr-5 absolute top-0 z-20 lg:z-50 left-1 lg:h-[150px]"
-      />
+      /> */}
 
       {/* Hero section */}
       <section
@@ -151,7 +152,7 @@ const Home = () => {
         <div ref={wrapperRef} className="w-full flex justify-center">
           <video
             ref={videoRef}
-            src={video}
+            src="https://res.cloudinary.com/dwmmlrpgg/video/upload/v1768981037/0121_1_o7qzgk.mp4"
             autoPlay
             muted
             loop
@@ -165,9 +166,10 @@ const Home = () => {
 
 
       {/* About Section */}
-      <section className=" px-5">
+      <section className="overflow-hidden relative py-4 lg:py-20">
+        <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768989994/lucid-origin_White_twisted_rope_lying_on_dewy_green_grass_field_in_morning_light-0.jpg_kgu35x.jpg" alt="" className="w-full object-fill absolute top-0 grayscale" />
         <FadeInLeftToRight>
-          <div className="space-y-10 font-bold font-sans text-2xl text-center mx-auto lg:w-[70%] lg:text-2xl">
+          <div className="px-4 space-y-10 font-bold font-sans text-md text-center mx-auto lg:w-[70%] relative z-10 lg:text-2xl">
             <p className="italic"><span className="text-yellow-400">" </span>EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
             <p className="italic">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL</span>.<span className="text-yellow-400"> "</span></p>
             <div>
@@ -177,7 +179,6 @@ const Home = () => {
           </div>
         </FadeInLeftToRight>
       </section>
-
 
 
       <section className="px-5 text-xl font-semibold text-left bg-no-repeat bg-cover" style={{ backgroundImage: `url(${bg})` }}>
@@ -198,7 +199,7 @@ const Home = () => {
               performance, branding, legal, and commercial domains. We help athletes unlock
               career milestones through strategic guidance tailored to their ambitions.</p>
 
-            <button className="group relative overflow-hidden font-oswald px-8 py-4 mt-4 text-lg bg-yellow-500 text-black skew-x-[-12deg] transition-transform duration-300 ease-in-out lg:w-[30%]">
+            <button className="group relative overflow-hidden font-oswald px-8 py-4 mt-4 text-lg bg-yellow-500 text-black skew-x-[-12deg] transition-transform duration-300 ease-in-out lg:w-[30%]" onClick={() => navigate('/about')}>
               {/* White fill layer */}
               <span className="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
 
@@ -217,7 +218,7 @@ const Home = () => {
       <section className="bg-[#090909] relative px-5 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <video
-            src={stadiumVideo}
+            src="https://res.cloudinary.com/dwmmlrpgg/video/upload/v1768977680/0121_kmxaaw.mp4"
             autoPlay
             muted
             loop
@@ -290,11 +291,64 @@ const Home = () => {
 
       <BlogSection />
 
-      <section className="py-20 px-5 space-y-8 text-center">
-        <h1 className="text-center text-2xl lg:text-5xl text-yellow-500">READY TO TAKE YOUR CAREER TO NEXT LEVEL?</h1>
-        <p className="text-center lg:text-xl font-sans">Our scouts are always looking for the next generation of elite talent. Send us your portfolio and let's discuss your future today.</p>
-        <button className="px-6 py-4 border bg-white font-sans text-black rounded-lg uppercase">Apply for Representation</button>
-      </section>
+      <section className="relative py-20 px-5 text-center overflow-hidden">
+
+  {/* Watermark */}
+  <svg
+    className="absolute inset-0 w-full h-full opacity-[0.05]"
+    preserveAspectRatio="none"
+  >
+    <defs>
+      <pattern
+        id="kitbagPattern"
+        width="1100"
+        height="200"     // ← EXACT MULTIPLE
+        patternUnits="userSpaceOnUse"
+      >
+        <g
+          fontSize="64"
+          fontWeight="800"
+          fill="white"
+          dominantBaseline="hanging"
+        >
+          {/* Row 1 */}
+          <text x="50" y="0">
+            KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            KITBAG&nbsp;&nbsp;&nbsp;JOURNEY
+          </text>
+
+          {/* Row 2 (shifted) */}
+          <text x="-300" y="100">
+            KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            KITBAG&nbsp;&nbsp;&nbsp;JOURNEY
+          </text>
+        </g>
+      </pattern>
+    </defs>
+
+    <rect width="100%" height="100%" fill="url(#kitbagPattern)" />
+  </svg>
+
+  {/* Content */}
+  <div className="relative z-10 space-y-8">
+    <h1 className="text-2xl lg:text-5xl text-yellow-500">
+      READY TO TAKE YOUR CAREER TO NEXT LEVEL?
+    </h1>
+
+    <p className="lg:text-xl font-sans">
+      Our scouts are always looking for the next generation of elite talent.
+      Send us your portfolio and let's discuss your future today.
+    </p>
+
+    <button className="px-6 py-4 border bg-white font-sans text-black rounded-lg uppercase">
+      Apply for Representation
+    </button>
+  </div>
+
+</section>
+
       <Footer />
     </div>
   );

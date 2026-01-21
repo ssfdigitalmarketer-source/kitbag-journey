@@ -8,7 +8,7 @@ const AtheleteManagement = () => {
             <section className="">
                 <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631738/service_h5odoj.jpg" alt="" className="w-full" />
                 <div className="py-20 space-y-8">
-                    <h1 className="text-4xl text-yellow-500 text-center">ATHLETE MANAGEMENT</h1>
+                    <h1 className="text-4xl text-yellow-500 text-center ">ATHLETE MANAGEMENT</h1>
                     <div className="text-lg font-sans px-5 lg:w-[70%] mx-auto space-y-10">
                         <p className="">Our athlete management framework brings together elite professionals across
                             performance, branding, legal, and commercial domains. We help athletes unlock
