@@ -192,7 +192,7 @@ const Home = () => {
           </div>
 
           <div className="w-full lg:w-1/2 space-y-4 flex-col relative lg:-top-14 justify-center lg:flex">
-            <h1 className="text-3xl text-yellow-500 lg:text-6xl">WELCOME TO KITBAG JOURNEY.</h1>
+            <h1 className="text-3xl text-yellow-500 lg:text-6xl">WELCOME TO KITBAG JOURNEY</h1>
             <h2 className="text-xl lg:text-3xl font-regular">AN ATHLETE MANAGEMENT COMPANY</h2>
             <p className="font-sans text-lg">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years. </p>
             <p className="font-sans text-lg">Our athlete management framework brings together elite professionals across

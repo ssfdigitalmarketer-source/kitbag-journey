@@ -5,6 +5,12 @@ import { Mail } from 'lucide-react';
 import { Phone } from 'lucide-react';
 import { MapPin } from 'lucide-react';
 import bg from '../assets/bg.jpg'
+import { Link } from "react-router";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+
 
 const Contact = () => {
     return (
@@ -52,7 +58,12 @@ const Contact = () => {
 
                             </div>
 
-                            <div className="">social media icons</div>
+                            <div className="flex gap-6 mb-20">
+                                <Link to={""}><FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300"/></Link>
+                                <Link to={""}><FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300"/></Link>
+                                <Link to={""}><FaXTwitter size={25} className="hover:text-yellow-500 transition-all duration-300"/></Link>
+                                <Link to={""}><FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300"/></Link>
+                            </div>
                         </div>
 
                     </div>

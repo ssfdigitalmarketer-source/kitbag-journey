@@ -14,6 +14,7 @@ import SocialMedia from "./pages/service pages/socialMedia";
 import EventManagement from "./pages/service pages/eventManagement";
 import LegalConsultancy from "./pages/service pages/legalConsultancy";
 import ITServices from "./pages/service pages/itServices";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const fetchPlayers = usePlayerStore(s => s.fetchPlayers);
@@ -36,6 +37,7 @@ const App = () => {
 
   return (
     <>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/players" element={<Players />} />

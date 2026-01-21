@@ -32,8 +32,6 @@ const AtheleteManagement = () => {
                             <p>We support athletic growth through expert mentoring & professional environment
                                 building.</p>
                         </div>
-
-
                     </div>
 
                 </div>
