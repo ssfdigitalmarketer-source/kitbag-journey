@@ -7,8 +7,6 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-
-
       <footer className='pt-10 px-10 bg-[#0e0e0e] space-y-8'>
         <div className='lg:flex space-y-6 justify-between items-center'>
           <div><h1 className='text-4xl text-yellow-500 uppercase'>Kitbag Journey</h1></div>

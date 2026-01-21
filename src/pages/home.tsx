@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import bg from '../assets/bg.jpg'
 import PlayerSection from "../sections/PlayerSection";
-import rightArrow from '../assets/right-arrow.svg';
 import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -11,6 +10,8 @@ import HeroHeadline from "../animations/HeroHeadline";
 import FadeInLeftToRight from "../animations/FadeInLeftToRight";
 import ServicesSection from "../sections/ServicesSection";
 import BlogSection from "../sections/blogSection";
+import { SlArrowLeft } from "react-icons/sl";
+import { SlArrowRight } from "react-icons/sl";
 import { useNavigate } from "react-router";
 
 const Home = () => {
@@ -280,11 +281,10 @@ const Home = () => {
 
 
         </div>
-        <button className="absolute top-1/2 left-0 lg:left-10 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveLeft} ><img src={rightArrow}
-          alt="left-arrow" className="cursor-pointer transform rotate-180" />
+        <button className="absolute top-1/2 left-0 lg:left-10 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveLeft} ><SlArrowLeft className="text-black"/>
         </button>
 
-        <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 lg:right-10 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveRight} ><img src={rightArrow} alt="right-arrow" className="cursor-pointer" />
+        <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 lg:right-10 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveRight} ><SlArrowRight className="text-black"/>
         </button>
 
       </section>
