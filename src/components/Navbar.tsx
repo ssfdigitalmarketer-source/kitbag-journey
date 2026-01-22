@@ -80,6 +80,7 @@ const Navbar = ({ showMenu = true }: any) => {
             </ul>
           </li>
           <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/players"}>ATHLETES</Link></li>
+          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/blogs"}>BLOGS</Link></li>
           <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/about"}>ABOUT US</Link></li>
           <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/contact"}>CONTACT</Link></li>
         </ul>)}
@@ -135,6 +136,7 @@ const Navbar = ({ showMenu = true }: any) => {
                 )}
               </li>
               <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/players"}>ATHLETES</Link></li>
+              <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/blogs"}>BLOGS</Link></li>
               <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/about"}>ABOUT US</Link></li>
               <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/contact"}>CONTACT</Link></li>
             <div className="gap-6 justify-center pointer-events-auto flex">

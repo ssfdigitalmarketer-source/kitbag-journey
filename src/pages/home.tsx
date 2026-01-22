@@ -134,7 +134,7 @@ const Home = () => {
       <section
         ref={sectionRef}
         className="w-full py-24 px-5 text-center relative
-                   h-[60vh] lg:h-[210vh] top-0 lg:px-20 lg:pb-40
+                   h-[70vh] lg:h-[210vh] top-0 lg:px-20 lg:pb-40
                     bg-no-repeat bg-cover"
         style={{ backgroundImage: `url("https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769061372/wrinkled-paper-black-background-abstract-2026-01-09-00-09-50-utc_um1mhu.jpg")` }}
       >

@@ -12,11 +12,12 @@ const Footer = () => {
           <div className="flex flex-col justify-center">
             <img src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632392/kitbag-logo_fmwuly.svg' alt="Kitbag-Logo" className="h-[100px] lg:h-[150px] cursor-pointer" />
             <ul className='list-none text-xl font-sans space-y-5 lg:space-y-0 gap-20'>
-              <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/about"}>About</Link></li>
+              <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/about"}>About Us</Link></li>
               <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/contact"}>Contact Us</Link></li>
+              <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/contact"}>Careers</Link></li>
             </ul>
           </div>
-          
+
           <div>
           </div>
           <div className="flex gap-6 mb-20 w-[80%] justify-center  mx-auto lg:w-[10%] lg:mx-0">
@@ -26,7 +27,7 @@ const Footer = () => {
             <Link to={""}><FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
           </div>
         </div>
-        <p className='font-sans text-lg text-yellow-500 text-center'>©2026. Kitbag Journey. All rights reserved.</p>
+        <p className='font-sans text-lg text-yellow-500 text-center'>©2026. Kitbag Journey. All rights reserved. Designed and maintained by SSF Designs.</p>
       </footer>
       <div className="w-full overflow-hidden text-center bg-[#0e0e0e]">
         <h1 className="whitespace-nowrap font-bold text-[13vw] leading-none relative -bottom-2 lg:-bottom-10">
