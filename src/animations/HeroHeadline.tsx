@@ -31,13 +31,13 @@ export default function HeroHeadline({ text }) {
       variants={container}
       initial="hidden"
       animate="show"
-      className="text-[8vh] font-extrabold lg:text-[11vw]"
+      className="text-[8vh] font-extrabold lg:text-[11vw] inline-block"
     >
       {text.split("").map((char, i) => (
-        <motion.span
+        <motion.span 
           key={i}
           variants={letter}
-          className="inline-block"
+          className="inline-block "
         >
           {char === " " ? "\u00A0" : char}
         </motion.span>

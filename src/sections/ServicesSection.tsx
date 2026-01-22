@@ -40,7 +40,7 @@ const ServicesSection = () => {
         <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631738/service_h5odoj.jpg' title="Player Management" link={"athlete-management"}/>
         <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631787/service2_q8sjvo.jpg' title="Social Media and P.R" link={"social-media&pr"} />
         <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631645/service3_dyonnu.jpg' title="Event Management" link={"event-management"}/>
-        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631845/service4_xlxk51.jpg' title="Legal Consultancy" link={"legal-consultancy"} />
+        <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769065678/client-was-listening-to-a-lawyer-advising-on-an-em-2026-01-07-01-02-00-utc_1_xoz2iw.jpg' title="Legal Consultancy" link={"legal-consultancy"} />
         <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768914345/male-data-scientist-works-on-personal-computer-wea-2026-01-09-10-11-30-utc_wdsuz6.jpg' title="IT Services" link={"it-services"} />
       </div>
     </section>

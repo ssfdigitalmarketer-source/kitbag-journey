@@ -9,13 +9,15 @@ const Footer = () => {
     <div>
       <footer className='pt-10 px-10 bg-[#0e0e0e] space-y-8'>
         <div className='lg:flex space-y-6 justify-between items-center'>
-          <div><h1 className='text-4xl text-yellow-500 uppercase'>Kitbag Journey</h1></div>
-          <div>
-            <ul className='list-none text-md font-sans space-y-5 lg:space-y-0 lg:flex gap-20'>
-              <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/"}>Home</Link></li>
+          <div className="flex flex-col justify-center">
+            <img src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632392/kitbag-logo_fmwuly.svg' alt="Kitbag-Logo" className="h-[100px] lg:h-[150px] cursor-pointer" />
+            <ul className='list-none text-xl font-sans space-y-5 lg:space-y-0 gap-20'>
               <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/about"}>About</Link></li>
               <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/contact"}>Contact Us</Link></li>
             </ul>
+          </div>
+          
+          <div>
           </div>
           <div className="flex gap-6 mb-20 w-[80%] justify-center  mx-auto lg:w-[10%] lg:mx-0">
             <Link to={""}><FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>

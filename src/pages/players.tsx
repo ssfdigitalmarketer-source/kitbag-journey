@@ -9,7 +9,7 @@ const Players = () => {
     return (
         <div>
             <Navbar />
-            <section className="py-20 space-y-10">
+            <section className="pb-20 pt-40 space-y-10">
                 <h1 className="text-4xl text-yellow-500 text-center">OUR ATHLETES</h1>
                 <div className="px-10 flex flex-wrap gap-14 justify-center">
                 {players?.map((player,index)=>(

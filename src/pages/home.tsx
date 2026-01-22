@@ -105,7 +105,7 @@ const Home = () => {
 
       const isMobile = window.innerWidth < 768;
 
-      const maxScale = isMobile ? 2 : 1.8;
+      const maxScale = isMobile ? 2 : 1.7;
       const speed = isMobile ? 2 : 1.8;
 
       const scale = Math.min(1 + progress * speed, maxScale);
@@ -128,19 +128,15 @@ const Home = () => {
   return (
     <div className="w-full relative">
       {/* Navbar */}
-      <Navbar  />
-      {/* <img
-        src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632392/kitbag-logo_fmwuly.svg'
-        alt="Kitbag-Logo"
-        className="h-[100px] mr-5 absolute top-0 z-20 lg:z-50 left-1 lg:h-[150px]"
-      /> */}
+      <Navbar />
 
       {/* Hero section */}
       <section
         ref={sectionRef}
-        className="w-full py-10 px-5 text-center relative
-                   h-[60vh] lg:h-[200vh] lg:px-20 lg:pb-40
+        className="w-full py-24 px-5 text-center relative
+                   h-[60vh] lg:h-[210vh] top-0 lg:px-20 lg:pb-40
                     bg-no-repeat bg-cover"
+        style={{ backgroundImage: `url("https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769061372/wrinkled-paper-black-background-abstract-2026-01-09-00-09-50-utc_um1mhu.jpg")` }}
       >
         <h1
           ref={headingRef}
@@ -281,10 +277,10 @@ const Home = () => {
 
 
         </div>
-        <button className="absolute top-1/2 left-0 lg:left-10 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveLeft} ><SlArrowLeft className="text-black"/>
+        <button className="absolute top-1/2 left-0 lg:left-10 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveLeft} ><SlArrowLeft className="text-black" />
         </button>
 
-        <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 lg:right-10 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveRight} ><SlArrowRight className="text-black"/>
+        <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 lg:right-10 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveRight} ><SlArrowRight className="text-black" />
         </button>
 
       </section>
@@ -293,61 +289,61 @@ const Home = () => {
 
       <section className="relative py-20 px-5 text-center overflow-hidden">
 
-  {/* Watermark */}
-  <svg
-    className="absolute inset-0 w-full h-full opacity-[0.05]"
-    preserveAspectRatio="none"
-  >
-    <defs>
-      <pattern
-        id="kitbagPattern"
-        width="1100"
-        height="200"     // ← EXACT MULTIPLE
-        patternUnits="userSpaceOnUse"
-      >
-        <g
-          fontSize="64"
-          fontWeight="800"
-          fill="white"
-          dominantBaseline="hanging"
+        {/* Watermark */}
+        <svg
+          className="absolute inset-0 w-full h-full opacity-[0.05]"
+          preserveAspectRatio="none"
         >
-          {/* Row 1 */}
-          <text x="50" y="0">
-            KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            KITBAG&nbsp;&nbsp;&nbsp;JOURNEY
-          </text>
+          <defs>
+            <pattern
+              id="kitbagPattern"
+              width="1100"
+              height="200"     // ← EXACT MULTIPLE
+              patternUnits="userSpaceOnUse"
+            >
+              <g
+                fontSize="64"
+                fontWeight="800"
+                fill="white"
+                dominantBaseline="hanging"
+              >
+                {/* Row 1 */}
+                <text x="50" y="0">
+                  KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  KITBAG&nbsp;&nbsp;&nbsp;JOURNEY
+                </text>
 
-          {/* Row 2 (shifted) */}
-          <text x="-300" y="100">
-            KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            KITBAG&nbsp;&nbsp;&nbsp;JOURNEY
-          </text>
-        </g>
-      </pattern>
-    </defs>
+                {/* Row 2 (shifted) */}
+                <text x="-300" y="100">
+                  KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  KITBAG&nbsp;&nbsp;&nbsp;JOURNEY
+                </text>
+              </g>
+            </pattern>
+          </defs>
 
-    <rect width="100%" height="100%" fill="url(#kitbagPattern)" />
-  </svg>
+          <rect width="100%" height="100%" fill="url(#kitbagPattern)" />
+        </svg>
 
-  {/* Content */}
-  <div className="relative z-10 space-y-8">
-    <h1 className="text-2xl lg:text-5xl text-yellow-500">
-      READY TO TAKE YOUR CAREER TO NEXT LEVEL?
-    </h1>
+        {/* Content */}
+        <div className="relative z-10 space-y-8">
+          <h1 className="text-2xl lg:text-5xl text-yellow-500">
+            READY TO TAKE YOUR CAREER TO NEXT LEVEL?
+          </h1>
 
-    <p className="lg:text-xl font-sans">
-      Our scouts are always looking for the next generation of elite talent.
-      Send us your portfolio and let's discuss your future today.
-    </p>
+          <p className="lg:text-xl font-sans">
+            Our scouts are always looking for the next generation of elite talent.
+            Send us your portfolio and let's discuss your future today.
+          </p>
 
-    <button className="px-6 py-4 border bg-white font-sans text-black rounded-lg uppercase">
-      Apply for Representation
-    </button>
-  </div>
+          <button className="px-6 py-4 border bg-white font-sans text-black rounded-lg uppercase">
+            Apply for Representation
+          </button>
+        </div>
 
-</section>
+      </section>
 
       <Footer />
     </div>

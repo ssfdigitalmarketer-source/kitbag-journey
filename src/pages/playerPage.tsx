@@ -14,10 +14,10 @@ const PlayerPage = () => {
     <div>
       <Navbar />
 
-      <section className="py-20 space-y-16 text-center">
+      <section className="pb-20 pt-40 space-y-16 text-center" >
 
         <div className="px-8 font-sans gap-20 lg:flex">
-          <div className="mb-5 lg:w-[45%]"><img src={player?.image} alt={slug} className="w-full object-contain shadow-lg grayscale relative z-20" /></div>
+          <div className="mb-5 bg-emerald-400 lg:w-[45%]"><img src={player?.image} alt={slug} className="w-full object-fill shadow-lg grayscale relative z-20" /></div>
           <div className="space-y-4 flex-1 lg:text-left ">
             <div className="bg-yellow-500 -skew-x-12 py-3 space-y-3 w-[95%] mx-auto relative">
               <h1 className="text-4xl font-bold lg:text-6xl font-oswald text-center text-black uppercase">{player?.name}</h1>

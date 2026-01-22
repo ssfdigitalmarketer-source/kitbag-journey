@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { Link } from "react-router";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 const Navbar = ({ showMenu = true }: any) => {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
@@ -9,8 +13,8 @@ const Navbar = ({ showMenu = true }: any) => {
   const navigate = useNavigate();
 
   return (
-    <nav className="sticky top-0 z-50 w-[100%]  py-8 font-semibold lg:flex pointer-events-none">
-      <div className="pointer-events-auto" onClick={() => navigate('/')}>
+    <nav className="fixed top-0 z-50 w-[100%] py-8 font-semibold lg:flex pointer-events-none">
+      <div className="pointer-events-auto px-6" onClick={() => navigate('/')}>
         <img
           src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632392/kitbag-logo_fmwuly.svg'
           alt="Kitbag-Logo"
@@ -20,7 +24,7 @@ const Navbar = ({ showMenu = true }: any) => {
 
       </div>
 
-      <div className="flex mx-auto">
+      <div className="flex lg:flex-2 w-[100%] lg:w-[80%] mx-auto bg-black/10 backdrop-blur-xl rounded-xl items-center justify-between lg:px-5">
 
         <button
           className="text-2xl mx-6 absolute right-0 lg:hidden pointer-events-auto"
@@ -28,7 +32,7 @@ const Navbar = ({ showMenu = true }: any) => {
         >
           ☰
         </button>
-        {showMenu && (<ul className="hidden list-none tracking-widest space-x-8 bg-white/10 backdrop-blur-xl rounded-xl px-14 py-5 text-[15px] lg:flex lg:gap-6 pointer-events-auto cursor-pointer">
+        {showMenu && (<ul className="hidden list-none w-full tracking-widest space-x-8 rounded-xl py-5 text-[15px] lg:flex lg:gap-6 pointer-events-auto cursor-pointer">
           {/* <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/"}>HOME</Link></li> */}
           <li className="relative group">
             <span className="hover:text-yellow-500 transition-all duration-300 ease-in-out cursor-pointer">
@@ -80,6 +84,13 @@ const Navbar = ({ showMenu = true }: any) => {
           <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/contact"}>CONTACT</Link></li>
         </ul>)}
 
+        <div className="hidden gap-6 justify-center pointer-events-auto lg:flex">
+          <Link to={""}><FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
+          <Link to={""}><FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
+          <Link to={""}><FaXTwitter size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
+          <Link to={""}><FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
+        </div>
+
       </div>
 
       {/* Burger menu */}
@@ -126,6 +137,12 @@ const Navbar = ({ showMenu = true }: any) => {
               <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/players"}>ATHLETES</Link></li>
               <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/about"}>ABOUT US</Link></li>
               <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/contact"}>CONTACT</Link></li>
+            <div className="gap-6 justify-center pointer-events-auto flex">
+              <Link to={""}><FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
+              <Link to={""}><FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
+              <Link to={""}><FaXTwitter size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
+              <Link to={""}><FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
+            </div>
             </ul>
           </div>
         </>

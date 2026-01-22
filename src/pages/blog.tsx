@@ -13,7 +13,7 @@ const Blog = () => {
         <div>
             <Navbar />
 
-            <section className='py-20 px-5 lg:px-60 space-y-8'>
+            <section className='pb-20 pt-40 px-5 lg:px-60 space-y-8'>
                 <div className='text-center'>
                     <img src={blog?.image} alt="blog-image" className='object-cover mx-auto'/>
                 </div>

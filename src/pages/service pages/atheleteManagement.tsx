@@ -3,7 +3,7 @@ import Footer from "../../components/Footer"
 
 const AtheleteManagement = () => {
     return (
-        <div>
+        <div className="relative">
             <Navbar />
             <section className="">
                 <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631738/service_h5odoj.jpg" alt="" className="w-full" />

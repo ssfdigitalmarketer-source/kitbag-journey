@@ -6,7 +6,7 @@ const LegalConsultancy = () => {
         <div>
             <Navbar />
             <section className="">
-                <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631845/service4_xlxk51.jpg" alt="social media and pr" className="w-full" />
+                <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769065678/client-was-listening-to-a-lawyer-advising-on-an-em-2026-01-07-01-02-00-utc_1_xoz2iw.jpg" alt="social media and pr" className="w-full" />
                 <div className="py-20 space-y-8">
                     <h1 className="text-4xl text-yellow-500 text-center">LEGAL CONSULTANCY</h1>
                     <div className="text-lg font-sans px-5 lg:w-[70%] mx-auto space-y-10">
