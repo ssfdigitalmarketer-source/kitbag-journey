@@ -16,7 +16,7 @@ const Contact = () => {
     return (
         <div>
             <Navbar />
-            <section className="pb-20 pt-40 px-5 lg:px-20 space-y-16" style={{ backgroundImage: `url('https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769075439/view-empty-football-stadium_1_pahnbn.jpg')`, backgroundPosition: "center" }}>
+            <section className="pb-20 pt-40 px-5 lg:px-20 space-y-16" style={{ backgroundImage: `url('')`, backgroundPosition: "center" }}>
                 <h1 className="text-yellow-500 text-4xl text-center">GET IN TOUCH</h1>
 
                 <div className="lg:flex gap-40">

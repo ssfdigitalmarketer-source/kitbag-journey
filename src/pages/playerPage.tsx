@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 import { useParams } from "react-router"
 import { usePlayerStore } from "../store/usePlayerStore"
 import Footer from "../components/Footer"
+import VideoCarousel from "../components/VideoCarousel"
 
 const PlayerPage = () => {
   const { slug } = useParams();
@@ -39,6 +40,7 @@ const PlayerPage = () => {
           </div>
         </div>
 
+            <VideoCarousel />
 
       </section>
       <Footer />

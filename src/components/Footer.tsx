@@ -27,7 +27,14 @@ const Footer = () => {
             <Link to={""}><FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
           </div>
         </div>
-        <p className='font-sans text-lg text-yellow-500 text-center'>©2026. Kitbag Journey. All rights reserved. Designed and maintained by SSF Designs.</p>
+        <p className='font-sans text-lg text-yellow-500 text-center'>©2026. Kitbag Journey. All rights reserved. Designed and maintained by <a
+          href="https://ssfdesigns.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          SSF Designs
+        </a>.</p>
       </footer>
       <div className="w-full overflow-hidden text-center bg-[#0e0e0e]">
         <h1 className="whitespace-nowrap font-bold text-[13vw] leading-none relative -bottom-2 lg:-bottom-10">
