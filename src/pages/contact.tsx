@@ -10,9 +10,10 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
-
+import { useNavigate } from "react-router";
 
 const Contact = () => {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -119,7 +120,7 @@ const Contact = () => {
 
                 <div className="font-sans w-[80%] mx-auto text-center">
                     <p className="text-lg">Are you an Athlete? Submit your portfolio right now and take your career to next level!</p>
-                    <button className="
+                    <button onClick={()=> navigate('/athlete-contact')} className="
     group relative overflow-hidden
     font-oswald px-8 py-4 mt-4 text-lg
     bg-yellow-500 text-black skew-x-[-12deg]
