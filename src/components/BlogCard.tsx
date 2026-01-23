@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router";
-import rightArrow from '../assets/right-arrow.svg'
 
 const BlogCard = ({ image, title, date }: any) => {
   const navigate = useNavigate();
@@ -14,7 +13,6 @@ const BlogCard = ({ image, title, date }: any) => {
         </div>
         <div className="flex mx-auto items-center space-x-2 cursor-pointer">
           <p className="text-lg text-yellow-500 font-sans">Read More</p>
-          <img src={rightArrow} alt="Right Arrow" className="w-6 h-6 invert" />
         </div>
 
       </div>

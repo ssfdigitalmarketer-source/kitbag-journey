@@ -1,5 +1,4 @@
 import ServiceCard from "../components/ServiceCard";
-import bg from '../assets/bg.jpg';
 import { useDragScroll } from "../hooks/useDragScroll";
 import { useEffect } from "react";
 
@@ -34,7 +33,7 @@ const ServicesSection = () => {
   }, []);
 
   return (
-    <section className="w-full py-20 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${bg})` }}>
+    <section className="w-full py-20 bg-no-repeat bg-cover" >
         <h1 className="text-4xl text-center items-center text-yellow-500 mb-8">OUR SERVICES</h1>
       <div className="flex whitespace-nowrap px-8 lg:px-12 gap-10 space-x-8 my-8 lg:mx-0 scrollbar-hide overflow-x-auto cursor-grab active:cursor-grabbing" ref={ref} {...handlers}>
         <ServiceCard img='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631738/service_h5odoj.jpg' title="Player Management" link={"athlete-management"}/>
