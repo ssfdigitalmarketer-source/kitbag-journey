@@ -177,7 +177,7 @@ const Home = () => {
       </section>
 
 
-      <section className="lg:px-5 text-left bg-no-repeat bg-cover">
+      <section className="lg:px-5 lg:py-2 text-left bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769061372/wrinkled-paper-black-background-abstract-2026-01-09-00-09-50-utc_um1mhu.jpg")` }}>
 
         <div className="space-y-5 px-5 my-20 text-center lg:flex lg:text-left">
           <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2">
@@ -187,7 +187,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 space-y-4 flex-col relative lg:-top-14 justify-center lg:flex">
+          <div className="w-full lg:w-1/2 space-y-4 flex-col relative lg:-top-14 justify-center lg:flex" >
             <h1 className="text-3xl text-yellow-500 lg:text-6xl font-semibold">WELCOME TO KITBAG JOURNEY</h1>
             <h2 className="text-xl lg:text-3xl font-semibold">AN ATHLETE MANAGEMENT COMPANY</h2>
             <p className="font-sans lg:text-lg">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years.</p>
