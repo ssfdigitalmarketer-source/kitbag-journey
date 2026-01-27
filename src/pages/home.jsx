@@ -14,17 +14,17 @@ import { SlArrowRight } from "react-icons/sl";
 import { useNavigate } from "react-router";
 
 const Home = () => {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-  const wrapperRef = useRef<HTMLDivElement | null>(null);
-  const sectionRef = useRef<HTMLDivElement | null>(null);
-  const headingRef = useRef<HTMLHeadingElement | null>(null);
+  const videoRef = useRef(null);
+  const wrapperRef = useRef(null);
+  const sectionRef = useRef(null);
+  const headingRef = useRef(null);
 
   const [showMenu, setShowMenu] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const navigate = useNavigate();
 
-  const slideRef = useRef<HTMLDivElement | null>(null);
+  const slideRef = useRef(null);
 
   function moveRight() {
     if (!slideRef.current) return;
