@@ -191,7 +191,7 @@ const Home = () => {
             <h1 className="text-3xl text-yellow-500 lg:text-6xl font-semibold">WELCOME TO KITBAG JOURNEY</h1>
             <h2 className="text-xl lg:text-3xl font-semibold">AN ATHLETE MANAGEMENT COMPANY</h2>
             <p className="font-sans lg:text-lg">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years.</p>
-            <p className="font-sans lg:text-lg">Our athlete management framework brings together elite professionals across performance, branding, legal, and commercial domains. We help athletes unlock career milestones through strategic guidance tailored to their ambitions.</p>
+            {/* <p className="font-sans lg:text-lg">Our athlete management framework brings together elite professionals across performance, branding, legal, and commercial domains. We help athletes unlock career milestones through strategic guidance tailored to their ambitions.</p> */}
 
             <button className="group relative overflow-hidden font-oswald px-8 py-4 mt-4 text-lg bg-yellow-500 text-black skew-x-[-12deg] transition-transform duration-300 ease-in-out lg:w-[30%]" onClick={() => navigate('/about')}>
               {/* White fill layer */}
