@@ -1,4 +1,4 @@
-const TestimonialCard = ({ text, img, name, title }: any) => {
+const TestimonialCard = ({ text, img, name, title }) => {
     return (
         <div className='w-full shrink-0'>
 

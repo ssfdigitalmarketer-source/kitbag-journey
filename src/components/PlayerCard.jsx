@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import clsx from "clsx";
 
-const PlayerCard = ({ img, title, link, className }: any) => {
+const PlayerCard = ({ img, title, link, className }) => {
     const navigate = useNavigate();
     return (
         <div className={clsx("relative shrink-0 py-20 -skew-x-6 cursor-pointer group will-change-transform transform-gpu backface-hidden transition-all", className)}

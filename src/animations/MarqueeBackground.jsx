@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-const MarqueeLine = ({ text, direction = "left", fontSize }: { text: string; direction?: string; fontSize: number }) => {
+const MarqueeLine = ({ text, direction = "left", fontSize }) => {
   return (
     <div className="overflow-hidden whitespace-nowrap">
       <motion.div
@@ -37,7 +37,7 @@ const MarqueeLine = ({ text, direction = "left", fontSize }: { text: string; dir
 };
 
 const MarqueeBackground = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef(null);
   const [fontSize, setFontSize] = useState(40); // default fallback
 
   useEffect(() => {

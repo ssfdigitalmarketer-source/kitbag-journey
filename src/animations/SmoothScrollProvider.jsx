@@ -5,7 +5,7 @@ import ScrollSmoother from "gsap/ScrollSmoother";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-const SmoothScrollProvider = ({ children }: { children: React.ReactNode }) => {
+const SmoothScrollProvider = ({ children }) => {
   useLayoutEffect(() => {
     const smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",

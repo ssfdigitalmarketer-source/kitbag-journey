@@ -1,15 +1,6 @@
 import { motion } from "framer-motion";
 
-type StaggerInViewProps = {
-  children: React.ReactNode;
-  className?: string;
-  stagger?: number;
-  yOffset?: number;
-  once?: boolean;
-  amount?: number;
-};
-
-const containerVariants = (stagger: number) => ({
+const containerVariants = (stagger) => ({
   hidden: {},
   show: {
     transition: {
@@ -18,7 +9,7 @@ const containerVariants = (stagger: number) => ({
   },
 });
 
-const itemVariants = (yOffset: number) => ({
+const itemVariants = (yOffset) => ({
   hidden: { opacity: 0, y: yOffset },
   show: {
     opacity: 1,
@@ -34,7 +25,7 @@ const StaggerInView = ({
   yOffset = 30,
   once = true,
   amount = 0.3,
-}: StaggerInViewProps) => {
+}) => {
   return (
     <motion.div
       className={className}

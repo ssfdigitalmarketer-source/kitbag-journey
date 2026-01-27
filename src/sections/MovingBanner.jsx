@@ -7,7 +7,7 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger);
 
 const MovingBanner = () => {
-  const targetDiv = useRef<HTMLDivElement | null>(null);
+  const targetDiv = useRef(null);
 
   // useGSAP(
   //   () => {

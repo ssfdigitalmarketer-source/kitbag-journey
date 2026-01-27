@@ -16,9 +16,6 @@ const videos = [
 function VideoModal({
   src,
   onClose,
-}: {
-  src: string;
-  onClose: () => void;
 }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70">
@@ -51,7 +48,7 @@ function VideoModal({
 
 
 export default function VideoCarousel({}) {
-  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+  const [activeVideo, setActiveVideo] = useState(null);
 
   return (
     <>
