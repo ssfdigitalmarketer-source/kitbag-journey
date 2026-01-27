@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router";
 import CharFadeLeftToRight from "../animations/CharFadeLeftToRight";
 
 const CTAButton1 = () => {
+  const navigate = useNavigate();
   return (
     <div className="text-center italic font-sans py-10 space-y-10 font-bold lg:py-20">
       <p className="text-3xl lg:text-5xl font-extrabold">
@@ -21,7 +23,7 @@ const CTAButton1 = () => {
         <CharFadeLeftToRight text="!" />
       </p>
 
-      <button className="
+      <button onClick={()=> navigate('/athlete-contact')} className="
     group relative overflow-hidden
     font-oswald px-8 py-4 mt-4 text-lg
     bg-yellow-500 text-black skew-x-[-12deg]

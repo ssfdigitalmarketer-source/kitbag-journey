@@ -33,10 +33,10 @@ const PlayerPage = () => {
             <p className="text-left text-xl text-yellow-500">Batting Style : <span className="text-white">{player?.battingStyle}</span></p>
             <p className="text-left text-xl text-yellow-500">Bowling Style : <span className="text-white">{player?.bowlingStyle}</span></p>
             <p className="text-left text-xl text-yellow-500">Major Achievement : <span className="text-white">{player?.achievement}</span></p>
-            <p className="text-left text-xl text-yellow-500">Bio : <span className="text-white">{player?.bio}</span></p>
             {player?.best?.map((best, index) => (
               <p className="text-left text-xl text-yellow-500" key={index}> {best.title} : <span className="text-white">{best.value}</span></p>
             ))}
+            <p className="text-left text-xl text-yellow-500">Bio : <span className="text-white">{player?.bio}</span></p>
           </div>
         </div>
 

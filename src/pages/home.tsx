@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import bg from '../assets/bg.jpg'
 import PlayerSection from "../sections/PlayerSection";
 import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
@@ -178,7 +177,7 @@ const Home = () => {
       </section>
 
 
-      <section className="px-5 text-xl font-semibold text-left bg-no-repeat bg-cover" style={{ backgroundImage: `url(${bg})` }}>
+      <section className="px-5 text-xl font-semibold text-left bg-no-repeat bg-cover">
 
         <div className="space-y-5 px-5 my-20 text-center lg:flex lg:text-left">
           <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2">
