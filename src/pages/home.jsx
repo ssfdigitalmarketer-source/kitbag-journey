@@ -8,7 +8,7 @@ import CTAButton1 from "../sections/CTAButton1";
 import HeroHeadline from "../animations/HeroHeadline";
 import FadeInLeftToRight from "../animations/FadeInLeftToRight";
 import ServicesSection from "../sections/ServicesSection";
-import BlogSection from "../sections/blogSection";
+import BlogSection from "../sections/BlogSection";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 import { useNavigate } from "react-router";
