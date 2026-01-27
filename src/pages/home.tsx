@@ -267,9 +267,9 @@ const Home = () => {
 
           <div className="overscroll-x-contain overflow-hidden">
             <div className="flex lg:w-full transition-all duration-300 ease-in-out" ref={slideRef}>
-              <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632786/testimonialImage_tdlohi.jpg" />
-              <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. o" img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632786/testimonialImage_tdlohi.jpg" />
-              <TestimonialCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, em ipsum dolor sit amet, consectetur adipiscing elit," img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632786/testimonialImage_tdlohi.jpg" />
+              <TestimonialCard text="Managing a player growth is very tactical journey and I am happy that Kitbag Journey team is leaving no stone unturned to provide best support to the athletes." img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987152/WhatsApp_Image_2026-01-21_at_10.13.06_AM_ybdw2y.jpg" name="Shahbaaz Nadeem" title="Former India Test and IPL Player" />
+              <TestimonialCard text="Team Kitbag Journey has all experiences of handling a Sports Events: From Planning to drafting to marketing to sponsorship to franchise sell, they have been spot on and guide the client in hosting a successful event!!" img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632786/testimonialImage_tdlohi.jpg" />
+              <TestimonialCard text="Sikandar Bhai was always there when i needed support like contract negotiation, endorsement or any commercial association and career planning." img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631030/virat-singh_mqvvpp.jpg" name="Virat Singh" title="Captain Jharkhand Cricket" />
             </div>
           </div>
 
