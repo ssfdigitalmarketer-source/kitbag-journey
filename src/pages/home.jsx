@@ -163,11 +163,11 @@ const Home = () => {
 
       {/* About Section */}
       <section className="overflow-hidden relative py-4 lg:py-20">
-        <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768989994/lucid-origin_White_twisted_rope_lying_on_dewy_green_grass_field_in_morning_light-0.jpg_kgu35x.jpg" alt="" className="w-full object-fill absolute top-0 grayscale" />
+        <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768989994/lucid-origin_White_twisted_rope_lying_on_dewy_green_grass_field_in_morning_light-0.jpg_kgu35x.jpg" alt="" className="w-full object-fill absolute top-0 grayscale brightness-50" />
         <FadeInLeftToRight>
           <div className="px-4 space-y-10 font-bold font-sans text-md text-center mx-auto lg:w-[70%] relative z-10 lg:text-2xl">
             <p className="italic"><span className="text-yellow-400">" </span>EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
-            <p className="italic">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL</span>.<span className="text-yellow-400"> "</span></p>
+            <p className="italic">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL</span><span className="text-yellow-400"> "</span></p>
             <div>
               <p className="text-sm font-oswald lg:text-xl">SHAHBAZ NADEEM</p>
               <p className="text-yellow-500 text-xs lg:text-sm">MENTOR, KITBAG JOURNEY.</p>
@@ -177,7 +177,7 @@ const Home = () => {
       </section>
 
 
-      <section className="px-5 text-xl font-semibold text-left bg-no-repeat bg-cover">
+      <section className="lg:px-5 text-left bg-no-repeat bg-cover">
 
         <div className="space-y-5 px-5 my-20 text-center lg:flex lg:text-left">
           <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2">
@@ -188,12 +188,10 @@ const Home = () => {
           </div>
 
           <div className="w-full lg:w-1/2 space-y-4 flex-col relative lg:-top-14 justify-center lg:flex">
-            <h1 className="text-3xl text-yellow-500 lg:text-6xl">WELCOME TO KITBAG JOURNEY</h1>
-            <h2 className="text-xl lg:text-3xl font-regular">AN ATHLETE MANAGEMENT COMPANY</h2>
-            <p className="font-sans text-lg">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years. </p>
-            <p className="font-sans text-lg">Our athlete management framework brings together elite professionals across
-              performance, branding, legal, and commercial domains. We help athletes unlock
-              career milestones through strategic guidance tailored to their ambitions.</p>
+            <h1 className="text-3xl text-yellow-500 lg:text-6xl font-semibold">WELCOME TO KITBAG JOURNEY</h1>
+            <h2 className="text-xl lg:text-3xl font-semibold">AN ATHLETE MANAGEMENT COMPANY</h2>
+            <p className="font-sans lg:text-lg">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years.</p>
+            <p className="font-sans lg:text-lg">Our athlete management framework brings together elite professionals across performance, branding, legal, and commercial domains. We help athletes unlock career milestones through strategic guidance tailored to their ambitions.</p>
 
             <button className="group relative overflow-hidden font-oswald px-8 py-4 mt-4 text-lg bg-yellow-500 text-black skew-x-[-12deg] transition-transform duration-300 ease-in-out lg:w-[30%]" onClick={() => navigate('/about')}>
               {/* White fill layer */}
@@ -267,9 +265,9 @@ const Home = () => {
 
           <div className="overscroll-x-contain overflow-hidden">
             <div className="flex lg:w-full transition-all duration-300 ease-in-out" ref={slideRef}>
-              <TestimonialCard text="Managing a player growth is very tactical journey and I am happy that Kitbag Journey team is leaving no stone unturned to provide best support to the athletes." img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987152/WhatsApp_Image_2026-01-21_at_10.13.06_AM_ybdw2y.jpg" name="Shahbaaz Nadeem" title="Former India Test and IPL Player" />
+              <TestimonialCard text="Managing a player growth is very tactical journey and I am happy that Kitbag Journey team is leaving no stone unturned to provide best support to the athletes" img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987152/WhatsApp_Image_2026-01-21_at_10.13.06_AM_ybdw2y.jpg" name="Shahbaaz Nadeem" title="Former India Test and IPL Player" />
               <TestimonialCard text="Team Kitbag Journey has all experiences of handling a Sports Events: From Planning to drafting to marketing to sponsorship to franchise sell, they have been spot on and guide the client in hosting a successful event!!" img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769496538/IMG_2605.JPG_kemtgb.jpg" name="Rajan Gunabalan" title="Sports Management Professional" />
-              <TestimonialCard text="Sikandar Bhai was always there when i needed support like contract negotiation, endorsement or any commercial association and career planning." img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631030/virat-singh_mqvvpp.jpg" name="Virat Singh" title="Captain Jharkhand Cricket" />
+              <TestimonialCard text="Sikandar Bhai was always there when i needed support like contract negotiation, endorsement or any commercial association and career planning" img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631030/virat-singh_mqvvpp.jpg" name="Virat Singh" title="Captain Jharkhand Cricket" />
             </div>
           </div>
 
@@ -337,8 +335,8 @@ const Home = () => {
             Send us your portfolio and let's discuss your future today.
           </p>
 
-          <button className="px-6 py-4 border bg-white font-sans text-black rounded-lg uppercase" onClick={() => navigate('/athlete-contact')}>
-            Apply for Representation
+          <button className="px-6 py-4 border bg-white font-sans text-black rounded-lg uppercase" onClick={() => navigate('/contact')}>
+            Contact Us
           </button>
         </div>
 

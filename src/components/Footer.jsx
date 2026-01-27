@@ -10,11 +10,11 @@ const Footer = () => {
         <div className='lg:flex space-y-6 justify-between items-center'>
           <div className="flex flex-col justify-center">
             <img src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632392/kitbag-logo_fmwuly.svg' alt="Kitbag-Logo" className="h-[100px] lg:h-[150px] cursor-pointer" />
-            <ul className='list-none text-xl font-sans space-y-5 lg:space-y-0 gap-20'>
+            {/* <ul className='list-none text-xl font-sans space-y-5 lg:space-y-0 gap-20'>
               <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/about"}>About Us</Link></li>
               <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/contact"}>Contact Us</Link></li>
               <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/careers"}>Careers</Link></li>
-            </ul>
+            </ul> */}
           </div>
 
           <div>
