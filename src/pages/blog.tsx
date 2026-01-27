@@ -13,7 +13,7 @@ const Blog = () => {
         <div>
             <Navbar />
 
-            <section className='pb-20 pt-40 px-5 lg:px-60 space-y-8'>
+            <section className='pb-20 pt-40 px-5 lg:px-60 space-y-8' style={{ backgroundImage: `url('https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769061372/wrinkled-paper-black-background-abstract-2026-01-09-00-09-50-utc_um1mhu.jpg')`, backgroundPosition: "center" }}>
                 <div className='text-center'>
                     <img src={blog?.image} alt="blog-image" className='object-cover mx-auto'/>
                 </div>

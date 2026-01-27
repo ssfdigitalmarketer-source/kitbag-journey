@@ -14,17 +14,19 @@ const Footer = () => {
             <ul className='list-none text-xl font-sans space-y-5 lg:space-y-0 gap-20'>
               <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/about"}>About Us</Link></li>
               <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/contact"}>Contact Us</Link></li>
-              <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/contact"}>Careers</Link></li>
+              <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/careers"}>Careers</Link></li>
             </ul>
           </div>
 
           <div>
           </div>
           <div className="flex gap-6 mb-20 w-[80%] justify-center  mx-auto lg:w-[10%] lg:mx-0">
-            <Link to={""}><FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
-            <Link to={""}><FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
-            <Link to={""}><FaXTwitter size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
-            <Link to={""}><FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
+            <a href="https://www.facebook.com/profile.php?id=61550798993939" target="_blank" rel="noopener noreferrer">
+            <FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+            <a href="https://www.instagram.com/kitbag_journey/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+            <a href="https://www.linkedin.com/company/sports-journey/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
           </div>
         </div>
         <p className='font-sans text-lg text-yellow-500 text-center'>©2026. Kitbag Journey. All rights reserved. Designed and maintained by <a

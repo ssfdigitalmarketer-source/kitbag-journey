@@ -16,6 +16,7 @@ import LegalConsultancy from "./pages/service pages/legalConsultancy";
 import ITServices from "./pages/service pages/itServices";
 import ScrollToTop from "./components/ScrollToTop";
 import AthleteContact from "./pages/athleteContact";
+import Careers from "./pages/careers";
 
 
 const App = () => {
@@ -54,6 +55,7 @@ const App = () => {
         <Route path="/legal-consultancy" element={<LegalConsultancy />} />
         <Route path="/it-services" element={<ITServices />} />
         <Route path="/athlete-contact" element={<AthleteContact />} />
+        <Route path="/careers" element={<Careers/>} />
         
 
       </Routes>

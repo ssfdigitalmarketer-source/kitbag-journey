@@ -86,10 +86,12 @@ const Navbar = ({ showMenu = true }: any) => {
         </ul>)}
 
         <div className="hidden gap-6 justify-center pointer-events-auto lg:flex">
-          <Link to={""}><FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
-          <Link to={""}><FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
-          <Link to={""}><FaXTwitter size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
-          <Link to={""}><FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
+          <a href="https://www.facebook.com/profile.php?id=61550798993939" target="_blank" rel="noopener noreferrer">
+            <FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+          <a href="https://www.instagram.com/kitbag_journey/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+          <a href="https://www.linkedin.com/company/sports-journey/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
         </div>
 
       </div>
@@ -139,12 +141,14 @@ const Navbar = ({ showMenu = true }: any) => {
               <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/blogs"}>BLOGS</Link></li>
               <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/about"}>ABOUT US</Link></li>
               <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/contact"}>CONTACT</Link></li>
-            <div className="gap-6 justify-center pointer-events-auto flex">
-              <Link to={""}><FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
-              <Link to={""}><FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
-              <Link to={""}><FaXTwitter size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
-              <Link to={""}><FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
-            </div>
+              <div className="gap-6 justify-center pointer-events-auto flex">
+                <a href="https://www.facebook.com/profile.php?id=61550798993939" target="_blank" rel="noopener noreferrer">
+                  <FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+                <a href="https://www.instagram.com/kitbag_journey/" target="_blank" rel="noopener noreferrer">
+                  <FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+                <a href="https://www.linkedin.com/company/sports-journey/" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+              </div>
             </ul>
           </div>
         </>

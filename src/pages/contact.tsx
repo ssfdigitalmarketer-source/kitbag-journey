@@ -4,10 +4,8 @@ import { User } from 'lucide-react';
 import { Mail } from 'lucide-react';
 import { Phone } from 'lucide-react';
 import { MapPin } from 'lucide-react';
-import { Link } from "react-router";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
 import { useNavigate } from "react-router";
@@ -37,7 +35,7 @@ const Contact = () => {
     return (
         <div>
             <Navbar />
-            <section className="pb-20 pt-40 px-5 lg:px-20 space-y-16" style={{ backgroundImage: `url('')`, backgroundPosition: "center" }}>
+            <section className="pb-20 pt-40 px-5 lg:px-20 space-y-16" style={{ backgroundImage: `url('https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769061372/wrinkled-paper-black-background-abstract-2026-01-09-00-09-50-utc_um1mhu.jpg')`, backgroundPosition: "center" }}>
                 <h1 className="text-yellow-500 text-4xl text-center">GET IN TOUCH</h1>
 
                 <div className="lg:flex gap-40">
@@ -80,10 +78,12 @@ const Contact = () => {
                             </div>
 
                             <div className="flex gap-6 mb-20">
-                                <Link to={""}><FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
-                                <Link to={""}><FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
-                                <Link to={""}><FaXTwitter size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
-                                <Link to={""}><FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></Link>
+                                <a href="https://www.facebook.com/profile.php?id=61550798993939" target="_blank" rel="noopener noreferrer">
+            <FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+            <a href="https://www.instagram.com/kitbag_journey/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+            <a href="https://www.linkedin.com/company/sports-journey/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
                             </div>
                         </div>
 

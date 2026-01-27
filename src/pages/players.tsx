@@ -7,7 +7,7 @@ const Players = () => {
     const players = usePlayerStore(s=> s.players);
 
     return (
-        <div>
+        <div style={{ backgroundImage: `url('https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769061372/wrinkled-paper-black-background-abstract-2026-01-09-00-09-50-utc_um1mhu.jpg')`, backgroundPosition: "center" }}>
             <Navbar />
             <section className="pb-20 pt-40 space-y-10">
                 <h1 className="text-4xl text-yellow-500 text-center">OUR ATHLETES</h1>

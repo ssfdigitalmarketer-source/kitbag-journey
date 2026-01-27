@@ -337,7 +337,7 @@ const Home = () => {
             Send us your portfolio and let's discuss your future today.
           </p>
 
-          <button className="px-6 py-4 border bg-white font-sans text-black rounded-lg uppercase">
+          <button className="px-6 py-4 border bg-white font-sans text-black rounded-lg uppercase" onClick={() => navigate('/athlete-contact')}>
             Apply for Representation
           </button>
         </div>
