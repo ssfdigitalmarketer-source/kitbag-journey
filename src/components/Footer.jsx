@@ -7,14 +7,14 @@ const Footer = () => {
   return (
     <div>
       <footer className='pt-10 px-10 bg-[#0e0e0e] space-y-8'>
-        <div className='lg:flex space-y-6 justify-between items-center'>
+        <div className='lg:flex space-y-6 lg:flex-col justify-between items-center'>
           <div className="flex flex-col justify-center">
-            <img src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632392/kitbag-logo_fmwuly.svg' alt="Kitbag-Logo" className="h-[100px] lg:h-[150px] cursor-pointer" />
-            {/* <ul className='list-none text-xl font-sans space-y-5 lg:space-y-0 gap-20'>
+            <img src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632392/kitbag-logo_fmwuly.svg' alt="Kitbag-Logo" className="h-[100px] lg:h-[120px] cursor-pointer" />
+            <ul className='list-none text-xl space-y-5 lg:space-y-0 gap-20 lg:flex font-oswald uppercase'>
               <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/about"}>About Us</Link></li>
               <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/contact"}>Contact Us</Link></li>
               <li className="cursor-pointer hover:text-yellow-500 transition-all duration-300"><Link to={"/careers"}>Careers</Link></li>
-            </ul> */}
+            </ul>
           </div>
 
           <div>

@@ -6,7 +6,7 @@ const EventManagement = () => {
         <div>
             <Navbar />
             <section className="">
-                <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631645/service3_dyonnu.jpg" alt="social media and pr" className="w-full" />
+                <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769506079/aksh-yadav-bY4cqxp7vos-unsplash_lx3exy.jpg" alt="social media and pr" className="w-full" />
                 <div className="py-20 space-y-8">
                     <h1 className="text-4xl text-yellow-500 text-center">EVENT MANAGEMENT</h1>
                     <div className="text-lg font-sans px-5 lg:w-[70%] mx-auto space-y-10">
