@@ -141,7 +141,7 @@ const Home = () => {
           ref={headingRef}
           className="text-[8vh] mx-auto font-extrabold mt-[10px] text-white lg:text-[11vw]"
         >
-          <h1 className="text-[8vh] font-extrabold lg:text-[11vw] inline-block">PROMOTING TALENT</h1>
+          PROMOTING TALENT
         </h1>
 
         {/* Sticky video wrapper */}

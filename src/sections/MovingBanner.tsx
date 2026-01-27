@@ -39,19 +39,19 @@ const MovingBanner = () => {
   return (
     <section
       ref={targetDiv}
-      className="relative overflow-hidden px-5 py-14 text-4xl font-bold lg:py-20 lg:text-9xl"
+      className="relative overflow-hidden px-5 py-14 text-4xl font-bold lg:py-20 lg:text-9xl text-center"
     >
       <MarqueeBackground />
 
-      <p className="moving-paragraph relative text-left">
+      <p className="moving-paragraph relative">
         WE CREATE
       </p>
 
-      <p className="moving-paragraph relative text-right">
+      <p className="moving-paragraph relative">
         BRANDS AND IP&apos;S
       </p>
 
-      <p className="moving-paragraph relative text-center">
+      <p className="moving-paragraph relative">
         WE ARE KITBAG JOURNEY
       </p>
     </section>
