@@ -43,7 +43,7 @@ const PlayerSection = () => {
                     <div className="whitespace-nowrap space-x-8 px-10 gap-10 flex scrollbar-hide overflow-x-auto cursor-grab active:cursor-grabbing" ref={ref}
                         {...handlers}>
                         {playersData.map((player, index) => (
-                            <PlayerCard key={index} img={player.image} title={player.name} link={player.link} className="h-[50vh] lg:h-[60vh] w-[80%] lg:w-[20%]"/>
+                            <PlayerCard key={index} img={player.image} title={player.name} link={player.link} className="h-[50vh] lg:h-[60vh] w-[80%] lg:w-[30%] xl:w-[20%] "/>
                         ))}
                     </div>
 

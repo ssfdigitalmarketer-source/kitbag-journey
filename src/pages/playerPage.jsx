@@ -17,8 +17,8 @@ const PlayerPage = () => {
 
       <section className="pb-20 pt-40 space-y-16 text-center" style={{ backgroundImage: `url('https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769061372/wrinkled-paper-black-background-abstract-2026-01-09-00-09-50-utc_um1mhu.jpg')`, backgroundPosition: "center" }} >
 
-        <div className="px-8 font-sans gap-20 lg:flex">
-          <div className="mb-5 bg-emerald-400 lg:w-[45%]"><img src={player?.image} alt={slug} className="w-full object-fill shadow-lg grayscale relative z-20" /></div>
+        <div className="px-8 font-sans gap-20 xl:flex">
+          <div className="mb-5 lg:w-[45%] lg:mx-auto"><img src={player?.image} alt={slug} className="w-full object-fill shadow-lg grayscale relative z-20" /></div>
           <div className="space-y-4 flex-1 lg:text-left ">
             <div className="bg-yellow-500 -skew-x-12 py-3 space-y-3 w-[95%] mx-auto relative">
               <h1 className="text-4xl font-bold lg:text-6xl font-oswald text-center text-black uppercase">{player?.name}</h1>

@@ -13,7 +13,7 @@ const Players = () => {
                 <h1 className="text-4xl text-yellow-500 text-center">OUR ATHLETES</h1>
                 <div className="px-10 flex flex-wrap gap-14 justify-center">
                 {players?.map((player,index)=>(
-                    <PlayerCard key={index} title={player.name} img={player.image} link={player.link} className="h-[50vh] lg:h-[50vh] w-[90%] lg:w-[20%]"/>
+                    <PlayerCard key={index} title={player.name} img={player.image} link={player.link} className="h-[50vh] lg:h-[50vh] w-[90%] lg:w-[30%] xl:w-[20%]"/>
                 ))}
 
                 </div>

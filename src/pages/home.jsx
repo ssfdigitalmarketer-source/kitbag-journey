@@ -148,7 +148,7 @@ const Home = () => {
         <div ref={wrapperRef} className="w-full flex justify-center">
           <video
             ref={videoRef}
-            src="https://res.cloudinary.com/dwmmlrpgg/video/upload/v1768981037/0121_1_o7qzgk.mp4"
+            src="https://res.cloudinary.com/dwmmlrpgg/video/upload/v1769579418/cricket-video_1_fh1znj.mp4"
             autoPlay
             muted
             loop
@@ -162,18 +162,16 @@ const Home = () => {
 
 
       {/* About Section */}
-      <section className="overflow-hidden relative py-4 lg:py-20">
-        <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768989994/lucid-origin_White_twisted_rope_lying_on_dewy_green_grass_field_in_morning_light-0.jpg_kgu35x.jpg" alt="" className="w-full object-fill absolute top-0 grayscale brightness-50" />
-        <FadeInLeftToRight>
-          <div className="px-4 space-y-10 font-bold font-sans text-md text-center mx-auto lg:w-[70%] relative z-10 lg:text-2xl">
-            <p className="italic"><span className="text-yellow-400">" </span>EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
-            <p className="italic">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL</span><span className="text-yellow-400"> "</span></p>
+      <section className="overflow-hidden relative py-4 lg:py-20" >
+        <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768989994/lucid-origin_White_twisted_rope_lying_on_dewy_green_grass_field_in_morning_light-0.jpg_kgu35x.jpg" alt="" className="w-full object-contain absolute top-0 grayscale brightness-50" />
+          <div className="px-2 space-y-3 lg:space-y-10 font-bold font-sans text-center mx-auto lg:w-[70%] relative z-10 lg:text-2xl">
+            <p className="italic text-sm lg:text-2xl"><span className="text-yellow-400">" </span>EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
+            <p className="italic text-sm lg:text-2xl">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL</span><span className="text-yellow-400"> "</span></p>
             <div>
-              <p className="text-sm font-oswald lg:text-xl">SHAHBAZ NADEEM</p>
+              <p className="text-xs font-oswald lg:text-xl">SHAHBAZ NADEEM</p>
               <p className="text-yellow-500 text-xs lg:text-sm">MENTOR, KITBAG JOURNEY.</p>
             </div>
           </div>
-        </FadeInLeftToRight>
       </section>
 
 
