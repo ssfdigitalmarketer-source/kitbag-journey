@@ -33,8 +33,8 @@ const Contact = () => {
     }
 
     return (
-        <div className="">
-            <div className="fixed z-0 top-0"><img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769593899/copy_of_backgroundfooter_dvic2i_cc16e1.png" alt="" /> </div>
+        <div className="bg-fixed" style={{ backgroundImage: `url("https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769593899/copy_of_backgroundfooter_dvic2i_cc16e1.png")` }}>
+            {/* <div className="fixed z-0 top-0"><img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769593899/copy_of_backgroundfooter_dvic2i_cc16e1.png" alt="" /> </div> */}
 
             <Navbar />
             <section className="pb-20 relative z-20 pt-40 text-xs px-5 lg:px-20 space-y-16" >

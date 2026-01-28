@@ -3,7 +3,7 @@ import { useNavigate } from "react-router"
 const ServiceCard = ({ img, title, link}) => {
   const navigate = useNavigate();
   return (
-    <div className="relative shrink-0 py-20 h-[50vh] lg:h-[60vh] w-[80%] lg:w-[30%] xl:w-[20%] -skew-x-6 cursor-pointer group lg:block group will-change-transform transform-gpu backface-hidden" onClick={() => navigate(`/${link}`)}>
+    <div className="relative shrink-0 py-20 h-[60vh] lg:h-[60vh] w-[80%] lg:w-[30%] xl:w-[20%] -skew-x-6 cursor-pointer group lg:block group will-change-transform transform-gpu backface-hidden" onClick={() => navigate(`/${link}`)}>
             <div className="w-full h-[90%] border-[0.5px] border-white absolute top-3 left-3 group-hover:border-yellow-400 transition-all duration-300 "></div>
 
             <div className="w-full h-[90%] absolute top-0 left-0 overflow-hidden">

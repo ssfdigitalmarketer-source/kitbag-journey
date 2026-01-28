@@ -6,7 +6,7 @@ const About = () => {
         <div className="">
 
             <Navbar />
-            <section className="py-40 px-2 relative z-10 lg:px-5 space-y-8" >
+            <section className="relative z-10 space-y-8" >
                 <div className="relative w-full">
                     <img
                         src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769592417/Untitled_design_2_genmsi.png"
@@ -23,8 +23,8 @@ const About = () => {
 
 
 
-                <p className="font-sans text-xs lg:text-xl lg:w-[70%] mx-auto text-center">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years. Sikandar was instrumental in establishing MS Dhoni Cricket Academy across the globe.</p>
-                <p className="font-sans text-xs lg:text-xl lg:w-[70%] mx-auto text-center">Kitbag Journey Athlete Management is a next-generation sports management
+                <p className="px-2 font-sans text-xs lg:text-xl lg:w-[70%] mx-auto text-center">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years. Sikandar was instrumental in establishing MS Dhoni Cricket Academy across the globe.</p>
+                <p className="px-2 font-sans text-xs lg:text-xl lg:w-[70%] mx-auto text-center">Kitbag Journey Athlete Management is a next-generation sports management
                     organization dedicated to nurturing athletic talent and empowering sports
                     professionals to achieve excellence. With strategic career development, brand
                     partnerships, professional mentoring, and top-tier representation — we ensure
@@ -33,7 +33,7 @@ const About = () => {
 
                 <h1 className="text-yellow-400 text-4xl text-center">MEET OUR TEAM</h1>
 
-                <div className="space-y-8 lg:w-[80%] xl:w-[70%] mx-auto">
+                <div className="px-2 space-y-8 lg:w-[80%] xl:w-[70%] mx-auto">
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
                             <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987152/WhatsApp_Image_2026-01-21_at_10.13.06_AM_ybdw2y.jpg" alt="" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
