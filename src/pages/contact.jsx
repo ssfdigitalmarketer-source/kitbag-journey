@@ -33,45 +33,47 @@ const Contact = () => {
     }
 
     return (
-        <div>
+        <div className="">
+            <div className="fixed z-0 top-0"><img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769593899/copy_of_backgroundfooter_dvic2i_cc16e1.png" alt="" /> </div>
+
             <Navbar />
-            <section className="pb-20 pt-40 px-5 lg:px-20 space-y-16" style={{ backgroundImage: `url('https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769061372/wrinkled-paper-black-background-abstract-2026-01-09-00-09-50-utc_um1mhu.jpg')`, backgroundPosition: "center" }}>
-                <h1 className="text-yellow-500 text-4xl text-center">GET IN TOUCH</h1>
+            <section className="pb-20 relative z-20 pt-40 text-xs px-5 lg:px-20 space-y-16" >
+                <h1 className="text-yellow-400 text-4xl text-center">GET IN TOUCH</h1>
 
                 <div className="lg:flex gap-40">
                     <div className="font-sans lg:w-[50%]">
                         <div className="lg:w-[80%]">
-                            <p className="text-xl">This is your gateway to connect with us directly. Whether you have inquiries or feedback or simply want to drop a message.</p>
-                            <div className="py-10 space-y-10 border-y-[0.5px] my-8 border-yellow-500">
+                            <p className="text-sm lg:text-xl">This is your gateway to connect with us directly. Whether you have inquiries or feedback or simply want to drop a message.</p>
+                            <div className="py-10 space-y-10 border-y-[0.5px] my-8 border-yellow-400">
                                 <div className="flex gap-4">
-                                    <div className="p-3 rounded-lg border-[0.5px] bg-yellow-500 border-yellow-500">
-                                        <Phone size={30} className="" />
+                                    <div className="p-3 rounded-lg border-[0.5px] bg-yellow-400 border-yellow-400">
+                                        <Phone size={25} className="" />
                                     </div>
                                     <div>
-                                        <p className="text-lg text-yellow-500">Phone</p>
-                                        <p className="text-lg">+91 1234567890</p>
+                                        <p className="text-xs lg:text-lg text-yellow-400">Phone</p>
+                                        <p className="text-xs lg:text-lg">+91 7828645264</p>
 
                                     </div>
                                 </div>
 
                                 <div className="flex gap-4">
-                                    <div className="p-3 rounded-lg border-[0.5px] bg-yellow-500 border-yellow-500">
-                                        <Mail size={30} className="" />
+                                    <div className="p-3 rounded-lg border-[0.5px] bg-yellow-400 border-yellow-400">
+                                        <Mail size={25} className="" />
                                     </div>
                                     <div>
-                                        <p className="text-lg text-yellow-500">Email</p>
-                                        <p className="text-lg">kitbag@journey.com</p>
+                                        <p className="text-xs lg:text-lg text-yellow-400">Email</p>
+                                        <p className="text-xs lg:text-lg">kitbagjourney@gmail.com</p>
 
                                     </div>
                                 </div>
 
                                 <div className="flex gap-4">
-                                    <div className="p-3 rounded-lg border-[0.5px] bg-yellow-500 border-yellow-500 self-start">
-                                        <MapPin size={30} className="" />
+                                    <div className="p-3 rounded-lg border-[0.5px] bg-yellow-400 border-yellow-400 self-start">
+                                        <MapPin size={25} className="" />
                                     </div>
                                     <div>
-                                        <p className="text-lg text-yellow-500">Location</p>
-                                        <p className="text-lg">2-A/3, Kundan Mansion, Asaf Ali Road, Turkman Gate, Connaught Place, New Delhi-110002</p>
+                                        <p className="text-xs lg:text-lg text-yellow-400">Location</p>
+                                        <p className="text-xs lg:text-lg">2-A/3, Kundan Mansion, Asaf Ali Road, Turkman Gate, Connaught Place, New Delhi-110002</p>
                                     </div>
                                 </div>
 
@@ -79,11 +81,11 @@ const Contact = () => {
 
                             <div className="flex gap-6 mb-20">
                                 <a href="https://www.facebook.com/profile.php?id=61550798993939" target="_blank" rel="noopener noreferrer">
-            <FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+            <FaFacebook size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
             <a href="https://www.instagram.com/kitbag_journey/" target="_blank" rel="noopener noreferrer">
-            <FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+            <FaInstagram size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
             <a href="https://www.linkedin.com/company/sports-journey/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+            <FaLinkedin size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
                             </div>
                         </div>
 
@@ -93,20 +95,20 @@ const Contact = () => {
                     <div className="lg:w-[40%]">
                         <form action="">
                             <div className="space-y-4 flex flex-col font-sans">
-                                <label htmlFor="name" className="text-yellow-500">Name</label>
-                                <div className='flex items-center bg-[#0f0f0f] rounded-lg px-3'>
+                                <label htmlFor="name" className="text-yellow-400">Name</label>
+                                <div className='flex items-center bg-[#0f0f0f] rounded-lg px-3 border-[1px] border-white/30 opacity-70'>
                                     <User className="w-6 h-6 text-[#505050]" />
                                     <input name="name" onChange={formDataChange} type="text" id="name" className="w-full bg-transparent rounded-lg py-4 px-3 focus:border-none focus:outline-none " placeholder="Name" required />
 
                                 </div>
-                                <label htmlFor="email" className="text-yellow-500">Email</label>
-                                <div className='flex items-center bg-[#0f0f0f] rounded-lg px-3'>
+                                <label htmlFor="email" className="text-yellow-400">Email</label>
+                                <div className='flex items-center bg-[#0f0f0f] rounded-lg px-3 border-[1px] border-white/30 opacity-70'>
                                     <Mail className="w-6 h-6 text-[#505050]" />
                                     <input name="email" onChange={formDataChange} type="text" id="email" className="w-full bg-[#0f0f0f] rounded-lg py-4 px-3 focus:border-none focus:outline-none" placeholder="Email" required />
                                 </div>
-                                <label htmlFor="message" className="text-yellow-500">Message</label>
-                                <textarea onChange={formDataChange} name="message" id="message" cols={30} rows={8} className="w-full bg-[#0f0f0f] rounded-lg py-4 px-3 focus:border-none focus:outline-none" placeholder="Your Message" required></textarea>
-                                <button onClick={handleForm} className="group relative overflow-hidden font-oswald px-8 py-4 mt-4 text-lg bg-yellow-500 text-black transition-transform duration-300 ease-in-out w-full mx-auto ">
+                                <label htmlFor="message" className="text-yellow-400">Message</label>
+                                <textarea onChange={formDataChange} name="message" id="message" cols={30} rows={8} className="w-full bg-[#0f0f0f] rounded-lg py-4 px-3 border-[1px] border-white/30 opacity-70" placeholder="Your Message" required></textarea>
+                                <button onClick={handleForm} className="group relative overflow-hidden  font-oswald px-8 py-4 mt-4 text-xs lg:text-lg bg-yellow-400 text-black transition-transform duration-300 ease-in-out w-full mx-auto ">
 
                                     <span className="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
 
@@ -118,16 +120,16 @@ const Contact = () => {
                 </div>
 
 
-                <div className="font-sans w-[80%] mx-auto text-center">
-                    <p className="text-lg">Are you an Athlete? Submit your portfolio right now and take your career to next level!</p>
+                {/* <div className="font-sans w-[80%] mx-auto text-center">
+                    <p className="text-xs lg:text-lg">Are you an Athlete? Submit your portfolio right now and take your career to next level!</p>
                     <button onClick={()=> navigate('/athlete-contact')} className="
     group relative overflow-hidden
-    font-oswald px-8 py-4 mt-4 text-lg
-    bg-yellow-500 text-black skew-x-[-12deg]
+    font-oswald px-8 py-4 mt-4 text-xs lg:text-lg
+    bg-yellow-400 text-black skew-x-[-12deg]
     transition-transform duration-300 ease-in-out
   "
                     >
-                        {/* White fill layer */}
+                        
                         <span
                             className="
       absolute inset-0
@@ -139,13 +141,13 @@ const Contact = () => {
     "
                         ></span>
 
-                        {/* Button text */}
+                        
                         <span className="relative z-10">
                             JOIN US AS AN ATHLETE
                         </span>
                     </button>
 
-                </div>
+                </div> */}
 
 
             </section>

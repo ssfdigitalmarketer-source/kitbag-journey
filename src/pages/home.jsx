@@ -135,7 +135,7 @@ const Home = () => {
         className="w-full py-24 px-5 text-center relative
                    h-[70vh] lg:h-[210vh] top-0 lg:px-20 lg:pb-40
                     bg-no-repeat bg-cover"
-        style={{ backgroundImage: `url("https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769061372/wrinkled-paper-black-background-abstract-2026-01-09-00-09-50-utc_um1mhu.jpg")` }}
+        style={{ backgroundImage: `url("")` }}
       >
         <h1
           ref={headingRef}
@@ -162,20 +162,20 @@ const Home = () => {
 
 
       {/* About Section */}
-      <section className="overflow-hidden relative py-4 lg:py-20" >
-        <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768989994/lucid-origin_White_twisted_rope_lying_on_dewy_green_grass_field_in_morning_light-0.jpg_kgu35x.jpg" alt="" className="w-full object-contain absolute top-0 grayscale brightness-50" />
-          <div className="px-2 space-y-3 lg:space-y-10 font-bold font-sans text-center mx-auto lg:w-[70%] relative z-10 lg:text-2xl">
-            <p className="italic text-sm lg:text-2xl"><span className="text-yellow-400">" </span>EVERY <span className="text-yellow-400">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="text-yellow-400">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="text-yellow-400">CAREER</span>.</p>
-            <p className="italic text-sm lg:text-2xl">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="text-yellow-400">SPORTS</span> TALENT <span className="text-yellow-400">REACH</span> THEIR FULL <span className="text-yellow-400">POTENTIAL</span><span className="text-yellow-400"> "</span></p>
-            <div>
-              <p className="text-xs font-oswald lg:text-xl">SHAHBAZ NADEEM</p>
-              <p className="text-yellow-500 text-xs lg:text-sm">MENTOR, KITBAG JOURNEY.</p>
-            </div>
+      <section className="overflow-hidden relative py-4 lg:py-20" style={{ backgroundImage: `url("https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769588635/cricket_ball_background_ulkhdw.png")`, backgroundSize: "cover", backgroundPosition: "center", backdropFilter: "brightness(0.5)" }}>
+        <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769588635/cricket_ball_background_ulkhdw.png" alt="" className="w-full scale-[2] h-full object-contain absolute top-0 brightness-50" />
+        <div className="px-2 space-y-3 lg:space-y-10 font-bold font-sans text-center mx-auto lg:w-[70%] relative z-10 lg:text-2xl">
+          <p className="italic text-sm lg:text-2xl"><span className="">" </span>EVERY <span className="">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="">CAREER</span>.</p>
+          <p className="italic text-sm lg:text-2xl">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="">SPORTS</span> TALENT <span className="">REACH</span> THEIR FULL <span className="">POTENTIAL</span><span className=""> "</span></p>
+          <div>
+            <p className="text-xs font-oswald lg:text-xl">SHAHBAZ NADEEM</p>
+            <p className="text-yellow-400 text-xs lg:text-sm">MENTOR, KITBAG JOURNEY.</p>
           </div>
+        </div>
       </section>
 
 
-      <section className="lg:px-5 lg:py-2 text-left bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769061372/wrinkled-paper-black-background-abstract-2026-01-09-00-09-50-utc_um1mhu.jpg")` }}>
+      <section className="lg:px-5 lg:py-2 text-left bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769593899/copy_of_backgroundfooter_dvic2i_cc16e1.png")` }}>
 
         <div className="space-y-5 px-5 my-20 text-center lg:flex lg:text-left">
           <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2">
@@ -186,12 +186,12 @@ const Home = () => {
           </div>
 
           <div className="w-full lg:w-1/2 space-y-4 flex-col relative lg:-top-14 justify-center lg:flex" >
-            <h1 className="text-3xl text-yellow-500 lg:text-6xl font-semibold">WELCOME TO KITBAG JOURNEY</h1>
+            <h1 className="text-3xl text-yellow-400 lg:text-6xl font-semibold">WELCOME TO KITBAG JOURNEY</h1>
             <h2 className="text-xl lg:text-3xl font-semibold">AN ATHLETE MANAGEMENT COMPANY</h2>
-            <p className="font-sans lg:text-lg">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years.</p>
+            <p className="font-sans text-xs lg:text-lg">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years.</p>
             {/* <p className="font-sans lg:text-lg">Our athlete management framework brings together elite professionals across performance, branding, legal, and commercial domains. We help athletes unlock career milestones through strategic guidance tailored to their ambitions.</p> */}
 
-            <button className="group relative overflow-hidden font-oswald px-8 py-4 mt-4 text-lg bg-yellow-500 text-black skew-x-[-12deg] transition-transform duration-300 ease-in-out lg:w-[30%]" onClick={() => navigate('/about')}>
+            <button className="group relative overflow-hidden font-oswald px-6 py-3 mt-4 text-lg bg-yellow-400 text-black skew-x-[-12deg] transition-transform duration-300 ease-in-out lg:w-[30%]" onClick={() => navigate('/about')}>
               {/* White fill layer */}
               <span className="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
 
@@ -230,19 +230,20 @@ const Home = () => {
 
       <div className="overflow-hidden w-full py-4">
         <div className="flex whitespace-nowrap w-max animate-marquee-right">
-          <span className="text-white text-xl md:text-2xl mr-8">
-            AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
+          <span className="text-white text-xl md:text-3xl mr-8">
+            AMIT KUMAR SELECTED FOR IPL  • VIRAT SINGH APPOINTED AS CAPTAIN OF JHARKHAND RANJI TEAM • SHIKHAR MOHAN SCORED DOUBLE CENTURY •
           </span>
-          <span className="text-white text-xl md:text-2xl mr-8">
-            AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
+          <span className="text-white text-xl md:text-3xl mr-8">
+            AMIT KUMAR SELECTED FOR IPL  • VIRAT SINGH APPOINTED AS CAPTAIN OF JHARKHAND RANJI TEAM • SHIKHAR MOHAN SCORED DOUBLE CENTURY •
+
 
           </span>
-          <span className="text-white text-xl md:text-2xl mr-8">
-            AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
+          <span className="text-white text-xl md:text-3xl mr-8">
+            AMIT KUMAR SELECTED FOR IPL  • VIRAT SINGH APPOINTED AS CAPTAIN OF JHARKHAND RANJI TEAM • SHIKHAR MOHAN SCORED DOUBLE CENTURY •
 
           </span>
-          <span className="text-white text-xl md:text-2xl mr-8">
-            AMIT KUMAR SELECTED FOR IPL  • AMIT KUMAR SELECTED FOR IPL • AMIT KUMAR SELECTED FOR IPL •
+          <span className="text-white text-xl md:text-3xl mr-8">
+            AMIT KUMAR SELECTED FOR IPL  • VIRAT SINGH APPOINTED AS CAPTAIN OF JHARKHAND RANJI TEAM • SHIKHAR MOHAN SCORED DOUBLE CENTURY •
 
           </span>
         </div>
@@ -254,12 +255,12 @@ const Home = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black via-[30%] to-transparent" />
         </div>
         <div className="relative space-y-10 group">
-          <h1 className="text-yellow-500 text-4xl">
+          <h1 className="text-yellow-400 text-4xl">
             TESTIMONIALS
           </h1>
-          <h1 className="text-6xl">
+          {/* <h1 className="text-6xl">
             WHAT OUR CLIENTS SAY
-          </h1>
+          </h1> */}
 
           <div className="overscroll-x-contain overflow-hidden">
             <div className="flex lg:w-full transition-all duration-300 ease-in-out" ref={slideRef}>
@@ -272,70 +273,34 @@ const Home = () => {
 
 
         </div>
-        <button className="absolute top-1/2 left-0 lg:left-10 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveLeft} ><SlArrowLeft className="text-black" />
+        <button className="absolute top-1/2 left-0 lg:left-10 opacity-30 lg:opacity-0 rounded-full p-2 bg-white group-hover:opacity-30 hover:bg-yellow-400 transition-all duration-300 ease-in-out" onClick={moveLeft} ><SlArrowLeft className="text-black" />
         </button>
 
-        <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 lg:right-10 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-500 transition-all duration-300 ease-in-out" onClick={moveRight} ><SlArrowRight className="text-black" />
+        <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 lg:right-10 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-400 transition-all duration-300 ease-in-out" onClick={moveRight} ><SlArrowRight className="text-black" />
         </button>
 
       </section>
 
       <BlogSection />
 
-      <section className="relative py-20 px-5 text-center overflow-hidden">
+      <section className="relative pt-20 px-5 text-center overflow-hidden space-y-10">
 
-        {/* Watermark */}
-        <svg
-          className="absolute inset-0 w-full h-full opacity-[0.05]"
-          preserveAspectRatio="none"
-        >
-          <defs>
-            <pattern
-              id="kitbagPattern"
-              width="1100"
-              height="200"     // ← EXACT MULTIPLE
-              patternUnits="userSpaceOnUse"
-            >
-              <g
-                fontSize="64"
-                fontWeight="800"
-                fill="white"
-                dominantBaseline="hanging"
-              >
-                {/* Row 1 */}
-                <text x="50" y="0">
-                  KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  KITBAG&nbsp;&nbsp;&nbsp;JOURNEY
-                </text>
-
-                {/* Row 2 (shifted) */}
-                <text x="-300" y="100">
-                  KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  KITBAG&nbsp;&nbsp;&nbsp;JOURNEY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  KITBAG&nbsp;&nbsp;&nbsp;JOURNEY
-                </text>
-              </g>
-            </pattern>
-          </defs>
-
-          <rect width="100%" height="100%" fill="url(#kitbagPattern)" />
-        </svg>
-
+<h1 className="text-4xl text-yellow-400 text-center uppercase">The Genesis of Kitbag Journey</h1>
+       
         {/* Content */}
         <div className="relative z-10 space-y-8">
-          <h1 className="text-2xl lg:text-5xl text-yellow-500">
-            READY TO TAKE YOUR CAREER TO NEXT LEVEL?
-          </h1>
+            
+          <div class="relative aspect-video w-full">
+            <iframe
+              class="absolute inset-0 w-full mx-auto h-full rounded-lg"
+              src="https://www.youtube.com/embed/mR2D-JPrWXs"
+              title="YouTube video"
+              allowfullscreen>
+            </iframe>
+          </div>
 
-          <p className="lg:text-xl font-sans">
-            Our scouts are always looking for the next generation of elite talent.
-            Send us your portfolio and let's discuss your future today.
-          </p>
 
-          <button className="px-6 py-4 border bg-white font-sans text-black rounded-lg uppercase" onClick={() => navigate('/contact')}>
-            Contact Us
-          </button>
+
         </div>
 
       </section>

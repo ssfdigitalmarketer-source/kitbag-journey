@@ -38,7 +38,7 @@ const PlayerSection = () => {
     return (
 
             <section className="w-full py-20 space-y-10">
-                <h1 className="text-4xl text-yellow-500 text-center">OUR PLAYERS</h1>
+                <h1 className="text-4xl text-yellow-400 text-center">OUR PLAYERS</h1>
                 <div className="overflow-x-auto overscroll-x-contain">
                     <div className="whitespace-nowrap space-x-8 px-10 gap-10 flex scrollbar-hide overflow-x-auto cursor-grab active:cursor-grabbing" ref={ref}
                         {...handlers}>

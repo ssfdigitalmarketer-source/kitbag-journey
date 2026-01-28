@@ -50,8 +50,8 @@ const App = () => {
         <Route path="/blogs/:slug" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/athlete-management" element={<AtheleteManagement />} />
-        <Route path="/social-media&pr" element={<SocialMedia />} />
-        <Route path="/event-management" element={<EventManagement />} />
+        <Route path="/branding&pr" element={<SocialMedia />} />
+        <Route path="/cricket-league-management" element={<EventManagement />} />
         <Route path="/legal-consultancy" element={<LegalConsultancy />} />
         <Route path="/it-services" element={<ITServices />} />
         <Route path="/athlete-contact" element={<AthleteContact />} />

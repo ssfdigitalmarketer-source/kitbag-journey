@@ -20,7 +20,7 @@ const CTAButton1 = () => {
           className="text-yellow-500"
         />
 
-        <CharFadeLeftToRight text="!" />
+
       </p>
 
       <button onClick={()=> navigate('/athlete-contact')} className="

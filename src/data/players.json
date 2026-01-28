@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631030/virat-singh_mqvvpp.jpg",
+        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631030/virat-singh_mqvvpp.jpg",
         "name": "Virat Singh",
         "fatherName": "Binod Singh",
         "dateOfBirth": "08-12-1997",
@@ -28,16 +28,16 @@
             },
             {
                 "title": "Best Bowling Figure",
-                "value": "1 for something"
+                "value": "N/A"
             }
         ],
-        "link" : "virat-singh",
+        "link": "virat-singh",
         "videos": []
     },
     {
         "id": 2,
         "name": "Shikhar Mohan",
-        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/shikhar-mohan_wjo2jq.jpg",
+        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/shikhar-mohan_wjo2jq.jpg",
         "fatherName": "Suraj Mohan",
         "dateOfBirth": "18-05-2005",
         "placeOfBirth": "Ranchi",
@@ -45,6 +45,10 @@
             {
                 "title": "First Class Debut",
                 "value": "15th October, 2025"
+            },
+            {
+                "title": "List A Debut",
+                "value": "N/A"
             }
         ],
         "playingRole": "Opening Batsman",
@@ -56,9 +60,13 @@
             {
                 "title": "Best Score",
                 "value": "207"
+            },
+            {
+                "title": "Best Bowling Figure",
+                "value": "N/A"
             }
         ],
-        "link" : "shikhar-mohan",
+        "link": "shikhar-mohan",
         "videos": []
     },
     {
@@ -72,6 +80,14 @@
             {
                 "title": "T-20 Debut",
                 "value": "2nd December, 2025"
+            },
+            {
+                "title": "First Class Debut",
+                "value": "N/A"
+            },
+            {
+                "title": "List A Debut",
+                "value": "N/A"
             }
         ],
         "playingRole": "Leg Spinner",
@@ -89,7 +105,7 @@
                 "value": "10 over 34 runs 5 wickets"
             }
         ],
-        "link" : "amit-kumar",
+        "link": "amit-kumar",
         "videos": []
     },
     {
@@ -118,19 +134,27 @@
             {
                 "title": "Best Score",
                 "value": " 102*"
+            },
+            {
+                "title": "Best Bowling Figure",
+                "value": "N/A"
             }
         ],
-        "link" : "shashi-mathur",
+        "link": "shashi-mathur",
         "videos": []
     },
     {
         "id": 5,
-        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/rajandeep-singh_jbqwuw.jpg",
+        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/rajandeep-singh_jbqwuw.jpg",
         "name": "Rajandeep Singh",
         "fatherName": "Kulwant singh",
         "dateOfBirth": "05-09-2002",
         "placeOfBirth": "Ranchi",
         "debuts": [
+            {
+                "title": "First Class Debut",
+                "value": "N/A"
+            },
             {
                 "title": "List A Debut",
                 "value": "February 2021"
@@ -151,17 +175,26 @@
                 "value": "14/ 45 vs J&K 2025"
             }
         ],
-        "link" : "rajandeep-singh",
+        "link": "rajandeep-singh",
         "videos": []
     },
     {
         "id": 6,
-        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631030/kounain-quraishi_otrsqs.png",
+        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631030/kounain-quraishi_otrsqs.png",
         "name": "Md Kounain Quraishi",
         "fatherName": "Md Shamim Quraishi",
         "dateOfBirth": "29-09-2002",
         "placeOfBirth": "",
-        "debuts": [],
+        "debuts": [
+            {
+                "title": "First Class Debut",
+                "value": "N/A"
+            },
+            {
+                "title": "List A Debut",
+                "value": "N/A"
+            }
+        ],
         "playingRole": "Batting All Rounder",
         "battingStyle": "Right-Handed Middle Order",
         "bowlingStyle": "Right Arm Off Break",
@@ -177,7 +210,7 @@
                 "value": "15 over 30 runs 4 wickets"
             }
         ],
-        "link" : "kounain-quraishi",
+        "link": "kounain-quraishi",
         "videos": []
     },
     {
@@ -206,9 +239,13 @@
             {
                 "title": "Best Score",
                 "value": "115 against Andhra Pradesh"
+            },
+            {
+                "title": "Best Bowling Figure",
+                "value": "N/A"
             }
         ],
-        "link" : "sharandeep-singh",
+        "link": "sharandeep-singh",
         "videos": []
     },
     {
@@ -236,19 +273,19 @@
         "best": [
             {
                 "title": "Best Score",
-                "value": ""
+                "value": "50 against Saurashtra"
             },
             {
                 "title": "Best Bowling Figure",
-                "value": ""
+                "value": "6 for 111 against North Zone"
             }
         ],
-        "link" : "manishi",
+        "link": "manishi",
         "videos": []
     },
     {
         "id": 9,
-        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/pankaj-kumar_lsxsiu.jpg",
+        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769596165/IMG_2631.JPG_s3gaey.jpg",
         "name": "Pankaj Kumar",
         "fatherName": "Kishor Kumar",
         "dateOfBirth": "12-11-1999",
@@ -257,6 +294,10 @@
             {
                 "title": "First Class Debut",
                 "value": "17th December, 2019"
+            },
+            {
+                "title": "List A Debut",
+                "value": "N/A"
             }
         ],
         "playingRole": "Wicket Keeper",
@@ -268,9 +309,13 @@
             {
                 "title": "Best Score",
                 "value": "123"
+            },
+            {
+                "title": "Best Bowling Figure",
+                "value": "N/A"
             }
         ],
-        "link" : "pankaj-kumar",
+        "link": "pankaj-kumar",
         "videos": []
     },
     {
@@ -284,24 +329,28 @@
             {
                 "title": "First Class Debut",
                 "value": "16th October, 2025"
+            },
+            {
+                "title": "List A Debut",
+                "value": "N/A"
             }
         ],
         "playingRole": "Right Arm Fast Bowler",
         "battingStyle": "Right-Handed",
         "bowlingStyle": "Right Arm",
-        "achievement": "",
+        "achievement": "Selected for Mumbai Indians trials",
         "bio": "Jatin Kumar Pandey is a professional Indian cricketer who plays for Jharkhand in domestic matches, primarily as a right-arm fast-medium bowler. He is known for an impressive Ranji Trophy debut where he took a five-wicket haulagainst Tamil Nadu. Pandey made his First-Class (FC) debut for Jharkhand in October 2025 and immediately made an impact by claiming a five-for (five wickets for35 runs). He was inspired to become a fast bowler by former Jharkhand player Ashish Kumar, who was also his neighbor. Prior to cricket, Pandey was a state-level swimming champion.",
         "best": [
             {
                 "title": "Best Score",
                 "value": "25 runs"
             },
-             {
+            {
                 "title": "Best Bowling Figure",
                 "value": "15 overs - 35 runs - 5 wickets"
             }
         ],
-        "link" : "jatin-kumar",
+        "link": "jatin-kumar",
         "videos": []
     }
 ]

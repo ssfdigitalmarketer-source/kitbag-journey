@@ -6,7 +6,7 @@ const PlayerCard = ({ img, title, link, className }) => {
     return (
         <div className={clsx("relative shrink-0 py-20 -skew-x-6 cursor-pointer group will-change-transform transform-gpu backface-hidden transition-all", className)}
             onClick={() => navigate(`/players/${link}`)}>
-            <div className="w-full h-[90%] border-[0.5px] border-white absolute top-3 left-3 group-hover:border-yellow-500 transition-all duration-300 "></div>
+            <div className="w-full h-[90%] border-[0.5px] border-white absolute top-3 left-3 group-hover:border-yellow-400 transition-all duration-300 "></div>
 
             <div className="w-full h-[90%] absolute top-0 left-0 overflow-hidden">
                 <img
@@ -16,7 +16,7 @@ const PlayerCard = ({ img, title, link, className }) => {
                 />
                 <div className="w-[90%] z-20 absolute m-5 bottom-0">
                     <div className='flex justify-between translate-y-10 group-hover:translate-y-0 transition-all duration-300 mb-2'>
-                        <p className="text-xl bg-yellow-500 pr-4 px-20 relative -left-14 py-1 text-black uppercase font-bold -skew-x-12">{title}</p>
+                        <p className="text-xl bg-yellow-400 pr-4 px-20 relative pl-12 -left-14 py-1 text-black uppercase font-bold -skew-x-12">{title}</p>
 
                     </div>
 
@@ -31,7 +31,7 @@ const PlayerCard = ({ img, title, link, className }) => {
                     </div>
                 </div>
 
-                <div className="absolute bottom-0 left-0 w-full h-[40%] z-10 bg-gradient-to-t from-yellow-500/70 via-yellow-500/30 to-transparent opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300" />
+                <div className="absolute bottom-0 left-0 w-full h-[40%] z-10 bg-gradient-to-t from-yellow-400/70 via-yellow-400/30 to-transparent opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300" />
 
             </div>
 

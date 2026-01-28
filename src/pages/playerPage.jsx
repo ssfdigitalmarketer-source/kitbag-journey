@@ -15,28 +15,28 @@ const PlayerPage = () => {
     <div>
       <Navbar />
 
-      <section className="pb-20 pt-40 space-y-16 text-center" style={{ backgroundImage: `url('https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769061372/wrinkled-paper-black-background-abstract-2026-01-09-00-09-50-utc_um1mhu.jpg')`, backgroundPosition: "center" }} >
+      <section className="pb-20 pt-40 space-y-16 text-center" >
 
         <div className="px-8 font-sans gap-20 xl:flex">
           <div className="mb-5 lg:w-[45%] lg:mx-auto"><img src={player?.image} alt={slug} className="w-full object-fill shadow-lg grayscale relative z-20" /></div>
           <div className="space-y-4 flex-1 lg:text-left ">
-            <div className="bg-yellow-500 -skew-x-12 py-3 space-y-3 w-[95%] mx-auto relative">
+            <div className="bg-yellow-400 -skew-x-12 py-3 space-y-3 w-[95%] mx-auto relative">
               <h1 className="text-4xl font-bold lg:text-6xl font-oswald text-center text-black uppercase">{player?.name}</h1>
             </div>
-            <p className="text-left lg:text-xl text-yellow-500">Date of Birth : <span className="text-white bg-none">{player?.dateOfBirth}</span></p>
-            <p className="text-left lg:text-xl text-yellow-500">Father's Name : <span className="text-white">{player?.fatherName}</span></p>
-            <p className="text-left lg:text-xl text-yellow-500">Place of Birth : <span className="text-white">{player?.placeOfBirth}</span></p>
+            <p className="text-left text-sm lg:text-xl">Date of Birth : <span className="text-white bg-none">{player?.dateOfBirth}</span></p>
+            <p className="text-left text-sm lg:text-xl ">Father's Name : <span className="text-white">{player?.fatherName}</span></p>
+            <p className="text-left text-sm lg:text-xl ">Place of Birth : <span className="text-white">{player?.placeOfBirth}</span></p>
             {player?.debuts?.map((debut, index) => (
-              <p className="text-left lg:text-xl text-yellow-500" key={index}> {debut.title} : <span className="text-white">{debut.value}</span></p>
+              <p className="text-left text-sm lg:text-xl " key={index}> {debut.title} : <span className="text-white">{debut.value}</span></p>
             ))}
-            <p className="text-left lg:text-xl text-yellow-500">Playing Role : <span className="text-white">{player?.playingRole}</span></p>
-            <p className="text-left lg:text-xl text-yellow-500">Batting Style : <span className="text-white">{player?.battingStyle}</span></p>
-            <p className="text-left lg:text-xl text-yellow-500">Bowling Style : <span className="text-white">{player?.bowlingStyle}</span></p>
-            <p className="text-left lg:text-xl text-yellow-500">Major Achievement : <span className="text-white">{player?.achievement}</span></p>
+            <p className="text-left text-sm lg:text-xl ">Playing Role : <span className="text-white">{player?.playingRole}</span></p>
+            <p className="text-left text-sm lg:text-xl ">Batting Style : <span className="text-white">{player?.battingStyle}</span></p>
+            <p className="text-left text-sm lg:text-xl ">Bowling Style : <span className="text-white">{player?.bowlingStyle}</span></p>
+            <p className="text-left text-sm lg:text-xl ">Major Achievement : <span className="text-white">{player?.achievement}</span></p>
             {player?.best?.map((best, index) => (
-              <p className="text-left lg:text-xl text-yellow-500" key={index}> {best.title} : <span className="text-white">{best.value}</span></p>
+              <p className="text-left text-sm lg:text-xl" key={index}> {best.title} : <span className="text-white">{best.value}</span></p>
             ))}
-            <p className="text-left lg:text-xl text-yellow-500">Bio : <span className="text-white">{player?.bio}</span></p>
+            <p className="text-left text-sm lg:text-xl"><span className="text-white">{player?.bio}</span></p>
           </div>
         </div>
 

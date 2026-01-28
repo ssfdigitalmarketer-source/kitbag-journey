@@ -17,7 +17,7 @@ const Navbar = ({ showMenu = true }) => {
         <img
           src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632392/kitbag-logo_fmwuly.svg'
           alt="Kitbag-Logo"
-          className="h-[100px] mr-5 absolute top-0 left-1 lg:h-[150px] cursor-pointer"
+          className="h-[70px] mr-5 absolute top-0 left-1 lg:h-[150px] cursor-pointer"
 
         />
 
@@ -32,9 +32,9 @@ const Navbar = ({ showMenu = true }) => {
           ☰
         </button>
         {showMenu && (<ul className="hidden list-none w-full tracking-widest space-x-8 rounded-xl py-5 text-[15px] lg:flex lg:gap-6 pointer-events-auto cursor-pointer">
-          {/* <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/"}>HOME</Link></li> */}
+          {/* <li className="hover:text-yellow-400 transition-all duration-300 ease-in-out"><Link to={"/"}>HOME</Link></li> */}
           <li className="relative group">
-            <span className="hover:text-yellow-500 transition-all duration-300 ease-in-out cursor-pointer">
+            <span className="hover:text-yellow-400 transition-all duration-300 ease-in-out cursor-pointer">
               SERVICES
             </span>
 
@@ -48,49 +48,49 @@ const Navbar = ({ showMenu = true }) => {
     "
             >
               <Link to="/athlete-management">
-                <li className="px-4 py-3 hover:bg-yellow-500 hover:text-black">
+                <li className="px-4 py-3 hover:bg-yellow-400 hover:text-black">
                   Player Management
                 </li>
               </Link>
 
-              <Link to="/social-media&pr">
-                <li className="px-4 py-3 hover:bg-yellow-500 hover:text-black">
-                  Social Media & PR
+              <Link to="/branding&pr">
+                <li className="px-4 py-3 hover:bg-yellow-400 hover:text-black">
+                  Branding & PR
                 </li>
               </Link>
 
-              <Link to="/event-management">
-                <li className="px-4 py-3 hover:bg-yellow-500 hover:text-black">
-                  Event Management
+              <Link to="/cricket-league-management">
+                <li className="px-4 py-3 hover:bg-yellow-400 hover:text-black">
+                  Cricket League Management
                 </li>
               </Link>
 
               <Link to="/legal-consultancy">
-                <li className="px-4 py-3 hover:bg-yellow-500 hover:text-black">
+                <li className="px-4 py-3 hover:bg-yellow-400 hover:text-black">
                   Legal Consultancy
                 </li>
               </Link>
 
               <Link to="/it-services">
-                <li className="px-4 py-3 hover:bg-yellow-500 hover:text-black">
+                <li className="px-4 py-3 hover:bg-yellow-400 hover:text-black">
                   IT Services
                 </li>
               </Link>
             </ul>
           </li>
-          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/players"}>ATHLETES</Link></li>
-          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/blogs"}>BLOGS</Link></li>
-          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/about"}>ABOUT US</Link></li>
-          <li className="hover:text-yellow-500 transition-all duration-300 ease-in-out"><Link to={"/contact"}>CONTACT</Link></li>
+          <li className="hover:text-yellow-400 transition-all duration-300 ease-in-out"><Link to={"/about"}>ABOUT US</Link></li>
+          <li className="hover:text-yellow-400 transition-all duration-300 ease-in-out"><Link to={"/players"}>PLAYERS</Link></li>
+          <li className="hover:text-yellow-400 transition-all duration-300 ease-in-out"><Link to={"/blogs"}>BLOGS</Link></li>
+          <li className="hover:text-yellow-400 transition-all duration-300 ease-in-out"><Link to={"/contact"}>CONTACT</Link></li>
         </ul>)}
 
         <div className="hidden gap-6 justify-center pointer-events-auto lg:flex">
           <a href="https://www.facebook.com/profile.php?id=61550798993939" target="_blank" rel="noopener noreferrer">
-            <FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+            <FaFacebook size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
           <a href="https://www.instagram.com/kitbag_journey/" target="_blank" rel="noopener noreferrer">
-            <FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+            <FaInstagram size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
           <a href="https://www.linkedin.com/company/sports-journey/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+            <FaLinkedin size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
         </div>
 
       </div>
@@ -106,47 +106,47 @@ const Navbar = ({ showMenu = true }) => {
 
           {/* Menu (original positioning preserved) */}
           <div className="w-full absolute z-40 top-2 left-0 lg:w-[20vw] lg:h-[100vh] transition-all duration-300 ease-in-out">
-            <ul className="list-none h-full space-y-4 w-[95%] rounded-lg mx-auto px-8 text-center text py-3 bg-black/30 backdrop-blur-xl tracking-widest text-[20px] text-white cursor-pointer pointer-events-auto" onClick={(e) => e.stopPropagation()}>
-              {/* <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/"}>HOME</Link></li> */}
+            <ul className="list-none text-sm h-full space-y-4 w-[95%] rounded-lg mx-auto px-8 text-center text py-3 bg-black/30 backdrop-blur-xl tracking-widest text-[20px] text-white cursor-pointer pointer-events-auto" onClick={(e) => e.stopPropagation()}>
+              {/* <li className=" border-white py-2 hover:text-yellow-400"><Link to={"/"}>HOME</Link></li> */}
               <li className="py-2">
                 <button
-                  className="w-full hover:text-yellow-500"
+                  className="w-full hover:text-yellow-400"
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                 >
                   SERVICES
                 </button>
 
                 {mobileServicesOpen && (
-                  <ul className="mt-2 space-y-4 text-lg uppercase">
-                    <li className="hover:text-yellow-500">
+                  <ul className="mt-2 text-xs space-y-4 uppercase">
+                    <li className="hover:text-yellow-400">
                       <Link to="/athlete-management">Athlete Management</Link>
                     </li>
-                    <li className="hover:text-yellow-500">
-                      <Link to="/social-media&pr">Social Media & PR</Link>
+                    <li className="hover:text-yellow-400">
+                      <Link to="/branding&pr">Branding & PR</Link>
                     </li>
-                    <li className="hover:text-yellow-500">
-                      <Link to="/event-management">Event Management</Link>
+                    <li className="hover:text-yellow-400">
+                      <Link to="/cricket-league-management">Cricket League Management</Link>
                     </li>
-                    <li className="hover:text-yellow-500">
+                    <li className="hover:text-yellow-400">
                       <Link to="/legal-consultancy">Legal Consultancy</Link>
                     </li>
-                    <li className="hover:text-yellow-500">
+                    <li className="hover:text-yellow-400">
                       <Link to="/it-services">IT Services</Link>
                     </li>
                   </ul>
                 )}
               </li>
-              <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/players"}>ATHLETES</Link></li>
-              <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/blogs"}>BLOGS</Link></li>
-              <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/about"}>ABOUT US</Link></li>
-              <li className=" border-white py-2 hover:text-yellow-500"><Link to={"/contact"}>CONTACT</Link></li>
+              <li className=" border-white py-2 hover:text-yellow-400"><Link to={"/about"}>ABOUT US</Link></li>
+              <li className=" border-white py-2 hover:text-yellow-400"><Link to={"/players"}>PLAYERS</Link></li>
+              <li className=" border-white py-2 hover:text-yellow-400"><Link to={"/blogs"}>BLOGS</Link></li>
+              <li className=" border-white py-2 hover:text-yellow-400"><Link to={"/contact"}>CONTACT</Link></li>
               <div className="gap-6 justify-center pointer-events-auto flex">
                 <a href="https://www.facebook.com/profile.php?id=61550798993939" target="_blank" rel="noopener noreferrer">
-                  <FaFacebook size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+                  <FaFacebook size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
                 <a href="https://www.instagram.com/kitbag_journey/" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+                  <FaInstagram size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
                 <a href="https://www.linkedin.com/company/sports-journey/" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin size={25} className="hover:text-yellow-500 transition-all duration-300" /></a>
+                  <FaLinkedin size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
               </div>
             </ul>
           </div>
