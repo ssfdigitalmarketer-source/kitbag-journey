@@ -79,13 +79,17 @@ const Contact = () => {
 
                             </div>
 
-                            <div className="flex gap-6 mb-20">
+                            <div className=" mb-20 space-y-3">
+                                <p className="text-sm lg:text-base">Social Media Links :</p>
+                                <div className="flex gap-6">
                                 <a href="https://www.facebook.com/profile.php?id=61550798993939" target="_blank" rel="noopener noreferrer">
             <FaFacebook size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
             <a href="https://www.instagram.com/kitbag_journey/" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
             <a href="https://www.linkedin.com/company/sports-journey/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
+
+                                </div>
                             </div>
                         </div>
 
