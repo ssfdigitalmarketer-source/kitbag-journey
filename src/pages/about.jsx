@@ -6,7 +6,7 @@ const About = () => {
         <div className="">
 
             <Navbar />
-            <section className="relative z-10 space-y-8" >
+            <section className="pb-20 relative z-10 space-y-8" >
                 <div className="relative w-full">
                     <img
                         src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769592417/Untitled_design_2_genmsi.png"
