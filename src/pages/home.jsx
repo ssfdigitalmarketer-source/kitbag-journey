@@ -229,7 +229,7 @@ const Home = () => {
 
 
       <div className="overflow-hidden w-full py-4">
-        <div className="flex whitespace-nowrap w-max animate-marquee-right">
+        <div className="flex whitespace-nowrap w-max animate-marquee-right [animation-duration:30s]">
           <span className="text-white text-xl md:text-3xl mr-8">
             AMIT KUMAR SELECTED FOR IPL  • VIRAT SINGH APPOINTED AS CAPTAIN OF JHARKHAND RANJI TEAM • SHIKHAR MOHAN SCORED DOUBLE CENTURY •
           </span>
