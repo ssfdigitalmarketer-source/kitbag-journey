@@ -36,7 +36,7 @@ const About = () => {
                 <div className="px-2 space-y-8 lg:w-[80%] xl:w-[70%] mx-auto">
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
-                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987152/WhatsApp_Image_2026-01-21_at_10.13.06_AM_ybdw2y.jpg" alt="" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987152/WhatsApp_Image_2026-01-21_at_10.13.06_AM_ybdw2y.jpg" alt="shahbaz-nadeem" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
                         </div>
                         <div className="space-y-3 flex-1">
                             <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">SHAHBAZ NADEEM</p>
@@ -48,7 +48,7 @@ const About = () => {
 
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
-                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632490/sh-sirImage_pb0kj3.jpg" alt="" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632490/sh-sirImage_pb0kj3.jpg" alt="sikandar-heyat" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
                         </div>
                         <div className="space-y-3 flex-1">
                             <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">SIKANDAR HEYAT</p>
@@ -57,10 +57,22 @@ const About = () => {
                             <p className="lg:pl-4 text-xs lg:text-lg text-center lg:text-left font-sans">A former state-level cricketer turned sports entrepreneur, Sikandar Heyat brings over 10 years of experience in business strategy, planning, contract negotiation, player management, and athlete development. His leadership experience at senior management levels has been instrumental in company growth and ecosystem development.</p>
                         </div>
                     </div>
+                    
+                    <div className="lg:flex space-y-3 lg:space-y-0">
+                        <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
+                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769778598/misbah-ur-rehman_aepc9k.jpg" alt="misbah" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                        </div>
+                        <div className="space-y-3 flex-1">
+                            <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">MISBAH</p>
+                            <p className="text-yellow-400 text-lg lg:text-xl pl-4 text-center lg:text-left font-sans uppercase">Founder & Creative Director</p>
+                            {/* <div className="w-full border-[0.5px] border-yellow-400 "></div> */}
+                            <p className="lg:pl-4 text-xs lg:text-lg text-center lg:text-left font-sans">Mr. Misbah has over 18 years of experience in creative advertising and leads a results-driven ad agency focused on building meaningful brands. Blending strategic thinking, creative direction, and storytelling, Misbah delivers impactful campaigns that connect with audiences and drive growth.</p>
+                        </div>
+                    </div>
 
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
-                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987893/IMG_2553.JPG_r1v7yx.jpg" alt="" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987893/IMG_2553.JPG_r1v7yx.jpg" alt="oneill-n-noah" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
                         </div>
                         <div className="space-y-3 flex-1">
                             <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">ONEILL N NOAH</p>
@@ -72,7 +84,7 @@ const About = () => {
 
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
-                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987152/IMG_2554.JPG_rqrkgi.jpg" alt="" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987152/IMG_2554.JPG_rqrkgi.jpg" alt="priyansh-tiwari" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
                         </div>
                         <div className="space-y-3 flex-1">
                             <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">PRIYANSH TIWARI</p>
@@ -84,7 +96,7 @@ const About = () => {
 
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
-                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769067675/IMG_2584.JPG_qt6dpq.jpg" alt="" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769067675/IMG_2584.JPG_qt6dpq.jpg" alt="nivesh-jha" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
                         </div>
                         <div className="space-y-3 flex-1">
                             <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">NIVESH JHA</p>
@@ -94,17 +106,7 @@ const About = () => {
                         </div>
                     </div>
 
-                     <div className="lg:flex space-y-3 lg:space-y-0">
-                        <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
-                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769778598/misbah-ur-rehman_aepc9k.jpg" alt="" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
-                        </div>
-                        <div className="space-y-3 flex-1">
-                            <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">MISBAH</p>
-                            <p className="text-yellow-400 text-lg lg:text-xl pl-4 text-center lg:text-left font-sans uppercase">Founder & Creative Director</p>
-                            {/* <div className="w-full border-[0.5px] border-yellow-400 "></div> */}
-                            <p className="lg:pl-4 text-xs lg:text-lg text-center lg:text-left font-sans">Mr. Misbah has over 18 years of experience in creative advertising and leads a results-driven ad agency focused on building meaningful brands. Blending strategic thinking, creative direction, and storytelling, Misbah delivers impactful campaigns that connect with audiences and drive growth.</p>
-                        </div>
-                    </div>
+
 
                 </div>
             </section>
