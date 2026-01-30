@@ -23,7 +23,7 @@ const Navbar = ({ showMenu = true }) => {
 
       </div>
 
-      <div className="flex lg:flex-2 w-[100%] lg:w-[80%] mx-auto bg-black/10 backdrop-blur-xl rounded-xl items-center justify-between lg:px-5">
+      <div className="flex lg:flex-2 w-[100%] lg:w-[80%] mx-auto lg:border-[1px] lg:border-white/10 bg-white/10 backdrop-blur-xl rounded-xl items-center justify-between lg:px-5">
 
         <button
           className="text-2xl mx-6 absolute right-0 lg:hidden pointer-events-auto"
@@ -33,7 +33,7 @@ const Navbar = ({ showMenu = true }) => {
         </button>
         {showMenu && (<ul className="hidden list-none w-full tracking-widest space-x-8 rounded-xl py-5 text-[15px] lg:flex lg:gap-6 pointer-events-auto cursor-pointer">
           {/* <li className="hover:text-yellow-400 transition-all duration-300 ease-in-out"><Link to={"/"}>HOME</Link></li> */}
-          <li className="relative group">
+          <li className="relative left-0 group">
             <span className="hover:text-yellow-400 transition-all duration-300 ease-in-out cursor-pointer">
               SERVICES
             </span>
@@ -105,19 +105,19 @@ const Navbar = ({ showMenu = true }) => {
           />
 
           {/* Menu (original positioning preserved) */}
-          <div className="w-full absolute z-40 top-2 left-0 lg:w-[20vw] lg:h-[100vh] transition-all duration-300 ease-in-out">
-            <ul className="list-none text-sm h-full space-y-4 w-[95%] rounded-lg mx-auto px-8 text-center text py-3 bg-black/30 backdrop-blur-xl tracking-widest text-[20px] text-white cursor-pointer pointer-events-auto" onClick={(e) => e.stopPropagation()}>
+          <div className="w-[70%] absolute z-40 top-0 left-0 h-screen transition-all duration-300 ease-in-out">
+            <ul className="list-none text-sm h-full space-y-4 w-[95%] rounded-lg px-8 lg:text-center py-3 bg-white/10 backdrop-blur-xl tracking-widest text-[20px] text-white cursor-pointer pointer-events-auto" onClick={(e) => e.stopPropagation()}>
               {/* <li className=" border-white py-2 hover:text-yellow-400"><Link to={"/"}>HOME</Link></li> */}
               <li className="py-2">
                 <button
-                  className="w-full hover:text-yellow-400"
+                  className=" hover:text-yellow-400"
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                 >
                   SERVICES
                 </button>
 
                 {mobileServicesOpen && (
-                  <ul className="mt-2 text-xs space-y-4 uppercase">
+                  <ul className="mt-4 px-4 text-xs space-y-4 uppercase">
                     <li className="hover:text-yellow-400">
                       <Link to="/athlete-management">Athlete Management</Link>
                     </li>
