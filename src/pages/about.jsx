@@ -94,6 +94,18 @@ const About = () => {
                         </div>
                     </div>
 
+                     <div className="lg:flex space-y-3 lg:space-y-0">
+                        <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
+                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769778598/misbah-ur-rehman_aepc9k.jpg" alt="" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                        </div>
+                        <div className="space-y-3 flex-1">
+                            <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">MISBAH</p>
+                            <p className="text-yellow-400 text-lg lg:text-xl pl-4 text-center lg:text-left font-sans uppercase">Founder & Creative Director</p>
+                            {/* <div className="w-full border-[0.5px] border-yellow-400 "></div> */}
+                            <p className="lg:pl-4 text-xs lg:text-lg text-center lg:text-left font-sans">Mr. Misbah has over 18 years of experience in creative advertising and leads a results-driven ad agency focused on building meaningful brands. Blending strategic thinking, creative direction, and storytelling, Misbah delivers impactful campaigns that connect with audiences and drive growth.</p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
             <Footer />
