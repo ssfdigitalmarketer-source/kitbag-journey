@@ -16,7 +16,7 @@ const About = () => {
 
                     <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
                         <h1 className="text-yellow-400 text-4xl md:text-5xl text-center leading-tight">
-                            ABOUT US
+                            ABOUT KITBAG JOURNEY
                         </h1>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ const About = () => {
                             <p className="lg:pl-4 text-xs lg:text-lg text-center lg:text-left font-sans">A former state-level cricketer turned sports entrepreneur, Sikandar Heyat brings over 10 years of experience in business strategy, planning, contract negotiation, player management, and athlete development. His leadership experience at senior management levels has been instrumental in company growth and ecosystem development.</p>
                         </div>
                     </div>
-                    
+
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
                             <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769778598/misbah-ur-rehman_aepc9k.jpg" alt="misbah" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
