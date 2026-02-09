@@ -5,9 +5,11 @@ const BlogSection = () => {
     const blogsData = useBlogStore(s => s.blogs);
 
     return (
-        <section className="px-5 mt-6 space-y-6 py-20" >
-            <h1 className="text-yellow-500 text-4xl text-center">LATEST BLOGS</h1>
-            <div className="justify-evenly lg:flex">
+        <section className="px-5 space-y-10 py-20 relative" >
+            <img src="/assets/cricket-rope.webp" alt="bg" className="absolute inset-0 w-full h-full object-cover -z-10 opacity-30"/>
+
+            <h1 className="text-yellow-400 text-4xl text-center">LATEST BLOGS</h1>
+            <div className="justify-evenly space-y-8 lg:space-y-0 lg:flex">
                 {blogsData?.map((blog, index) => (
                     <BlogCard key={index} image={blog.image} title={blog.title} date={blog.date} />
                 ))}

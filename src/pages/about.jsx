@@ -9,9 +9,10 @@ const About = () => {
             <section className="pb-20 relative z-10 space-y-8" >
                 <div className="relative w-full">
                     <img
-                        src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769592417/Untitled_design_2_genmsi.png"
-                        alt=""
+                        src="/assets/stadium_bw.webp"
+                        alt="stadium background"
                         className="w-full block"
+                        loading="lazy"
                     />
 
                     <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
@@ -20,8 +21,6 @@ const About = () => {
                         </h1>
                     </div>
                 </div>
-
-
 
                 <p className="px-2 font-sans text-xs lg:text-xl lg:w-[70%] mx-auto text-center">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years. Sikandar was instrumental in establishing MS Dhoni Cricket Academy across the globe.</p>
                 <p className="px-2 font-sans text-xs lg:text-xl lg:w-[70%] mx-auto text-center">Kitbag Journey Athlete Management is a next-generation sports management
@@ -36,7 +35,7 @@ const About = () => {
                 <div className="px-2 space-y-8 lg:w-[80%] xl:w-[70%] mx-auto">
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
-                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987152/WhatsApp_Image_2026-01-21_at_10.13.06_AM_ybdw2y.jpg" alt="shahbaz-nadeem" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                            <img src="/assets/team/shahbaaz_nadeem.jpg" alt="shahbaz-nadeem" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
                         </div>
                         <div className="space-y-3 flex-1">
                             <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">SHAHBAZ NADEEM</p>
@@ -48,7 +47,7 @@ const About = () => {
 
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
-                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632490/sh-sirImage_pb0kj3.jpg" alt="sikandar-heyat" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                            <img src="/assets/team/sh.webp" alt="sikandar-heyat" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
                         </div>
                         <div className="space-y-3 flex-1">
                             <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">SIKANDAR HEYAT</p>
@@ -60,7 +59,7 @@ const About = () => {
 
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
-                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769778598/misbah-ur-rehman_aepc9k.jpg" alt="misbah" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                            <img src="/assets/team/misbah_ur_rehman.jpg" alt="misbah" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
                         </div>
                         <div className="space-y-3 flex-1">
                             <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">MISBAH</p>
@@ -72,7 +71,7 @@ const About = () => {
 
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
-                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987893/IMG_2553.JPG_r1v7yx.jpg" alt="oneill-n-noah" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                            <img src="/assets/team/oneill_n_noah.jpg" alt="oneill-n-noah" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
                         </div>
                         <div className="space-y-3 flex-1">
                             <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">ONEILL N NOAH</p>
@@ -84,7 +83,7 @@ const About = () => {
 
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
-                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987152/IMG_2554.JPG_rqrkgi.jpg" alt="priyansh-tiwari" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                            <img src="/assets/team/priyansh_tiwari.jpg" alt="priyansh-tiwari" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
                         </div>
                         <div className="space-y-3 flex-1">
                             <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">PRIYANSH TIWARI</p>
@@ -96,7 +95,7 @@ const About = () => {
 
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
-                            <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769067675/IMG_2584.JPG_qt6dpq.jpg" alt="nivesh-jha" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                            <img src="/assets/team/nivesh_jha.jpg" alt="nivesh-jha" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
                         </div>
                         <div className="space-y-3 flex-1">
                             <p className="text-yellow-400 text-2xl pl-4 text-center lg:text-left lg:text-3xl">NIVESH JHA</p>
@@ -105,8 +104,6 @@ const About = () => {
                             <p className="lg:pl-4 text-xs lg:text-lg text-center lg:text-left font-sans">Mr. Nivesh Kumar Jha is the Legal Consultant for Kitbag Journey and a Fellow Member of the Institute of Chartered Accountants of India (ICAI) with over 9 years of professional standing. He has extensive experience in GST, assurance, and accounting, and has been actively involved in providing direct tax advisory services to several reputed companies in India. He also handles international clients, offering comprehensive advisory and compliance support across jurisdictions.</p>
                         </div>
                     </div>
-
-
 
                 </div>
             </section>

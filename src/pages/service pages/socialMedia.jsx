@@ -8,9 +8,10 @@ const SocialMedia = () => {
             <section className="">
                 <div className="relative w-full">
                     <img
-                        src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631787/service2_q8sjvo.jpg"
-                        alt=""
+                        src="/assets/services/branding_pr.webp"
+                        alt="branding & pr"
                         className="w-full block"
+                        loading="lazy"
                     />
 
                     <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">

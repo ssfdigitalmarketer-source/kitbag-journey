@@ -1,16 +1,17 @@
 import { useNavigate } from "react-router"
+import { motion } from "framer-motion";
 
 const ServiceCard = ({ img, title, link}) => {
   const navigate = useNavigate();
   return (
-    <div className="relative shrink-0 py-20 h-[60vh] lg:h-[60vh] w-[80%] lg:w-[30%] xl:w-[20%] -skew-x-6 cursor-pointer group lg:block group will-change-transform transform-gpu backface-hidden" onClick={() => navigate(`/${link}`)}>
+    <div className="relative shrink-0 py-20 h-[60vh] lg:h-[60vh] w-[80%] md:w-[50%] lg:w-[40%] xl:w-[20%] -skew-x-6 cursor-pointer group lg:block group will-change-transform transform-gpu backface-hidden" onClick={() => navigate(`/${link}`)}>
             <div className="w-full h-[90%] border-[0.5px] border-white absolute top-3 left-3 group-hover:border-yellow-400 transition-all duration-300 "></div>
 
             <div className="w-full h-[90%] absolute top-0 left-0 overflow-hidden">
                 <img
                     src={img}
                     alt="background"
-                    className="w-full h-full object-cover scale-125 brightness-100 skew-x-6 grayscale group-hover:brightness-50 group-hover:grayscale-0 transition-all duration-300 object-center"
+                    className="w-full h-full object-cover scale-125 brightness-100 skew-x-6 grayscale group-hover:brightness-50 group-hover:grayscale-0 transition-all duration-300 object-top"
                 />
                 <div className="w-[90%] z-20 absolute m-5 bottom-0">
                     <div className='flex justify-between translate-y-10 group-hover:translate-y-0 transition-all duration-300 mb-2'>

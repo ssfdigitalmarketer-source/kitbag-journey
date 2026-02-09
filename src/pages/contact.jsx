@@ -33,11 +33,12 @@ const Contact = () => {
     }
 
     return (
-        <div className="bg-fixed" style={{ backgroundImage: `url("https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769593899/copy_of_backgroundfooter_dvic2i_cc16e1.png")` }}>
+        <div className="bg-fixed">
             {/* <div className="fixed z-0 top-0"><img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769593899/copy_of_backgroundfooter_dvic2i_cc16e1.png" alt="" /> </div> */}
 
             <Navbar />
             <section className="pb-20 relative z-20 pt-40 text-xs px-5 lg:px-20 space-y-16" >
+          <img src="/assets/bg_black.webp" className="fixed inset-0 -z-10 w-full h-full object-cover" alt="" loading="lazy" />
                 <h1 className="text-yellow-400 text-4xl text-center">GET IN TOUCH</h1>
 
                 <div className="lg:flex gap-40">

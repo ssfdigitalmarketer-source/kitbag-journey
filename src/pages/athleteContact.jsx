@@ -38,7 +38,7 @@ const AthleteContact = () => {
     return (
         <div>
             <Navbar />
-            <section className="pt-40 pb-20 space-y-8 px-5 text-xs" style={{ backgroundImage: `url('https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769061372/wrinkled-paper-black-background-abstract-2026-01-09-00-09-50-utc_um1mhu.jpg')`, backgroundPosition: "center" }}>
+            <section className="pt-40 pb-20 space-y-8 px-5 text-xs" style={{ backgroundImage: `url('/assets/bg_paper.jpg')`, backgroundPosition: "center" }}>
                 <h1 className="text-center text-4xl text-yellow-400">JOIN US AS AN ATHLETE</h1>
                 <p className="font-sans text-center text-sm lg:text-lg">Submit your portfolio today and take your career to next level with our expert guidance and support.</p>
                 <div className="mx-auto lg:w-[60%] bg-white/10 px-8 py-10 rounded-lg backdrop-blur-xl">

@@ -1,30 +1,41 @@
-
 import { motion } from "framer-motion";
 
-const variant = {
-  hidden: {
-    x: -60,
-    opacity: 0,
-  },
+const container = {
+  hidden: {},
   show: {
-    x: 0,
-    opacity: 1,
     transition: {
-      duration: 5,                 // slow, confident
-      ease: [0.22, 1, 0.36, 1],       // premium easing
+      staggerChildren: 0.25,
     },
   },
 };
 
-export default function FadeInLeftToRight({ children, delay = 0 }) {
+const item = {
+  hidden: { opacity: 0, x: -50 },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+export default function FadeInOnView({ children, className }) {
   return (
     <motion.div
-      variants={variant}
+      className={className}
+      variants={container}
       initial="hidden"
-      animate="show"
-      transition={{ delay }}
+      whileInView="show"
+      viewport={{ once: true, amount: 0.3 }}
     >
-      {children}
+      {children.map((child, i) => (
+        <motion.div
+          key={i}
+          variants={item}
+          className=""
+        >
+          {child}
+        </motion.div>
+      ))}
     </motion.div>
   );
 }

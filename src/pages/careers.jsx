@@ -15,7 +15,7 @@ const Careers = () => {
     return (
         <div>
             <Navbar />
-            <section className="px-5 text-xs lg:text-base pt-40 pb-20" style={{ backgroundImage: `url('https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769061372/wrinkled-paper-black-background-abstract-2026-01-09-00-09-50-utc_um1mhu.jpg')`, backgroundPosition: "center" }}>
+            <section className="px-5 text-xs lg:text-base pt-40 pb-20" style={{ backgroundImage: `url('/assets/bg_paper.jpg')`, backgroundPosition: "center" }}>
                 <div className="lg:w-[70%] mx-auto space-y-8 ">
                     <h1 className="text-4xl text-yellow-400 text-center">JOIN OUR TEAM AND CONTRIBUTE TO OUR MISSION</h1>
                     <h2 className="text-xl lg:text-2xl text-yellow-400 text-center font-sans">Currently Looking for :</h2>

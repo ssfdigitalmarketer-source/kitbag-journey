@@ -2,7 +2,7 @@ import MarqueeBackground from "../animations/MarqueeBackground";
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import FadeInX from "../animations/FadeInX";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,17 +43,24 @@ const MovingBanner = () => {
     >
       <MarqueeBackground />
 
-      <p className="moving-paragraph relative">
-        WE CREATE
-      </p>
+      <FadeInX direction="right" delay={0.4}>
+        <p className="moving-paragraph relative">
+          WE CREATE
+        </p>
+      </FadeInX>
 
-      <p className="moving-paragraph relative">
-        BRANDS AND IP&apos;S
-      </p>
+      <FadeInX direction="left" delay={0.8}>
+        <p className="moving-paragraph relative">
+          BRANDS AND IP&apos;S
+        </p>
+      </FadeInX>
 
+      <FadeInX direction="right" delay={1.2}>
       <p className="moving-paragraph relative">
         WE ARE KITBAG JOURNEY
       </p>
+      </FadeInX>
+
     </section>
   );
 };

@@ -2,7 +2,7 @@
     {
         "id" : 1,
         "title" : "Amit – The Charismatic Leg Spinner Raring to Play in the IPL",
-        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768886879/Amit_Kumar_wuqqhr.jpg",
+        "image" : "/assets/blogs/Amit_Kumar_1.jpg",
         "content": [
             "Amit is an exciting and highly skilled leg spinner who has steadily climbed the ranks of Indian cricket through sheer determination and hard work.",
             "Born with a natural flair for spin bowling, Amit’s early days were marked by struggle, perseverance, and relentless practice. Recognizing his raw talent, he joined a professional cricket academy where he refined his technique and developed his signature variations.",
@@ -16,7 +16,7 @@
     {
         "id" : 2,
         "title" : "Virat – The Flamboyant Left-Handed Batsman and Complete Brand",
-        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768886880/VintageVirat-Kitbagjourney2_o8pfmz.png",
+        "image" : "/assets/blogs/Virat_Singh_1.webp",
         "content": [
             "Virat is a naturally gifted left-handed batsman, known for his stylish stroke play, elegance, and match-winning temperament.",
             "Born in Jamshedpur, Virat began playing cricket at a very young age, displaying exceptional hand-eye coordination and an aggressive yet calculated batting style. His passion for the game set him apart from his peers from childhood itself.",
@@ -30,7 +30,7 @@
     {
         "id" : 3,
         "title" : "Shikhar Mohan – One of India’s Most Promising Rising Cricketers",
-        "image" : "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768886880/Sharandeep_Singh_xb8k3j.png",
+        "image" : "/assets/blogs/Shikhar_Mohan_1.webp",
         "content": [
             "Shikhar Mohan is a talented and dynamic cricketer from Ranchi, a city known for producing world-class players like MS Dhoni.",
             "From an early age, Shikhar displayed exceptional cricketing instincts. His natural ability and sharp reflexes caught the attention of local coaches, who guided him into professional training at a young age.",

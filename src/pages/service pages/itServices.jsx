@@ -9,9 +9,10 @@ const ITServices = () => {
             <section className="">
                 <div className="relative w-full">
                     <img
-                        src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768914345/male-data-scientist-works-on-personal-computer-wea-2026-01-09-10-11-30-utc_wdsuz6.jpg"
-                        alt=""
+                        src="/assets/services/it_services.webp"
+                        alt="it services"
                         className="w-full block"
+                        loading="lazy"
                     />
 
                     <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">

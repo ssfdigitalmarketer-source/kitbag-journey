@@ -8,9 +8,10 @@ const EventManagement = () => {
             <section className="">
                 <div className="relative w-full">
                     <img
-                        src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631738/service_h5odoj.jpg"
-                        alt=""
+                        src="/assets/services/cricket_league_management_cover.webp"
+                        alt="cricket league management"
                         className="w-full block"
+                        loading="lazy"
                     />
 
                     <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">

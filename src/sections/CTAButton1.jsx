@@ -10,23 +10,21 @@ const CTAButton1 = () => {
 
         <CharFadeLeftToRight
           text="FUTURE"
-          className="text-yellow-500"
+          className="text-yellow-400"
         />
 
         <CharFadeLeftToRight text=" THAT CELEBRATES YOUR " />
 
         <CharFadeLeftToRight
           text="PASSION"
-          className="text-yellow-500"
+          className="text-yellow-400"
         />
-
-
       </p>
 
       <button onClick={()=> navigate('/athlete-contact')} className="
     group relative overflow-hidden
     font-oswald px-8 py-4 mt-4 text-lg
-    bg-yellow-500 text-black skew-x-[-12deg]
+    bg-yellow-400 text-black skew-x-[-12deg]
     transition-transform duration-300 ease-in-out
   "
       >
@@ -47,7 +45,6 @@ const CTAButton1 = () => {
           JOIN US AS AN ATHLETE
         </span>
       </button>
-
 
     </div>
   )

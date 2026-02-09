@@ -12,25 +12,26 @@ const Navbar = ({ showMenu = true }) => {
   const navigate = useNavigate();
 
   return (
-    <nav className="fixed top-0 z-50 w-[100%] py-8 font-semibold lg:flex pointer-events-none">
-      <div className="pointer-events-auto px-6" onClick={() => navigate('/')}>
+    <nav className="fixed px-5 z-50 w-[100%] mt-5 justify-between lg:justify-around items-center font-semibold flex pointer-events-none">
+      {/* <div className="pointer-events-auto px-6" onClick={() => navigate('/')}> */}
         <img
-          src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632392/kitbag-logo_fmwuly.svg'
+          src='/assets/kitbag_logo_red.svg'
           alt="Kitbag-Logo"
-          className="h-[70px] mr-5 absolute top-0 left-1 lg:h-[150px] cursor-pointer"
+          className="h-[50px] pointer-events-auto relative -left-2 lg:-left-4 lg:h-[100px] cursor-pointer"
+          onClick={() => navigate('/')}
 
         />
 
-      </div>
-
-      <div className="flex lg:flex-2 w-[100%] lg:w-[80%] mx-auto lg:border-[1px] lg:border-white/10 bg-white/10 backdrop-blur-xl rounded-xl items-center justify-between lg:px-5">
-
+      {/* </div> */}
         <button
-          className="text-2xl mx-6 absolute right-0 lg:hidden pointer-events-auto"
+          className="text-2xl lg:hidden pointer-events-auto"
           onClick={() => setShowBurgerMenu(true)}
         >
           ☰
         </button>
+
+      <div className="hidden lg:flex lg:flex-2 h-[50%] w-[85%] lg:border-[1px] lg:border-white/10 bg-white/10 backdrop-blur-xl rounded-xl items-center justify-between lg:px-5">
+
         {showMenu && (<ul className="hidden list-none w-full tracking-widest space-x-8 rounded-xl py-5 text-[15px] lg:flex lg:gap-6 pointer-events-auto cursor-pointer">
           {/* <li className="hover:text-yellow-400 transition-all duration-300 ease-in-out"><Link to={"/"}>HOME</Link></li> */}
           <li className="relative left-0 group">

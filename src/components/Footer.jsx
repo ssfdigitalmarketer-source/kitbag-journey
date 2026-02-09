@@ -2,14 +2,17 @@ import { Link } from "react-router"
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { useNavigate } from "react-router";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
-    <div className="relative z-50" style={{ backgroundImage: `url("https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769593899/copy_of_backgroundfooter_dvic2i_cc16e1.png")`, backgroundPosition : "center" }}>
+    <div className="relative z-40">
+          <img src="/assets/bg_black.webp" className="absolute inset-0 w-full h-full object-cover" alt="" loading="lazy" />
       <footer className='pt-10 px-10 b space-y-8 relative'>
         <div className='lg:flex space-y-6 lg:flex-col justify-between items-center'>
           <div className="flex flex-col justify-center">
-            <img src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632392/kitbag-logo_fmwuly.svg' alt="Kitbag-Logo" className="h-[100px] lg:h-[120px] cursor-pointer" />
+            <img src='/assets/kitbag_logo.svg' alt="Kitbag-Logo" className="h-[100px] lg:h-[120px] cursor-pointer" onClick={() => navigate('/')} />
             <ul className='list-none text-center lg:text-left lg:text-xl space-y-5 lg:space-y-0 gap-20 lg:flex font-oswald uppercase'>
               <li className="cursor-pointer hover:text-yellow-400 transition-all duration-300"><Link to={"/about"}>About Us</Link></li>
               <li className="cursor-pointer hover:text-yellow-400 transition-all duration-300"><Link to={"/contact"}>Contact Us</Link></li>

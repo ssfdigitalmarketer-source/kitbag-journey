@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631030/virat-singh_mqvvpp.jpg",
+        "image": "/assets/players/virat-singh.webp",
         "name": "Virat Singh",
         "fatherName": "Binod Singh",
         "dateOfBirth": "08-12-1997",
@@ -37,7 +37,7 @@
     {
         "id": 2,
         "name": "Shikhar Mohan",
-        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/shikhar-mohan_wjo2jq.jpg",
+        "image": "/assets/players/shikhar-mohan.jpg",
         "fatherName": "Suraj Mohan",
         "dateOfBirth": "18-05-2005",
         "placeOfBirth": "Ranchi",
@@ -72,7 +72,7 @@
     {
         "id": 3,
         "name": "Amit Kumar",
-        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631028/amit-kumar_ds78rd.jpg",
+        "image": "/assets/players/amit-kumar.jpg",
         "fatherName": "Janardan Prasad Chandrabanshi",
         "dateOfBirth": "02-11-2002",
         "placeOfBirth": "Sasaram, Bihar",
@@ -110,7 +110,7 @@
     },
     {
         "id": 4,
-        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/shashi-mathur_sff0dk.jpg",
+        "image": "/assets/players/shashi-mathur.jpg",
         "name": "Shashi Mathur",
         "fatherName": "Jaiveer Singh",
         "dateOfBirth": "09-03-1995",
@@ -145,7 +145,7 @@
     },
     {
         "id": 5,
-        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/rajandeep-singh_jbqwuw.jpg",
+        "image": "/assets/players/rajandeep-singh.webp",
         "name": "Rajandeep Singh",
         "fatherName": "Kulwant singh",
         "dateOfBirth": "05-09-2002",
@@ -180,7 +180,7 @@
     },
     {
         "id": 6,
-        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631030/kounain-quraishi_otrsqs.png",
+        "image": "/assets/players/kounain-quraishi.webp",
         "name": "Md Kounain Quraishi",
         "fatherName": "Md Shamim Quraishi",
         "dateOfBirth": "29-09-2002",
@@ -216,7 +216,7 @@
     {
         "id": 7,
         "name": "Sharandeep Singh",
-        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631029/sharandeep-singh_qtwlig.jpg",
+        "image": "/assets/players/sharandeep-singh.jpg",
         "fatherName": "Jasvinder Singh",
         "dateOfBirth": "27-11-2002",
         "placeOfBirth": "Jamshedpur",
@@ -250,7 +250,7 @@
     },
     {
         "id": 8,
-        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631028/manishi_ar4dty.jpg",
+        "image": "/assets/players/manishi.webp",
         "name": "Manishi",
         "fatherName": "Tarkeshwar Singh",
         "dateOfBirth": "03-11-2003",
@@ -285,7 +285,7 @@
     },
     {
         "id": 9,
-        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769596165/IMG_2631.JPG_s3gaey.jpg",
+        "image": "/assets/players/pankaj-kumar.jpg",
         "name": "Pankaj Kumar",
         "fatherName": "Kishor Kumar",
         "dateOfBirth": "12-11-1999",
@@ -320,7 +320,7 @@
     },
     {
         "id": 10,
-        "image": "https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631028/jatin-pandey_zqh8cs.jpg",
+        "image": "/assets/players/jatin-pandey.jpg",
         "name": "Jatin Kumar Pandey",
         "fatherName": "Dinesh Pandey",
         "dateOfBirth": "01-05-2004",

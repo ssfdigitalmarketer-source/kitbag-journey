@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import PlayerSection from "../sections/PlayerSection";
-import TestimonialCard from "../components/TestimonialCard";
+// import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import MovingBanner from "../sections/MovingBanner";
@@ -9,9 +9,8 @@ import HeroHeadline from "../animations/HeroHeadline";
 import FadeInLeftToRight from "../animations/FadeInLeftToRight";
 import ServicesSection from "../sections/ServicesSection";
 import BlogSection from "../sections/BlogSection";
-import { SlArrowLeft } from "react-icons/sl";
-import { SlArrowRight } from "react-icons/sl";
 import { useNavigate } from "react-router";
+import FadeInX from "../animations/FadeInX";
 
 const Home = () => {
   const videoRef = useRef(null);
@@ -134,53 +133,74 @@ const Home = () => {
         ref={sectionRef}
         className="w-full py-24 px-5 text-center relative
                    h-[70vh] lg:h-[210vh] top-0 lg:px-20 lg:pb-40
-                    bg-no-repeat bg-cover"
-        style={{ backgroundImage: `url("")` }}
+                    bg-no-repeat bg-fixed bg-center bg-cover "
+        style={{ backgroundImage: `url("/assets/stadium.webp")` }}
       >
+        <div class="absolute inset-0 bg-black/60"></div>
+
         <h1
           ref={headingRef}
-          className="text-[8vh] mx-auto font-extrabold mt-[10px] text-white lg:text-[11vw]"
+          className="text-[8vh] relative z-10 mx-auto font-extrabold mt-[10px] text-white lg:text-[11vw]"
         >
           PROMOTING TALENT
         </h1>
+        {/* <img src="/assets/stadium.jpg" alt="bg" className="fixed z-0 inset-0 grayscale" /> */}
+
 
         {/* Sticky video wrapper */}
         <div ref={wrapperRef} className="w-full flex justify-center">
           <video
             ref={videoRef}
-            src="https://res.cloudinary.com/dwmmlrpgg/video/upload/v1769579418/cricket-video_1_fh1znj.mp4"
+            src="/assets/videos/hero_video.mp4"
             autoPlay
             muted
             loop
-            className="w-[50%] transition-transform duration-500"
+            className="w-[50%] transition-transform duration-500 "
           />
         </div>
       </section>
 
       {/* Services Section */}
-      <ServicesSection />
+      
+        <ServicesSection />
 
 
       {/* About Section */}
-      <section className="overflow-hidden relative py-4 lg:py-20" style={{ backgroundImage: `url("https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769588635/cricket_ball_background_ulkhdw.png")`, backgroundSize: "cover", backgroundPosition: "center", backdropFilter: "brightness(0.5)" }}>
-        <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769588635/cricket_ball_background_ulkhdw.png" alt="" className="w-full scale-[2] h-full object-contain absolute top-0 brightness-50" />
+      <section className="overflow-hidden relative py-4 lg:py-20">
+        <img src="/assets/cricket_ball.webp" alt="bg" className="absolute inset-0 w-full h-full object-cover" />
+        {/* <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+        >
+          <source src="/assets/videos/stadium_video.mp4" type="video/mp4" />
+        </video> */}
+
+        {/* Overlay (optional) */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        {/* <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769588635/cricket_ball_background_ulkhdw.png" alt="" className="w-full scale-[2] h-full object-contain absolute top-0 brightness-50" /> */}
         <div className="px-2 space-y-3 lg:space-y-10 font-bold font-sans text-center mx-auto lg:w-[70%] relative z-10 lg:text-2xl">
           <p className="italic text-sm lg:text-2xl"><span className="">" </span>EVERY <span className="">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="">CAREER</span>.</p>
           <p className="italic text-sm lg:text-2xl">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="">SPORTS</span> TALENT <span className="">REACH</span> THEIR FULL <span className="">POTENTIAL</span><span className=""> "</span></p>
           <div>
             <p className="text-xs font-oswald lg:text-xl">SHAHBAZ NADEEM</p>
-            <p className="text-yellow-400 text-xs lg:text-sm">MENTOR, KITBAG JOURNEY.</p>
+            <p className="text-yellow-400 text-xs lg:text-sm">FORMER INDIAN CRICKETER, MENTOR, KITBAG JOURNEY.</p>
           </div>
         </div>
       </section>
 
 
-      <section className="lg:px-5 lg:py-2 text-left bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769593899/copy_of_backgroundfooter_dvic2i_cc16e1.png")` }}>
+      <section className="lg:px-5 py-2 relative text-left bg-no-repeat bg-cover">
+
+        <img src="/assets/bg_black.webp" className="absolute inset-0 w-full h-full object-cover" alt="" loading="lazy" />
 
         <div className="space-y-5 px-5 my-20 text-center lg:flex lg:text-left">
           <div className="w-full h-[50vh] overflow-hidden lg:h-[80vh] lg:w-1/2">
             <div className="lg:w-[80%] h-full">
-              <img src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632490/sh-sirImage_pb0kj3.jpg' alt="" className="h-full object-cover grayscale mx-auto hover:grayscale-0" />
+              <img src='/assets/team/sh.webp' alt="" className="h-full object-cover grayscale mx-auto hover:grayscale-0" />
 
             </div>
           </div>
@@ -210,12 +230,13 @@ const Home = () => {
       <section className="bg-[#090909] relative px-5 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <video
-            src="https://res.cloudinary.com/dwmmlrpgg/video/upload/v1768977680/0121_kmxaaw.mp4"
+            src="/assets/videos/cricket_highlight.mp4"
             autoPlay
             muted
             loop
             playsInline
             className="w-full h-full object-cover grayscale brightness-50"
+            loading="lazy"
           />
         </div>
 
@@ -225,7 +246,8 @@ const Home = () => {
       </section>
 
       {/* players section */}
-      <PlayerSection />
+
+        <PlayerSection />
 
 
       <div className="overflow-hidden w-full py-4">
@@ -249,7 +271,7 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="px-5 lg:px-32 relative py-20 group">
+      {/* <section className="px-5 lg:px-32 relative py-20 group">
         <div className="w-full h-full inset-0 overflow-hidden absolute top-0 left-0 z-0">
           <img src='https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768632570/testimonialBackground1_j7khty.jpg' alt="testimonial background" className="object-cover w-full h-full" />
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black via-[30%] to-transparent" />
@@ -258,10 +280,6 @@ const Home = () => {
           <h1 className="text-yellow-400 text-4xl">
             TESTIMONIALS
           </h1>
-          {/* <h1 className="text-6xl">
-            WHAT OUR CLIENTS SAY
-          </h1> */}
-
           <div className="overscroll-x-contain overflow-hidden">
             <div className="flex lg:w-full transition-all duration-300 ease-in-out" ref={slideRef}>
               <TestimonialCard text="Managing a player growth is very tactical journey and I am happy that Kitbag Journey team is leaving no stone unturned to provide best support to the athletes" img="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768987152/WhatsApp_Image_2026-01-21_at_10.13.06_AM_ybdw2y.jpg" name="Shahbaaz Nadeem" title="Former India Test and IPL Player" />
@@ -279,17 +297,17 @@ const Home = () => {
         <button className="rounded-full absolute opacity-30 lg:opacity-0 top-1/2 right-0 lg:right-10 p-2 bg-white group-hover:opacity-30 hover:bg-yellow-400 transition-all duration-300 ease-in-out" onClick={moveRight} ><SlArrowRight className="text-black" />
         </button>
 
-      </section>
+      </section> */}
 
       <BlogSection />
 
       <section className="relative pt-20 px-5 text-center overflow-hidden space-y-10">
 
-<h1 className="text-4xl text-yellow-400 text-center uppercase">The Genesis of Kitbag Journey</h1>
-       
+        <h1 className="text-4xl text-yellow-400 text-center uppercase">The Genesis of Kitbag Journey</h1>
+
         {/* Content */}
         <div className="relative z-10 space-y-8">
-            
+
           <div class="relative aspect-video w-full">
             <iframe
               class="absolute inset-0 w-full mx-auto h-full rounded-lg"

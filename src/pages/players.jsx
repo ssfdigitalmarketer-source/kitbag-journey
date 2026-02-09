@@ -10,7 +10,7 @@ const Players = () => {
         <div>
             <Navbar />
             {/* <div className="fixed top-0"><img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769592417/Untitled_design_2_genmsi.png" alt="" /> </div> */}
-            <section className="pb-20 pt-40 space-y-10 bg-fixed bg-cover" style={{ backgroundImage: `url("https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769592417/Untitled_design_2_genmsi.png")` }}>
+            <section className="pb-20 pt-40 space-y-10 bg-fixed bg-cover" style={{ backgroundImage: `url("/assets/stadium_bw.webp")` }}>
                 <h1 className="text-4xl relative z-30 text-yellow-400 text-center">OUR PLAYERS</h1>
                 <div className="px-10 flex flex-wrap gap-14 justify-center">
                 {players?.map((player,index)=>(

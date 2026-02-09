@@ -5,12 +5,13 @@ const AtheleteManagement = () => {
     return (
         <div className="relative">
             <Navbar />
-            <section className="text-center">
+            <section className="">
                 <div className="relative w-full">
                     <img
-                        src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631738/service_h5odoj.jpg"
-                        alt=""
+                        src="/assets/services/player_management.webp"
+                        alt="player management"
                         className="w-full block"
+                        loading="lazy"
                     />
 
                     <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">

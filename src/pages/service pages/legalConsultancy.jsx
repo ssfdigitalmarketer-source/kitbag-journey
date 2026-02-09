@@ -8,9 +8,10 @@ const LegalConsultancy = () => {
             <section className="">
                 <div className="relative w-full">
                     <img
-                        src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769065678/client-was-listening-to-a-lawyer-advising-on-an-em-2026-01-07-01-02-00-utc_1_xoz2iw.jpg"
-                        alt=""
+                        src="/assets/services/legal_consultancy_cover.webp"
+                        alt="legal consultancy"
                         className="w-full block"
+                        loading="lazy"
                     />
 
                     <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
