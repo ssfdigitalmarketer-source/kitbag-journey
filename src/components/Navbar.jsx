@@ -12,12 +12,12 @@ const Navbar = ({ showMenu = true }) => {
   const navigate = useNavigate();
 
   return (
-    <nav className="fixed px-5 z-50 w-[100%] mt-5 justify-between lg:justify-around items-center font-semibold flex pointer-events-none">
+    <nav className="fixed px-5 z-50 w-[100%] justify-between lg:justify-around items-center font-semibold flex pointer-events-none">
       {/* <div className="pointer-events-auto px-6" onClick={() => navigate('/')}> */}
         <img
-          src='/assets/kitbag_logo_red.svg'
+          src='/assets/kitbag_logo.svg'
           alt="Kitbag-Logo"
-          className="h-[50px] pointer-events-auto relative -left-2 lg:-left-4 lg:h-[100px] cursor-pointer"
+          className="h-[70px] pointer-events-auto relative -left-3 lg:-left-8 lg:h-[150px] cursor-pointer"
           onClick={() => navigate('/')}
 
         />

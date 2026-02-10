@@ -138,12 +138,15 @@ const Home = () => {
       >
         <div class="absolute inset-0 bg-black/60"></div>
 
+      <FadeInX direction="up">
         <h1
           ref={headingRef}
           className="text-[8vh] relative z-10 mx-auto font-extrabold mt-[10px] text-white lg:text-[11vw]"
         >
           PROMOTING TALENT
         </h1>
+
+      </FadeInX>
         {/* <img src="/assets/stadium.jpg" alt="bg" className="fixed z-0 inset-0 grayscale" /> */}
 
 

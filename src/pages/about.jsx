@@ -1,5 +1,6 @@
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
+import FadeInX from "../animations/FadeInX"
 
 const About = () => {
     return (
@@ -32,6 +33,9 @@ const About = () => {
 
                 <h1 className="text-yellow-400 text-4xl text-center">MEET OUR TEAM</h1>
 
+
+                <FadeInX direction="right">
+                
                 <div className="px-2 space-y-8 lg:w-[80%] xl:w-[70%] mx-auto">
                     <div className="lg:flex space-y-3 lg:space-y-0">
                         <div className="w-[100%] h-[45vh] lg:w-60 lg:h-60 overflow-hidden">
@@ -106,6 +110,7 @@ const About = () => {
                     </div>
 
                 </div>
+                </FadeInX>
             </section>
             <Footer />
         </div>

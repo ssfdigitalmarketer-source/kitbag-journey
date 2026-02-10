@@ -34,12 +34,12 @@ const ServicesSection = () => {
   }, []);
 
   return (
-    <section className="w-full relative py-20" style={{ backgroundImage: `linear-gradient(to right, #434343 0%, black 100%);` }} >
+    <section className="w-full relative py-20" >
       
       <div
-    class="absolute top-1/2 left-1/2 h-[500px] w-[500px]
+    class="absolute top-1/2 -z-10 left-1/2 h-[100%] w-[100%]
            -translate-x-1/2 -translate-y-1/2
-           bg-white/20
+           bg-white/5
            rounded-full
            blur-[160px]"
   ></div>
