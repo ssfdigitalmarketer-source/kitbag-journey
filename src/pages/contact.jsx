@@ -48,6 +48,8 @@ const Contact = () => {
                 }),
             });
 
+                alert("Message sent successfully!");
+
         } catch (err) {
             console.log(err);
             return;

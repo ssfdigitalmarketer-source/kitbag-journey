@@ -68,6 +68,8 @@ const AthleteContact = () => {
                 }),
             });
 
+            alert("Profile submitted successfully!");
+
         } catch (err) {
             console.log(err);
             return;
