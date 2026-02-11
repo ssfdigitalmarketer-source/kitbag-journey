@@ -1,13 +1,15 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
-import { Calendar, MapPin, User } from "lucide-react"
-
+import { Calendar, MapPin, User, Mail, Phone } from "lucide-react"
 
 
 const AthleteContact = () => {
+    const scriptUrl = import.meta.env.VITE_APP_SCRIPT_URL;
     const [formData, setFormData] = useState({
         name: "",
+        email: "",
+        phone: "",
         dateOfBirth: "",
         placeOfBirth: "",
         debuts: "",
@@ -20,6 +22,14 @@ const AthleteContact = () => {
         bio: ""
     })
 
+    const [showEmptyFieldAlert, setShowEmptyFieldAlert] = useState(false);
+
+    const dateRef = useRef(null);
+
+    const openPicker = () => {
+        dateRef.current?.showPicker();
+    };
+
     function formDataChange(e) {
         const { name, value } = e.target;
         setFormData({
@@ -28,9 +38,41 @@ const AthleteContact = () => {
         })
     }
 
-    function handleForm(e) {
+    async function handleForm(e) {
         e.preventDefault();
         console.log(formData);
+        if (formData.name === "" || formData.email === "" || formData.phone === "") {
+            setShowEmptyFieldAlert(true);
+            return;
+        }
+        try {
+            await fetch(scriptUrl, {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    form: "athlete-contact",
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone,
+                    dateOfBirth: formData.dateOfBirth,
+                    placeOfBirth: formData.placeOfBirth,
+                    debuts: formData.debuts,
+                    playingRole: formData.playingRole,
+                    battingStyle: formData.battingStyle,
+                    bowlingStyle: formData.bowlingStyle,
+                    achievements: formData.achievements,
+                    bestScore: formData.bestScore,
+                    bestBowling: formData.bestBowling,
+                    bio: formData.bio
+                }),
+            });
+
+        } catch (err) {
+            console.log(err);
+            return;
+
+        }
 
     }
 
@@ -58,16 +100,49 @@ const AthleteContact = () => {
                                     required
                                 />
                             </div>
+                            {showEmptyFieldAlert && formData.name === "" && <p className="text-red-500">Enter your name</p>}
+
+
+                            <label className="text-yellow-400">Email</label>
+                            <div className="flex items-center bg-[#0f0f0f] rounded-lg px-3">
+                                <Mail className="w-6 h-6 text-[#505050]" />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    onChange={formDataChange}
+                                    className="w-full bg-transparent py-4 px-3 focus:outline-none"
+                                    placeholder="Email Address"
+                                    required
+                                />
+                            </div>
+                            {showEmptyFieldAlert && formData.email === "" && <p className="text-red-500">Enter your email</p>}
+
+
+                            <label className="text-yellow-400">Phone Number</label>
+                            <div className="flex items-center bg-[#0f0f0f] rounded-lg px-3">
+                                <Phone className="w-6 h-6 text-[#505050]" />
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    onChange={formDataChange}
+                                    className="w-full bg-transparent py-4 px-3 focus:outline-none"
+                                    placeholder="Phone Number"
+                                    required
+                                />
+                            </div>
+                            {showEmptyFieldAlert && formData.phone === "" && <p className="text-red-500">Enter your phone number</p>}
+
 
                             {/* Date of Birth */}
                             <label className="text-yellow-400">Date of Birth</label>
-                            <div className="flex items-center bg-[#0f0f0f] rounded-lg px-3">
+                            <div className="flex items-center bg-[#0f0f0f] rounded-lg px-3" onClick={openPicker}>
                                 <Calendar className="w-6 h-6 text-[#505050]" />
                                 <input
                                     type="date"
-                                    name="dob"
+                                    name="dateOfBirth"
                                     onChange={formDataChange}
                                     className="w-full bg-transparent py-4 px-3 focus:outline-none"
+                                    ref={dateRef}
                                     required
                                 />
                             </div>
@@ -158,7 +233,7 @@ const AthleteContact = () => {
                             {/* About Yourself */}
                             <label className="text-yellow-400">Say something about yourself</label>
                             <textarea
-                                name="about"
+                                name="bio"
                                 onChange={formDataChange}
                                 rows={6}
                                 className="w-full bg-[#0f0f0f] rounded-lg py-4 px-3 focus:outline-none"

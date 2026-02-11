@@ -8,28 +8,52 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
-import { useNavigate } from "react-router";
 
 const Contact = () => {
-    const navigate = useNavigate();
+    const scriptUrl = import.meta.env.VITE_APP_SCRIPT_URL;
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         message: ""
     })
 
-    function formDataChange(e){
-        const {name, value} = e.target;
+    const [showEmptyFieldAlert, setShowEmptyFieldAlert] = useState(false);
+
+    function formDataChange(e) {
+        const { name, value } = e.target;
         setFormData({
             ...formData,
             [name]: value
         })
     }
 
-    function handleForm(e){
+    async function handleForm(e) {
         e.preventDefault();
         console.log(formData);
+        if (formData.name === "" || formData.email === "" || formData.message === "") {
+            setShowEmptyFieldAlert(true);
+            return;
+        }
         
+        try {
+            await fetch(scriptUrl, {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    form: "contact",
+                    name: formData.name,
+                    email: formData.email,
+                    message: formData.message
+                }),
+            });
+
+        } catch (err) {
+            console.log(err);
+            return;
+
+        }
+
     }
 
     return (
@@ -38,7 +62,7 @@ const Contact = () => {
 
             <Navbar />
             <section className="pb-20 relative z-20 pt-40 text-xs px-5 lg:px-20 space-y-16" >
-          <img src="/assets/bg_black.webp" className="fixed inset-0 -z-10 w-full h-full object-cover" alt="" loading="lazy" />
+                <img src="/assets/bg_black.webp" className="fixed inset-0 -z-10 w-full h-full object-cover" alt="" loading="lazy" />
                 <h1 className="text-yellow-400 text-4xl text-center">GET IN TOUCH</h1>
 
                 <div className="lg:flex gap-40">
@@ -83,12 +107,12 @@ const Contact = () => {
                             <div className=" mb-20 space-y-3">
                                 <p className="text-sm lg:text-base">Social Media Links :</p>
                                 <div className="flex gap-6">
-                                <a href="https://www.facebook.com/profile.php?id=61550798993939" target="_blank" rel="noopener noreferrer">
-            <FaFacebook size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
-            <a href="https://www.instagram.com/kitbag_journey/" target="_blank" rel="noopener noreferrer">
-            <FaInstagram size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
-            <a href="https://www.linkedin.com/company/sports-journey/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
+                                    <a href="https://www.facebook.com/profile.php?id=61550798993939" target="_blank" rel="noopener noreferrer">
+                                        <FaFacebook size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
+                                    <a href="https://www.instagram.com/kitbag_journey/" target="_blank" rel="noopener noreferrer">
+                                        <FaInstagram size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
+                                    <a href="https://www.linkedin.com/company/sports-journey/" target="_blank" rel="noopener noreferrer">
+                                        <FaLinkedin size={25} className="hover:text-yellow-400 transition-all duration-300" /></a>
 
                                 </div>
                             </div>
@@ -106,13 +130,18 @@ const Contact = () => {
                                     <input name="name" onChange={formDataChange} type="text" id="name" className="w-full bg-transparent rounded-lg py-4 px-3 focus:border-none focus:outline-none " placeholder="Name" required />
 
                                 </div>
+                                {showEmptyFieldAlert && formData.name === "" && <p className="text-red-500">Enter your name</p>}
                                 <label htmlFor="email" className="text-yellow-400">Email</label>
                                 <div className='flex items-center bg-[#0f0f0f] rounded-lg px-3 border-[1px] border-white/30 opacity-70'>
                                     <Mail className="w-6 h-6 text-[#505050]" />
                                     <input name="email" onChange={formDataChange} type="text" id="email" className="w-full bg-[#0f0f0f] rounded-lg py-4 px-3 focus:border-none focus:outline-none" placeholder="Email" required />
                                 </div>
+                                {showEmptyFieldAlert && formData.email === "" && <p className="text-red-500">Enter your email</p>}
+
                                 <label htmlFor="message" className="text-yellow-400">Message</label>
                                 <textarea onChange={formDataChange} name="message" id="message" cols={30} rows={8} className="w-full bg-[#0f0f0f] rounded-lg py-4 px-3 border-[1px] border-white/30 opacity-70" placeholder="Your Message" required></textarea>
+                                {showEmptyFieldAlert && formData.message === "" && <p className="text-red-500">Enter your message</p>}
+
                                 <button onClick={handleForm} className="group relative overflow-hidden  font-oswald px-8 py-4 mt-4 text-xs lg:text-lg bg-yellow-400 text-black transition-transform duration-300 ease-in-out w-full mx-auto ">
 
                                     <span className="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
