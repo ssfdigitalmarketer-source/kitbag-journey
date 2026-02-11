@@ -103,7 +103,7 @@ const Home = () => {
 
       const isMobile = window.innerWidth < 768;
 
-      const maxScale = isMobile ? 2 : 1.7;
+      const maxScale = isMobile ? 2 : 1.6;
       const speed = isMobile ? 2 : 1.8;
 
       const scale = Math.min(1 + progress * speed, maxScale);
@@ -169,7 +169,7 @@ const Home = () => {
 
 
       {/* About Section */}
-      <section className="overflow-hidden relative py-4 lg:py-20">
+      <section className="overflow-hidden relative py-10 lg:py-20">
         <img src="/assets/cricket_ball.webp" alt="bg" className="absolute inset-0 w-full h-full object-cover" />
         {/* <video
           autoPlay
