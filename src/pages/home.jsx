@@ -318,13 +318,11 @@ const Home = () => {
 
       <BlogSection />
 
-      <section className="relative pt-20 px-5 text-center overflow-hidden space-y-10">
+      <section className="relative py-10 px-5 overflow-hidden space-y-8">
 
         <h1 className="text-4xl font-bold text-yellow-400 text-center uppercase">The Genesis of Kitbag Journey</h1>
 
         {/* Content */}
-        <div className="relative z-10 space-y-8">
-
           <div class="relative aspect-video w-full">
             <iframe
               class="absolute inset-0 w-full mx-auto h-full rounded-lg"
@@ -332,10 +330,6 @@ const Home = () => {
               title="YouTube video"
               allowfullscreen>
             </iframe>
-          </div>
-
-
-
         </div>
 
       </section>
