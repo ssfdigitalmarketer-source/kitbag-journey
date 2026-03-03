@@ -13,7 +13,7 @@ const PlayerPage = () => {
 
   return (
     <div>
-      <section className="pb-20 pt-40 space-y-16 text-center" >
+      <section className="pb-20 pt-20 lg:pt-40 space-y-16 text-center" >
 
         <div className="px-8 font-[Poppins] gap-20 xl:flex">
           

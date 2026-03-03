@@ -142,7 +142,7 @@ const Contact = () => {
                                 <textarea onChange={formDataChange} name="message" id="message" cols={30} rows={8} className="w-full bg-[#0f0f0f] rounded-lg py-4 px-3 border-[1px] border-white/30 opacity-70" placeholder="Your Message" required></textarea>
                                 {showEmptyFieldAlert && formData.message === "" && <p className="text-red-500">Enter your message</p>}
 
-                                <button onClick={handleForm} className="group relative overflow-hidden  font-oswald px-8 py-4 mt-4 text-xs lg:text-lg bg-yellow-400 text-black transition-transform duration-300 ease-in-out w-full mx-auto ">
+                                <button onClick={handleForm} className="group relative overflow-hidden px-8 py-4 mt-4 text-xs lg:text-lg bg-yellow-400 text-black transition-transform duration-300 ease-in-out w-full mx-auto ">
 
                                     <span className="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
 

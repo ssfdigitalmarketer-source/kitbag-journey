@@ -3,9 +3,11 @@ import { useDragScroll } from "../hooks/useDragScroll";
 import { useEffect } from "react";
 import FadeInX from "../animations/FadeInX";
 import { section } from "framer-motion/client";
+import { useNavigate } from "react-router";
 
 const ServicesSection = () => {
   const { ref, handlers, isDragging } = useDragScroll();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const container = ref.current;
@@ -62,6 +64,14 @@ const ServicesSection = () => {
   //   )
   // }
 
+  // const services = [
+  //   { title: "ATHLETE MANAGEMENT", img: "/assets/services/player_management_cover.jpg", link: "athlete-management"},
+  //   { title: "CRICKET LEAGUE MANAGEMENT", img: "/assets/services/cricket_league_management_cover.webp", link: "cricket-league-management" },
+  //   { title: "BRANDING & PR", img: "/assets/services/branding_pr_cover.jpg", link: "branding&pr" },
+  //   { title: "LEGAL CONSULTANCY", img: "/assets/services/legal_consultancy_cover.webp", link: "legal-consultancy" },
+  //   { title: "IT SERVICES", img: "/assets/services/it_services.webp", link: "it-services" },
+  // ]
+
   return (
     <section className="w-full relative grid gap-4 lg:gap-8 lg:grid-cols-8 lg:grid-rows-4 p-5">
 
@@ -69,39 +79,49 @@ const ServicesSection = () => {
         <h1 className="text-[clamp(2rem,6vw,9rem)] font-black items-center text-black">CORE SERVICES</h1>
       </div>
 
-
-      <div className="flex items-center relative justify-center overflow-hidden rounded-xl row-span-4 col-span-2">
-        <img src="/assets/services/player_management_cover.jpg" alt="" className="w-full h-full object-cover grayscale hover:grayscale-0"/>
+      <div className="flex items-center relative justify-center overflow-hidden rounded-xl row-span-4 col-span-2 cursor-pointer group" onClick={() => navigate('/athlete-management')}>
+        <img src="/assets/services/player_management_cover.jpg" alt="" className="w-full h-full object-cover grayscale brightness-100 hover:grayscale-0 hover:brightness-75 transition-all duration-300"/>
         {/* <div className="absolute bottom-0 left-0 w-full h-[40%] z-10 bg-gradient-to-t from-yellow-400/70 via-yellow-400/30 to-transparent opacity-100  group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300" /> */}
         <h2 className="absolute top-4 left-4 text-white font-bold md:text-xl xl:text-[clamp(2rem,1vw,9rem)]">ATHLETE MANAGEMENT</h2>
+        <div className="absolute bottom-4 translate-y-28 group-hover:translate-y-0 transition-all duration-300 px-4 py-2">
+          <p className="text-white font-bold uppercase">Read More</p>
+        </div>
       </div>
 
-      <div className="flex items-center relative justify-center row-span-2 col-span-2 text-white overflow-hidden rounded-lg">
-        <img src="/assets/services/cricket_league_management_cover.webp" alt="" className="w-full h-full object-cover grayscale hover:grayscale-0" />
+      <div className="flex items-center relative justify-center row-span-2 col-span-2 text-white overflow-hidden rounded-lg cursor-pointer group" onClick={() => navigate('/cricket-league-management')}>
+        <img src="/assets/services/cricket_league_management_cover.webp" alt="" className="w-full h-full object-cover grayscale brightness-100 hover:grayscale-0 hover:brightness-75 transition-all duration-300" />
         {/* <div className="absolute bottom-0 left-0 w-full h-[40%] z-10 bg-gradient-to-t from-amber-500/70 via-amber-500/30 to-transparent opacity-100 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300" /> */}
         <h2 className="absolute top-4 left-4 text-white font-bold md:text-xl xl:text-[clamp(2rem,1vw,9rem)]">CRICKET LEAGUE MANAGEMENT</h2>
-
+        <div className="absolute bottom-4 translate-y-28 group-hover:translate-y-0 transition-all duration-300 px-4 py-2">
+          <p className="text-white font-bold uppercase">Read More</p>
+        </div>
       </div>
 
-      <div className="relative flex items-center justify-center row-span-2 col-span-2 text-white overflow-hidden rounded-xl">
-        <img src="/assets/services/branding_pr_cover.jpg" alt="" className="w-full h-full object-cover grayscale hover:grayscale-0" />
+      <div className="relative flex items-center justify-center row-span-2 col-span-2 text-white overflow-hidden rounded-xl cursor-pointer group" onClick={() => navigate('/branding&pr')}>
+        <img src="/assets/services/branding_pr_cover.jpg" alt="" className="w-full h-full object-cover grayscale brightness-100 hover:grayscale-0 hover:brightness-75 transition-all duration-300" />
         {/* <div className="absolute bottom-0 left-0 w-full h-[40%] z-10 bg-gradient-to-t from-green-500/70 via-green-500/30 to-transparent opacity-100  group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300" /> */}
         <h2 className="absolute top-4 left-4 text-white font-bold md:text-xl xl:text-[clamp(2rem,1vw,9rem)]">BRANDING & PR</h2>
-
+        <div className="absolute bottom-4 translate-y-28 group-hover:translate-y-0 transition-all duration-300 px-4 py-2">
+          <p className="text-white font-bold uppercase">Read More</p>
+        </div>
       </div>
 
-      <div className="relative flex items-center justify-center row-span-2 col-span-2 text-white overflow-hidden rounded-xl">
-        <img src="/assets/services/legal_consultancy_cover.webp" alt="" className="w-full h-full object-cover grayscale hover:grayscale-0" />
+      <div className="relative flex items-center justify-center row-span-2 col-span-2 text-white overflow-hidden rounded-xl cursor-pointer group" onClick={() => navigate('/legal-consultancy')}>
+        <img src="/assets/services/legal_consultancy_cover.webp" alt="" className="w-full h-full object-cover grayscale brightness-100 hover:grayscale-0 hover:brightness-75 transition-all duration-300" />
         {/* <div className="absolute bottom-0 left-0 w-full h-[40%] z-10 bg-gradient-to-t from-blue-500/70 via-blue-500/30 to-transparent opacity-100 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300" /> */}
         <h2 className="absolute top-4 left-4 text-white font-bold md:text-xl xl:text-[clamp(2rem,1vw,9rem)]">LEGAL CONSULTANCY</h2>
-
+        <div className="absolute bottom-4 translate-y-28 group-hover:translate-y-0 transition-all duration-300 px-4 py-2">
+          <p className="text-white font-bold uppercase">Read More</p>
+        </div>
       </div>
 
-      <div className="flex relative items-center justify-center row-span-2 col-span-2 text-white overflow-hidden rounded-xl">
-        <img src="/assets/services/IT-Services.jpg" alt="" className="w-full h-full object-cover grayscale hover:grayscale-0" />
+      <div className="flex relative items-center justify-center row-span-2 col-span-2 text-white overflow-hidden rounded-xl cursor-pointer group" onClick={() => navigate('/it-services')}>
+        <img src="/assets/services/IT-Services.jpg" alt="" className="w-full h-full object-cover grayscale brightness-100 hover:grayscale-0 hover:brightness-75 transition-all duration-300" />
         {/* <div className="absolute bottom-0 left-0 w-full h-[40%] z-10 bg-gradient-to-t from-purple-500/70 via-purple-500/30 to-transparent opacity-100 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300" /> */}
         <h2 className="absolute top-4 left-4 text-white font-bold md:text-xl xl:text-[clamp(2rem,1vw,9rem)]">IT SERVICES</h2>
-
+        <div className="absolute bottom-4 translate-y-28 group-hover:translate-y-0 transition-all duration-300 px-4 py-2">
+          <p className="text-white font-bold uppercase">Read More</p>
+        </div>
       </div>
 
 

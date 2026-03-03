@@ -66,8 +66,8 @@ const About = () => {
                     </div>
                 </div>
 
-                <p className="px-2 font-[Poppins] text-xs lg:text-xl lg:w-[70%] mx-auto text-center">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years. Sikandar was instrumental in establishing MS Dhoni Cricket Academy across the globe.</p>
-                <p className="px-2 font-[Poppins] text-xs lg:text-xl lg:w-[70%] mx-auto text-center">Kitbag Journey Athlete Management is a next-generation sports management
+                <p className="px-2 text-xs lg:text-xl lg:w-[70%] mx-auto text-center">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years. Sikandar was instrumental in establishing MS Dhoni Cricket Academy across the globe.</p>
+                <p className="px-2 text-xs lg:text-xl lg:w-[70%] mx-auto text-center">Kitbag Journey Athlete Management is a next-generation sports management
                     organization dedicated to nurturing athletic talent and empowering sports
                     professionals to achieve excellence. With strategic career development, brand
                     partnerships, professional mentoring, and top-tier representation — we ensure
@@ -155,12 +155,12 @@ const About = () => {
                                 <p className='translate-y-32 group-hover:translate-y-0 text-xs text-black transition-transform duration-700'>{member.description}</p>
                             </div>
 
-                            <div className="h-8 absolute z-0 bottom-0 bg-white w-full">
-                                <div className='absolute z-50 text-right rounded-xl gap-3 -bottom-1 px-8 py-2 bg-white lg:text-xl transition-transform duration-700 text-yellow-400 right-0'>
-                                    <p className="text-black relative font-bold z-30">{member.name}</p>
-                                    <p className="text-black relative z-30">{member.role}</p>
+                            <div className="h-8 absolute bottom-0 px-5 py-2 bg-white w-full">
+                                <div className='absolute z-50 text-right rounded-xl bottom-5 px-5 py-2 bg-white lg:text-xl transition-transform duration-700 text-yellow-400 right-0'>
+                                    <p className="text-black relative font-bold">{member.name}</p>
 
                                 </div>
+                                <p className="text-black text-right relative z-50">{member.role}</p>
                             </div>
                         </div>
                     ))}

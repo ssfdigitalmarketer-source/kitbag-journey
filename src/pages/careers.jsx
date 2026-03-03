@@ -216,7 +216,7 @@ const Careers = () => {
                             {/* Submit Button */}
                             <button
                                 type="submit"
-                                className="group relative overflow-hidden font-oswald px-8 py-4 mt-4 text-lg bg-yellow-400 text-black w-full"
+                                className="group relative overflow-hidden px-8 py-4 mt-4 text-lg bg-yellow-400 text-black w-full"
                                 onClick={handleForm}
                             >
                                 <span className="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"></span>

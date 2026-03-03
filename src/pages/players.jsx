@@ -34,7 +34,7 @@ const Players = () => {
         <div>
             <section className="px-5">
                 <div className="pt-28 md:pt-32 xl:pt-48 pb-10">
-                    <h1 className="text-5xl xl:text-9xl font-black relative z-30 text-white">OUR <br /> ATHLETES</h1>
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-9xl font-black relative z-30 text-white">OUR <br /> ATHLETES</h1>
                 </div>
                 <div className='grid relative py-10 md:py-14 xl:py-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 '>
                     {players.map((player, index) => (

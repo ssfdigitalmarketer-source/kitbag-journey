@@ -159,18 +159,11 @@ const Home = () => {
       </section> */}
 
       <section className="relative h-[60vh] md:h-screen overflow-hidden">
-        {/* <img src="/assets/stadium.webp" alt="bg" className="absolute -z-10 inset-0 w-full h-full object-cover" /> */}
-        <video src="/assets/videos/stadium.mp4" autoPlay muted loop className="absolute inset-0 w-full h-full object-cover"></video>
-        {/* <div className="bg-yellow-500/10 absolute w-full h-full inset-0"></div> */}
-        {/* <div className="w-[50%] h-[100%] absolute inset-0 bg-black flex items-center"> */}
-        {/* <h1 className="text-4xl lg:text-[150px]/[200px] text-center font-black px-5 relative z-10">PROMOTING TALENT</h1> */}
-        {/* <div className="absolute inset-0 w-full h-full bg-black/70"></div> */}
-        <div className="w-[50%] px-5 h-full absolute left-0 bg-black/60 flex flex-col justify-center"> <h1 className="text-3xl lg:text-[9rem] font-oswald text-white font-black ">PROMOTING <br /> TALENT
-          {/* <span className="text-transparent [-webkit-text-stroke:1.5px_#ffffff]">
-            TALENT
-            </span> */}
+        <img src="/assets/stadiumBG_2.webp" alt="bg" className="absolute -z-10 inset-0 w-full h-full object-cover" />
+        {/* <video src="/assets/videos/stadium.mp4" autoPlay muted loop className="absolute inset-0 w-full h-full object-cover"></video> */}
+        <div className="w-[50%] px-5 h-full absolute space-y-3 left-0 bg-black/60 flex flex-col justify-center"> <h1 className=" text-[8vw] xl:text-[9vw] leading-[1] font-oswald text-white font-black ">PROMOTING <br /> TALENT
         </h1>
-          <p className="z-20 text-xs lg:text-3xl text-yellow-400">A New Generation Athlete Management Company</p>
+          <p className="z-20 text-xs sm:text-sm md:text-xl lg:text-2xl xl:text-3xl text-yellow-400">A New Generation Athlete Management Company</p>
         </div>
 
 
@@ -199,7 +192,7 @@ const Home = () => {
         {/* Overlay (optional) */}
         <div className="absolute inset-0 bg-black/60"></div>
         {/* <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769588635/cricket_ball_background_ulkhdw.png" alt="" className="w-full scale-[2] h-full object-contain absolute top-0 brightness-50" /> */}
-        <div className="px-2 space-y-3 lg:space-y-10 font-bold font-[Poppins] text-center mx-auto lg:w-[70%] relative z-10 lg:text-2xl">
+        <div className="px-2 space-y-3 lg:space-y-10 font-bold text-center mx-auto lg:w-[70%] relative z-10 lg:text-2xl">
           <p className="italic text-sm lg:text-2xl"><span className="">" </span>EVERY <span className="">TALENT</span> NEEDS RIGHT GUIDANCE AND <span className="">PROFESSIONAL</span> TEAM BOTH ON AND OFF THE FIELD IN SHAPING THEIR <span className="">CAREER</span>.</p>
           <p className="italic text-sm lg:text-2xl">WE ARE LEAVING NO STONE UNTURNED AND MAKING SURE EVERY <span className="">SPORTS</span> TALENT <span className="">REACH</span> THEIR FULL <span className="">POTENTIAL</span><span className=""> "</span></p>
           <div>
@@ -221,7 +214,7 @@ const Home = () => {
             <div className="relative h-full border-[1px] border-yellow-400">
               <img src='/assets/team/sh.webp' alt="" className="h-full object-cover grayscale-0 mx-auto" />
               <div className="absolute h-8 w-full bg-yellow-400 bottom-0 "></div>
-              <div className="absolute h-14 w-[30%] z-50 bottom-0 bg-yellow-400 rounded-xl right-0"></div>
+              <div className="absolute h-14 w-[30%] z-40 bottom-0 bg-yellow-400 rounded-xl right-0"></div>
               <div>
 
               </div>
@@ -232,7 +225,7 @@ const Home = () => {
 
             <h1 className="text-3xl lg:text-7xl font-extrabold text-yellow-400">WELCOME TO KITBAG JOURNEY</h1>
             <h2 className="text-xl lg:text-3xl font-semibold">AN ATHLETE MANAGEMENT COMPANY</h2>
-            <p className="font-[Poppins]  text-xs lg:text-lg">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years.</p>
+            <p className="text-xs lg:text-lg">Kitbag Journey, is solely a sports management and consultancy firm conceptualized in the year 2023 by Sikandar Heyat, who himself is a former cricketer & sport management professional with industry experience of more than 10 years.</p>
 
 
             <button className="group relative overflow-hidden px-6 py-3 mt-4 text-lg border-[0.5px] hover:text-black border-white transition-transform duration-300 ease-in-out lg:w-[30%] rounded-3xl" onClick={() => navigate('/about')}>

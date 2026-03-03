@@ -13,7 +13,7 @@ const Footer = () => {
         <div className='lg:flex space-y-6 lg:flex-col justify-between items-center'>
           <div className="flex flex-col justify-center">
             <img src='/assets/kitbag_logo.svg' alt="Kitbag-Logo" className="h-[100px] lg:h-[120px] cursor-pointer" onClick={() => navigate('/')} />
-            <ul className='list-none text-center lg:text-left lg:text-xl space-y-5 lg:space-y-0 gap-20 lg:flex font-oswald uppercase'>
+            <ul className='list-none text-center lg:text-left lg:text-xl space-y-5 lg:space-y-0 gap-20 lg:flex font-bold uppercase'>
               <li className="cursor-pointer hover:text-yellow-400 transition-all duration-300"><Link to={"/about"}>About Us</Link></li>
               <li className="cursor-pointer hover:text-yellow-400 transition-all duration-300"><Link to={"/contact"}>Contact Us</Link></li>
               <li className="cursor-pointer hover:text-yellow-400 transition-all duration-300"><Link to={"/careers"}>Careers</Link></li>
@@ -41,7 +41,7 @@ const Footer = () => {
         </a>.</p>
       </footer>
       <div className="w-full overflow-hidden text-center ">
-        <h1 className="whitespace-nowrap font-bold text-[13vw] leading-none relative -bottom-2 lg:-bottom-10">
+        <h1 className="whitespace-nowrap font-bold text-[11vw] leading-none relative -bottom-3 lg:-bottom-14">
           KITBAG JOURNEY
         </h1>
       </div>

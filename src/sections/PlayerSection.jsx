@@ -72,7 +72,7 @@ const PlayerSection = () => {
     <section className='space-y-1'>
       <div className='w-full px-5 bg-yellow-400 relative py-10 xl:py-20 space-y-8 '>
         {/* <div className='w-[50%] h-full bg-white absolute right-0 top-0'></div> */}
-        <h1 className='text-3xl md:text-5xl lg:text-7xl xl:text-9xl font-black text-black'>PRO <br /> ATHLETES</h1>
+        <h1 className='text-4xl md:text-5xl lg:text-7xl xl:text-9xl font-black text-black'>PRO <br /> ATHLETES</h1>
         <div className='flex flex-col lg:flex-row justify-between'>
           <p className='text-xl md:text-2xl xl:text-3xl font-semibold text-black'>The wall of talent defining the next generation of sports</p>
           <p className='font-bold underline text-black text-xl md:text-2xl xl:text-3xl cursor-pointer' onClick={() => navigate('/players')}>View All Talents</p>

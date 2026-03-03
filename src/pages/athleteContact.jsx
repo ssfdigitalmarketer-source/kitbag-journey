@@ -242,7 +242,7 @@ const AthleteContact = () => {
                             {/* Submit Button */}
                             <button
                                 onClick={handleForm}
-                                className="group relative overflow-hidden font-oswald px-8 py-4 mt-4 text-lg bg-yellow-400 text-black transition-transform duration-300 ease-in-out w-full"
+                                className="group relative overflow-hidden px-8 py-4 mt-4 text-lg bg-yellow-400 text-black transition-transform duration-300 ease-in-out w-full"
                             >
                                 <span className="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
                                 <span className="relative z-10">Submit Profile</span>
