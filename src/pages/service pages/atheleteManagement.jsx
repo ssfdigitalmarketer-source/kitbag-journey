@@ -1,10 +1,8 @@
-import Navbar from "../../components/Navbar"
-import Footer from "../../components/Footer"
+
 
 const AtheleteManagement = () => {
     return (
         <div className="relative">
-            <Navbar />
             <section className="">
                 <div className="relative w-full">
                     <img
@@ -15,19 +13,19 @@ const AtheleteManagement = () => {
                     />
 
                     <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
-                        <h1 className="text-yellow-400 text-4xl md:text-5xl text-center leading-tight">
-                            PLAYER MANAGEMENT
+                        <h1 className="text-yellow-400 text-4xl font-black md:text-6xl text-center leading-tight">
+                            ATHLETE MANAGEMENT
                         </h1>
                     </div>
                 </div>
                 {/* <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1768631738/service_h5odoj.jpg" alt="" className="w-full" /> */}
                 <div className="py-20 space-y-8">
                     {/* <h1 className="text-4xl text-yellow-400 text-center">PLAYER MANAGEMENT</h1> */}
-                    <div className="text-xs lg:text-lg font-sans px-5 lg:w-[70%] mx-auto space-y-10">
+                    <div className="text-xs lg:text-lg font-[Poppins] px-5 lg:w-[70%] mx-auto space-y-10">
                         <p className="">Our athlete management framework brings together elite professionals across
                             performance, branding, legal, and commercial domains. We help athletes unlock
                             career milestones through strategic guidance tailored to their ambitions.</p>
-                        <h2 className="text-2xl lg:text-3xl font-oswald text-yellow-400 text-center">WHAT WE MANAGE</h2>
+                        <h2 className="text-2xl lg:text-3xl font-semibold text-yellow-400 text-center">WHAT WE MANAGE</h2>
                         <div className="space-y-2">
                             <h3 className="text-yellow-400 text-xl lg:text-2xl">Career Representation</h3>
                             <p>We represent athletes with complete dedication and ensure they are showcased
@@ -50,7 +48,6 @@ const AtheleteManagement = () => {
 
                 </div>
             </section>
-            <Footer />
         </div>
     )
 }

@@ -43,7 +43,10 @@ const MovingBanner = () => {
     >
       <MarqueeBackground />
 
-      <FadeInX direction="right" delay={0.4}>
+      {/* <div className="h-full bg-yellow-400 w-[30px]"></div> */}
+
+      <div>
+      <FadeInX direction="left" delay={0.4}>
         <p className="moving-paragraph relative">
           WE CREATE
         </p>
@@ -55,11 +58,13 @@ const MovingBanner = () => {
         </p>
       </FadeInX>
 
-      <FadeInX direction="right" delay={1.2}>
+      <FadeInX direction="left" delay={1.2}>
       <p className="moving-paragraph relative">
         WE ARE KITBAG JOURNEY
       </p>
       </FadeInX>
+
+      </div>
 
     </section>
   );

@@ -1,7 +1,6 @@
-import Navbar from "../components/Navbar"
+
 import { useParams } from "react-router"
 import { usePlayerStore } from "../store/usePlayerStore"
-import Footer from "../components/Footer"
 import VideoCarousel from "../components/VideoCarousel"
 import FadeInX from "../animations/FadeInX"
 
@@ -14,11 +13,9 @@ const PlayerPage = () => {
 
   return (
     <div>
-      <Navbar />
-
       <section className="pb-20 pt-40 space-y-16 text-center" >
 
-        <div className="px-8 font-sans gap-20 xl:flex">
+        <div className="px-8 font-[Poppins] gap-20 xl:flex">
           
           <div className="mb-5 lg:w-[45%] lg:mx-auto overflow-hidden">
             <FadeInX delay={0.6}>
@@ -28,8 +25,8 @@ const PlayerPage = () => {
             </div>
           <div className="space-y-4 flex-1 lg:text-left ">
           
-            <div className="bg-yellow-400 -skew-x-12 py-3 space-y-3 w-[95%] mx-auto relative">
-              <h1 className="text-4xl font-bold lg:text-6xl font-oswald text-center text-black uppercase">{player?.name}</h1>
+            <div className="bg-yellow-400 py-3 space-y-3 w-full rounded-2xl mx-auto relative">
+              <h1 className="text-4xl font-bold lg:text-6xl text-center text-black uppercase">{player?.name}</h1>
 
             </div>
 
@@ -54,7 +51,6 @@ const PlayerPage = () => {
             {/* <VideoCarousel /> */}
 
       </section>
-      <Footer />
 
     </div>
   )

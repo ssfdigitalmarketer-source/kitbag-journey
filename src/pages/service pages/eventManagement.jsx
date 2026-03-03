@@ -1,10 +1,8 @@
-import Navbar from "../../components/Navbar"
-import Footer from "../../components/Footer"
+
 
 const EventManagement = () => {
     return (
         <div>
-            <Navbar />
             <section className="">
                 <div className="relative w-full">
                     <img
@@ -15,7 +13,7 @@ const EventManagement = () => {
                     />
 
                     <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
-                        <h1 className="text-yellow-400 text-4xl md:text-5xl text-center leading-tight">
+                        <h1 className="text-yellow-400 text-4xl font-black md:text-6xl text-center leading-tight">
                             CRICKET LEAGUE MANAGEMENT
                         </h1>
                     </div>
@@ -23,7 +21,7 @@ const EventManagement = () => {
                 {/* <img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769506079/aksh-yadav-bY4cqxp7vos-unsplash_lx3exy.jpg" alt="social media and pr" className="w-full" /> */}
                 <div className="py-20 space-y-8">
                     {/* <h1 className="text-4xl text-yellow-400 text-center">Cricket League Management</h1> */}
-                    <div className="text-xs lg:text-lg font-sans px-5 lg:w-[70%] mx-auto space-y-10">
+                    <div className="text-xs lg:text-lg  px-5 lg:w-[70%] mx-auto space-y-10">
                         <p className="">We build and manage scalable sports events and leagues with a strong focus on commercial viability, brand value, and long-term growth. Our end-to-end approach ensures structured planning, efficient execution, and measurable returns for stakeholders.</p>
                         {/* <h2 className="text-3xl font-oswald text-yellow-400 text-center">WHAT WE MANAGE</h2> */}
                         <div className="space-y-2">
@@ -76,7 +74,6 @@ const EventManagement = () => {
 
                 </div>
             </section>
-            <Footer />
         </div>
     )
 }

@@ -1,5 +1,4 @@
-import Footer from "../components/Footer"
-import Navbar from "../components/Navbar"
+
 import { User } from 'lucide-react';
 import { Mail } from 'lucide-react';
 import { Phone } from 'lucide-react';
@@ -8,6 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
+
 
 const Contact = () => {
     const scriptUrl = import.meta.env.VITE_APP_SCRIPT_URL;
@@ -61,14 +61,12 @@ const Contact = () => {
     return (
         <div className="bg-fixed">
             {/* <div className="fixed z-0 top-0"><img src="https://res.cloudinary.com/dwmmlrpgg/image/upload/v1769593899/copy_of_backgroundfooter_dvic2i_cc16e1.png" alt="" /> </div> */}
-
-            <Navbar />
             <section className="pb-20 relative z-20 pt-40 text-xs px-5 lg:px-20 space-y-16" >
                 <img src="/assets/bg_black.webp" className="fixed inset-0 -z-10 w-full h-full object-cover" alt="" loading="lazy" />
-                <h1 className="text-yellow-400 text-4xl text-center">GET IN TOUCH</h1>
+                <h1 className="text-yellow-400 text-4xl font-black text-center">GET IN TOUCH</h1>
 
                 <div className="lg:flex gap-40">
-                    <div className="font-sans lg:w-[50%]">
+                    <div className=" lg:w-[50%]">
                         <div className="lg:w-[80%]">
                             <p className="text-sm lg:text-xl">This is your gateway to connect with us directly. Whether you have inquiries or feedback or simply want to drop a message.</p>
                             <div className="py-10 space-y-10 border-y-[0.5px] my-8 border-yellow-400">
@@ -125,7 +123,7 @@ const Contact = () => {
 
                     <div className="lg:w-[40%]">
                         <form action="">
-                            <div className="space-y-4 flex flex-col font-sans">
+                            <div className="space-y-4 flex flex-col ">
                                 <label htmlFor="name" className="text-yellow-400">Name</label>
                                 <div className='flex items-center bg-[#0f0f0f] rounded-lg px-3 border-[1px] border-white/30 opacity-70'>
                                     <User className="w-6 h-6 text-[#505050]" />
@@ -156,7 +154,7 @@ const Contact = () => {
                 </div>
 
 
-                {/* <div className="font-sans w-[80%] mx-auto text-center">
+                {/* <div className=" w-[80%] mx-auto text-center">
                     <p className="text-xs lg:text-lg">Are you an Athlete? Submit your portfolio right now and take your career to next level!</p>
                     <button onClick={()=> navigate('/athlete-contact')} className="
     group relative overflow-hidden
@@ -187,7 +185,6 @@ const Contact = () => {
 
 
             </section>
-            <Footer />
         </div>
     )
 }

@@ -1,5 +1,4 @@
-import Footer from "../components/Footer"
-import Navbar from "../components/Navbar"
+
 import { User, Mail, Phone, Briefcase, Upload } from "lucide-react";
 import { useState, useRef } from "react";
 
@@ -83,27 +82,26 @@ const Careers = () => {
     };
     return (
         <div>
-            <Navbar />
             <section className="px-5 text-xs lg:text-base pt-40 pb-20" style={{ backgroundImage: `url('/assets/bg_paper.jpg')`, backgroundPosition: "center" }}>
                 <div className="lg:w-[70%] mx-auto space-y-8 ">
-                    <h1 className="text-4xl text-yellow-400 text-center">JOIN OUR TEAM AND CONTRIBUTE TO OUR MISSION</h1>
-                    <h2 className="text-xl lg:text-2xl text-yellow-400 text-center font-sans">Currently Looking for :</h2>
+                    <h1 className="text-4xl text-yellow-400 font-black text-center">JOIN OUR TEAM AND CONTRIBUTE TO OUR MISSION</h1>
+                    <h2 className="text-xl lg:text-2xl text-yellow-400 text-center ">Currently Looking for :</h2>
                     <div className="lg:flex gap-10 flex-wrap justify-center space-y-3 lg:space-y-0">
-                        <div className="font-sans lg:w-[40%] space-y-4 backdrop-blur-xl p-6 rounded-xl bg-white/10 hover:bg-white/20 transition-all duration-300">
+                        <div className=" lg:w-[40%] space-y-4 backdrop-blur-xl p-6 rounded-xl bg-white/10 hover:bg-white/20 transition-all duration-300">
                             <h3 className="text-lg lg:text-xl text-yellow-400">Assistant Manager</h3>
                             <p className="">We are looking for a responsible Assistant Manager to support daily operations, supervise staff, and assist the Manager in planning and execution of tasks. The role involves coordinating teams, preparing reports, ensuring policy compliance, and maintaining efficient workflow.</p>
                             <p className="text-yellow-400 text-xl">Requirements :</p>
                             <p className="">Bachelor’s degree in a related field, 2–4 years of experience, strong communication and leadership skills, and basic proficiency in MS Office.</p>
                             <button className="bg-white px-6 py-3 text-black" onClick={scrollToForm}>Apply Now</button>
                         </div>
-                        <div className="font-sans lg:w-[40%] space-y-4 backdrop-blur-xl p-6 rounded-xl bg-white/10 hover:bg-white/20 transition-all duration-300">
+                        <div className=" lg:w-[40%] space-y-4 backdrop-blur-xl p-6 rounded-xl bg-white/10 hover:bg-white/20 transition-all duration-300">
                             <h3 className="text-lg lg:text-xl text-yellow-400">Assistant Manager</h3>
                             <p className="">We are looking for a responsible Assistant Manager to support daily operations, supervise staff, and assist the Manager in planning and execution of tasks. The role involves coordinating teams, preparing reports, ensuring policy compliance, and maintaining efficient workflow.</p>
                             <p className="text-yellow-400 text-xl">Requirements :</p>
                             <p className="">Bachelor’s degree in a related field, 2–4 years of experience, strong communication and leadership skills, and basic proficiency in MS Office.</p>
                             <button className="bg-white px-6 py-3 text-black" onClick={scrollToForm}>Apply Now</button>
                         </div>
-                        <div className="font-sans lg:w-[40%] space-y-4 backdrop-blur-xl p-6 rounded-xl bg-white/10 hover:bg-white/20 transition-all duration-300">
+                        <div className=" lg:w-[40%] space-y-4 backdrop-blur-xl p-6 rounded-xl bg-white/10 hover:bg-white/20 transition-all duration-300">
                             <h3 className="text-lg lg:text-xl text-yellow-400">Assistant Manager</h3>
                             <p className="">We are looking for a responsible Assistant Manager to support daily operations, supervise staff, and assist the Manager in planning and execution of tasks. The role involves coordinating teams, preparing reports, ensuring policy compliance, and maintaining efficient workflow.</p>
                             <p className="text-yellow-400 text-xl">Requirements :</p>
@@ -115,7 +113,7 @@ const Careers = () => {
                 </div>
                 <div className="lg:w-[50%] mx-auto mt-20" ref={formRef}>
                     <form action="">
-                        <div className="space-y-4 flex flex-col font-sans">
+                        <div className="space-y-4 flex flex-col ">
 
                             {/* Name */}
                             <label htmlFor="name" className="text-yellow-400">Full Name</label>
@@ -229,7 +227,6 @@ const Careers = () => {
                     </form>
                 </div>
             </section>
-            <Footer />
         </div>
     )
 }

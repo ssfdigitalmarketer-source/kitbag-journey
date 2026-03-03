@@ -21,6 +21,7 @@ const MarqueeLine = ({ text, direction = "left", fontSize }) => {
             key={i}
             style={{ fontSize }}
             className="
+            font-oswald
               font-extrabold uppercase italic
               text-transparent
               stroke-text

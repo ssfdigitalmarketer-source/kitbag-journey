@@ -49,7 +49,7 @@ const Navbar = ({ showMenu = true }) => {
     "
             >
               <Link to="/athlete-management">
-                <li className="px-4 py-3 hover:bg-yellow-400 hover:text-black">
+                <li className="px-4 py-3 active:bg-yellow-400 hover:bg-yellow-400 hover:text-black">
                   Player Management
                 </li>
               </Link>

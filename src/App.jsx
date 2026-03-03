@@ -17,6 +17,8 @@ import ITServices from "./pages/service pages/itServices";
 import ScrollToTop from "./components/ScrollToTop";
 import AthleteContact from "./pages/athleteContact";
 import Careers from "./pages/careers";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -40,6 +42,7 @@ const App = () => {
 
   return (
     <>
+    <Navbar />
     <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -57,8 +60,8 @@ const App = () => {
         <Route path="/athlete-contact" element={<AthleteContact />} />
         <Route path="/careers" element={<Careers/>} />
         
-
       </Routes>
+      <Footer />
     </>
   )
 }

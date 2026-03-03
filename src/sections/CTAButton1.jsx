@@ -4,8 +4,8 @@ import CharFadeLeftToRight from "../animations/CharFadeLeftToRight";
 const CTAButton1 = () => {
   const navigate = useNavigate();
   return (
-    <div className="text-center italic font-sans py-10 space-y-10 font-bold lg:py-20">
-      <p className="text-3xl lg:text-5xl font-extrabold">
+    <div className="text-center italic py-10 space-y-10 font-bold lg:py-20">
+      <p className="text-3xl lg:text-5xl font-black">
         <CharFadeLeftToRight text="LET'S BUILD A " />
 
         <CharFadeLeftToRight
@@ -23,9 +23,9 @@ const CTAButton1 = () => {
 
       <button onClick={()=> navigate('/athlete-contact')} className="
     group relative overflow-hidden
-    font-oswald px-8 py-4 mt-4 text-lg
-    bg-yellow-400 text-black skew-x-[-12deg]
-    transition-transform duration-300 ease-in-out
+     px-8 py-4 mt-4 text-lg
+     border-[0.5px] text-white rounded-3xl
+    transition-transform duration-300 ease-in-out hover:text-black
   "
       >
         {/* White fill layer */}
@@ -41,7 +41,7 @@ const CTAButton1 = () => {
         ></span>
 
         {/* Button text */}
-        <span className="relative z-10">
+        <span className="relative z-10 ">
           JOIN US AS AN ATHLETE
         </span>
       </button>
