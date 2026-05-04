@@ -66,11 +66,11 @@ const Navbar = ({ showMenu = true }) => {
                 </li>
               </Link>
 
-              <Link to="/legal-consultancy">
+              {/* <Link to="/legal-consultancy">
                 <li className="px-4 py-3 hover:bg-yellow-400 hover:text-black">
                   Legal Consultancy
                 </li>
-              </Link>
+              </Link> */}
               <Link to="/cricket-academy">
                 <li className="px-4 py-3 hover:bg-yellow-400 hover:text-black">
                   Cricket Academy
@@ -133,9 +133,9 @@ const Navbar = ({ showMenu = true }) => {
                     <li className="hover:text-yellow-400">
                       <Link to="/cricket-league-management">Cricket League Management</Link>
                     </li>
-                    <li className="hover:text-yellow-400">
+                    {/* <li className="hover:text-yellow-400">
                       <Link to="/legal-consultancy">Legal Consultancy</Link>
-                    </li>
+                    </li> */}
                     <li className="hover:text-yellow-400">
                       <Link to="/cricket-academy">Cricket Academy</Link>
                     </li>

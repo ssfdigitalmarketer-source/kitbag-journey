@@ -6,7 +6,7 @@ const CricketAcademy = () => {
                     <img
                         src="/assets/services/cricket_academy_cover.jpg"
                         alt="cricket academy"
-                        className="w-full block"
+                        className="w-full block brightness-50"
                         loading="lazy"
                     />
 
