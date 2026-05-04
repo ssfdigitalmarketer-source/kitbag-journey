@@ -71,6 +71,11 @@ const Navbar = ({ showMenu = true }) => {
                   Legal Consultancy
                 </li>
               </Link>
+              <Link to="/cricket-academy">
+                <li className="px-4 py-3 hover:bg-yellow-400 hover:text-black">
+                  Cricket Academy
+                </li>
+              </Link>
 
               <Link to="/it-services">
                 <li className="px-4 py-3 hover:bg-yellow-400 hover:text-black">
@@ -130,6 +135,9 @@ const Navbar = ({ showMenu = true }) => {
                     </li>
                     <li className="hover:text-yellow-400">
                       <Link to="/legal-consultancy">Legal Consultancy</Link>
+                    </li>
+                    <li className="hover:text-yellow-400">
+                      <Link to="/cricket-academy">Cricket Academy</Link>
                     </li>
                     <li className="hover:text-yellow-400">
                       <Link to="/it-services">IT Services</Link>

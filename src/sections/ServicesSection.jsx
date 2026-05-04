@@ -55,7 +55,7 @@ const ServicesSection = () => {
   //           <ServiceCard img='/assets/services/player_management_cover.jpg' title="Player Management" link={"athlete-management"} />
   //           <ServiceCard img='/assets/services/cricket_league_management_cover.webp' title="Cricket League Management" link={"cricket-league-management"} />
   //           <ServiceCard img='/assets/services/branding_pr_cover.jpg' title="Branding & PR" link={"branding&pr"} />
-  //           <ServiceCard img='/assets/services/legal_consultancy_cover.webp' title="Legal Consultancy" link={"legal-consultancy"} />
+  //           <ServiceCard img='/assets/services/cricket_academy_cover.jpg' title="Cricket Academy" link={"cricket-academy"} />
   //           <ServiceCard img='/assets/services/it_services.webp' title="IT Services" link={"it-services"} />
   //         </div>
   //       </FadeInX>
@@ -68,7 +68,7 @@ const ServicesSection = () => {
   //   { title: "ATHLETE MANAGEMENT", img: "/assets/services/player_management_cover.jpg", link: "athlete-management"},
   //   { title: "CRICKET LEAGUE MANAGEMENT", img: "/assets/services/cricket_league_management_cover.webp", link: "cricket-league-management" },
   //   { title: "BRANDING & PR", img: "/assets/services/branding_pr_cover.jpg", link: "branding&pr" },
-  //   { title: "LEGAL CONSULTANCY", img: "/assets/services/legal_consultancy_cover.webp", link: "legal-consultancy" },
+  //   { title: "CRICKET ACADEMY", img: "/assets/services/cricket_academy_cover.jpg", link: "cricket-academy" },
   //   { title: "IT SERVICES", img: "/assets/services/it_services.webp", link: "it-services" },
   // ]
 
@@ -106,10 +106,10 @@ const ServicesSection = () => {
         </div>
       </div>
 
-      <div className="relative flex items-center justify-center row-span-2 col-span-2 text-white overflow-hidden rounded-xl cursor-pointer group" onClick={() => navigate('/legal-consultancy')}>
-        <img src="/assets/services/legal_consultancy_cover.webp" alt="" className="w-full h-full object-cover grayscale brightness-100 hover:grayscale-0 hover:brightness-75 transition-all duration-300" />
+      <div className="relative flex items-center justify-center row-span-2 col-span-2 text-white overflow-hidden rounded-xl cursor-pointer group" onClick={() => navigate('/cricket-academy')}>
+        <img src="/assets/services/cricket_academy_cover.jpg" alt="" className="w-full h-full object-cover grayscale brightness-100 hover:grayscale-0 hover:brightness-75 transition-all duration-300" />
         {/* <div className="absolute bottom-0 left-0 w-full h-[40%] z-10 bg-gradient-to-t from-blue-500/70 via-blue-500/30 to-transparent opacity-100 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300" /> */}
-        <h2 className="absolute top-4 left-4 text-white font-bold md:text-xl xl:text-[clamp(2rem,1vw,9rem)]">LEGAL CONSULTANCY</h2>
+        <h2 className="absolute top-4 left-4 text-white font-bold md:text-xl xl:text-[clamp(2rem,1vw,9rem)]">CRICKET ACADEMY</h2>
         <div className="absolute bottom-4 translate-y-28 group-hover:translate-y-0 transition-all duration-300 px-4 py-2">
           <p className="text-white font-bold uppercase">Read More</p>
         </div>

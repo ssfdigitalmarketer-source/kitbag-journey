@@ -1,10 +1,6 @@
 import MarqueeBackground from "../animations/MarqueeBackground";
 import { useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import FadeInX from "../animations/FadeInX";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const MovingBanner = () => {
   const targetDiv = useRef(null);
@@ -39,7 +35,7 @@ const MovingBanner = () => {
   return (
     <section
       ref={targetDiv}
-      className="relative overflow-hidden px-5 py-14 text-4xl font-bold lg:py-20 lg:text-9xl text-center"
+      className="relative overflow-hidden px-5 py-14 text-3xl font-bold lg:py-20 lg:text-9xl text-center"
     >
       <MarqueeBackground />
 
