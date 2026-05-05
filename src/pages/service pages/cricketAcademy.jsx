@@ -4,7 +4,7 @@ const CricketAcademy = () => {
             <section className="">
                 <div className="relative w-full">
                     <img
-                        src="/assets/services/cricket_academy_cover.jpg"
+                        src="/assets/services/cricket_academy_cover.webp"
                         alt="cricket academy"
                         className="w-full block brightness-50"
                         loading="lazy"
